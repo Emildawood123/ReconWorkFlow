@@ -15,16 +15,31 @@ env:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+
+    # Keep the workflow safely below GitHub's 1-hour limit.
+    timeout-minutes: 50
 
     steps:
+      # ============================================================
+      # CHECKOUT
+      # ============================================================
+
       - name: Checkout
         uses: actions/checkout@v4
+
+      # ============================================================
+      # GO
+      # ============================================================
 
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
           go-version: ${{ env.GO_VERSION }}
+          cache: true
+
+      # ============================================================
+      # INSTALL TOOLS
+      # ============================================================
 
       - name: Install tools
         shell: bash
@@ -33,10 +48,28 @@ jobs:
 
           echo "$HOME/go/bin" >> "$GITHUB_PATH"
 
-          go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-          go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest
-          go install github.com/tomnomnom/assetfinder@latest
-          go install github.com/owasp-amass/amass/v4/...@master
+          echo "Installing Subfinder..."
+          timeout 5m go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+
+          echo "Installing DNSx..."
+          timeout 5m go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+
+          echo "Installing Assetfinder..."
+          timeout 5m go install github.com/tomnomnom/assetfinder@latest
+
+          echo "Installing Amass..."
+          timeout 8m go install github.com/owasp-amass/amass/v4/...@master
+
+          echo "Checking installed tools..."
+
+          command -v subfinder || true
+          command -v dnsx || true
+          command -v assetfinder || true
+          command -v amass || true
+
+      # ============================================================
+      # PREPARE
+      # ============================================================
 
       - name: Prepare
         shell: bash
@@ -48,11 +81,29 @@ jobs:
           touch all_subs.txt
           touch resolved_subs.txt
 
+          if [ ! -f root.txt ]; then
+            echo "ERROR: root.txt does not exist."
+            exit 1
+          fi
+
           sed -i 's/\r//' root.txt
           sed -i '/^[[:space:]]*$/d' root.txt
 
           echo "Targets:"
           cat root.txt
+
+          TARGET_COUNT=$(wc -l < root.txt | tr -d ' ')
+
+          echo "Target count: $TARGET_COUNT"
+
+          if [ "$TARGET_COUNT" -eq 0 ]; then
+            echo "ERROR: root.txt is empty."
+            exit 1
+          fi
+
+      # ============================================================
+      # TELEGRAM REMINDER
+      # ============================================================
 
       - name: Telegram reminder
         if: github.event_name == 'schedule'
@@ -73,7 +124,7 @@ jobs:
           🔎 Assetfinder
           🌐 DNS validation'
 
-          RESPONSE=$(curl -sS -X POST \
+          RESPONSE=$(timeout 30s curl -sS -X POST \
             "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
             --data-urlencode "text=${MESSAGE}" \
@@ -81,16 +132,19 @@ jobs:
 
           echo "$RESPONSE"
 
-          if ! echo "$RESPONSE" | grep -q '"ok":true'; then
-            echo "Telegram reminder failed."
-            exit 1
-          fi
+      # ============================================================
+      # WAIT
+      # ============================================================
 
       - name: Wait 5 minutes
         if: github.event_name == 'schedule'
         shell: bash
         run: |
           sleep 300
+
+      # ============================================================
+      # TELEGRAM STARTED
+      # ============================================================
 
       - name: Telegram started
         env:
@@ -109,7 +163,7 @@ jobs:
 
           ⏳ Running passive discovery...'
 
-          RESPONSE=$(curl -sS -X POST \
+          RESPONSE=$(timeout 30s curl -sS -X POST \
             "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
             --data-urlencode "text=${MESSAGE}" \
@@ -117,17 +171,22 @@ jobs:
 
           echo "$RESPONSE"
 
-          if ! echo "$RESPONSE" | grep -q '"ok":true'; then
-            echo "Telegram started notification failed."
-            exit 1
-          fi
+      # ============================================================
+      # SUBFINDER
+      # Maximum runtime: 8 minutes
+      # ============================================================
 
       - name: Subfinder
         shell: bash
         run: |
           set +e
 
-          subfinder \
+          : > results/subfinder.txt
+          : > results/subfinder.log
+
+          echo "Starting Subfinder..."
+
+          timeout 8m subfinder \
             -dL root.txt \
             -all \
             -silent \
@@ -136,22 +195,20 @@ jobs:
 
           STATUS=$?
 
-          echo "Subfinder finished with status: $STATUS"
+          echo "Subfinder exit status: $STATUS"
 
-      - name: Amass passive
-        shell: bash
-        run: |
-          set +e
+          if [ "$STATUS" -eq 124 ]; then
+            echo "Subfinder reached its 8 minute timeout."
+          fi
 
-          amass enum \
-            -passive \
-            -df root.txt \
-            -o results/amass.txt \
-            > results/amass.log 2>&1
+          COUNT=$(wc -l < results/subfinder.txt | tr -d ' ')
 
-          STATUS=$?
+          echo "Subfinder results: $COUNT"
 
-          echo "Amass finished with status: $STATUS"
+      # ============================================================
+      # ASSETFINDER
+      # Maximum runtime: 8 minutes
+      # ============================================================
 
       - name: Assetfinder
         shell: bash
@@ -161,15 +218,64 @@ jobs:
           : > results/assetfinder.txt
           : > results/assetfinder.log
 
-          while IFS= read -r domain; do
-            if [ -n "$domain" ]; then
-              assetfinder --subs-only "$domain" \
-                >> results/assetfinder.txt \
-                2>> results/assetfinder.log
-            fi
-          done < root.txt
+          echo "Starting Assetfinder..."
 
-          echo "Assetfinder finished."
+          timeout 8m bash -c '
+            while IFS= read -r domain; do
+              if [ -n "$domain" ]; then
+                assetfinder --subs-only "$domain"
+              fi
+            done < root.txt
+          ' > results/assetfinder.txt 2> results/assetfinder.log
+
+          STATUS=$?
+
+          echo "Assetfinder exit status: $STATUS"
+
+          if [ "$STATUS" -eq 124 ]; then
+            echo "Assetfinder reached its 8 minute timeout."
+          fi
+
+          COUNT=$(wc -l < results/assetfinder.txt | tr -d ' ')
+
+          echo "Assetfinder results: $COUNT"
+
+      # ============================================================
+      # AMASS
+      # Maximum runtime: 10 minutes
+      # ============================================================
+
+      - name: Amass passive
+        shell: bash
+        run: |
+          set +e
+
+          : > results/amass.txt
+          : > results/amass.log
+
+          echo "Starting Amass passive enumeration..."
+
+          timeout 10m amass enum \
+            -passive \
+            -df root.txt \
+            -o results/amass.txt \
+            > results/amass.log 2>&1
+
+          STATUS=$?
+
+          echo "Amass exit status: $STATUS"
+
+          if [ "$STATUS" -eq 124 ]; then
+            echo "Amass reached its 10 minute timeout."
+          fi
+
+          COUNT=$(wc -l < results/amass.txt | tr -d ' ')
+
+          echo "Amass results: $COUNT"
+
+      # ============================================================
+      # COMBINE
+      # ============================================================
 
       - name: Combine discoveries
         shell: bash
@@ -180,6 +286,8 @@ jobs:
           touch results/amass.txt
           touch results/assetfinder.txt
 
+          echo "Combining results..."
+
           cat \
             results/subfinder.txt \
             results/amass.txt \
@@ -188,37 +296,61 @@ jobs:
             | sed 's/^[[:space:]]*//' \
             | sed 's/[[:space:]]*$//' \
             | tr '[:upper:]' '[:lower:]' \
-            | grep -E '^[a-z0-9._*-]+\.[a-z]{2,}$' \
+            | grep -E '^[a-z0-9][a-z0-9._*-]*\.[a-z0-9.-]+$' \
             | sort -u \
             > results/discovered.txt
 
           DISCOVERED_COUNT=$(wc -l < results/discovered.txt | tr -d ' ')
 
-          echo "Discovered: $DISCOVERED_COUNT"
+          echo "================================"
+          echo "Total discovered: $DISCOVERED_COUNT"
+          echo "================================"
+
+          echo "First results:"
+          head -50 results/discovered.txt || true
+
+      # ============================================================
+      # DNS VALIDATION
+      # Maximum runtime: 8 minutes
+      # ============================================================
 
       - name: DNS validation
         shell: bash
         run: |
           set +e
 
-          touch results/discovered.txt
+          : > results/resolved.txt
 
           if [ -s results/discovered.txt ]; then
-            dnsx \
+
+            echo "Starting DNS validation..."
+
+            timeout 8m dnsx \
               -l results/discovered.txt \
               -silent \
               -o results/resolved.txt
-          else
-            : > results/resolved.txt
-          fi
 
-          touch results/resolved.txt
+            STATUS=$?
+
+            echo "DNSx exit status: $STATUS"
+
+            if [ "$STATUS" -eq 124 ]; then
+              echo "DNSx reached its 8 minute timeout."
+            fi
+
+          else
+            echo "No discovered subdomains to resolve."
+          fi
 
           sort -u results/resolved.txt -o results/resolved.txt
 
           RESOLVED_COUNT=$(wc -l < results/resolved.txt | tr -d ' ')
 
           echo "Resolved: $RESOLVED_COUNT"
+
+      # ============================================================
+      # FIND NEW
+      # ============================================================
 
       - name: Find new subdomains
         id: process
@@ -227,8 +359,10 @@ jobs:
           set -e
 
           touch all_subs.txt
+          touch resolved_subs.txt
           touch results/discovered.txt
           touch results/resolved.txt
+          touch results/new.txt
 
           sort -u all_subs.txt \
             | sed '/^[[:space:]]*$/d' \
@@ -248,19 +382,25 @@ jobs:
           echo "RESOLVED_COUNT=$RESOLVED_COUNT" >> "$GITHUB_OUTPUT"
           echo "NEW_COUNT=$NEW_COUNT" >> "$GITHUB_OUTPUT"
 
-          echo "=============================="
+          echo "================================"
           echo "Discovered: $DISCOVERED_COUNT"
           echo "Resolved:   $RESOLVED_COUNT"
           echo "New:        $NEW_COUNT"
-          echo "=============================="
+          echo "================================"
 
           echo "New subdomains:"
           cat results/new.txt || true
 
+          # Update history
           cat results/discovered.txt >> all_subs.txt
           sort -u all_subs.txt -o all_subs.txt
 
+          # Update resolved history
           cp results/resolved.txt resolved_subs.txt
+
+      # ============================================================
+      # TELEGRAM FINAL RESULTS
+      # ============================================================
 
       - name: Telegram final results
         if: always()
@@ -269,27 +409,21 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         shell: bash
         run: |
-          set -e
+          set +e
 
           mkdir -p results
 
           touch results/new.txt
+          touch results/discovered.txt
+          touch results/resolved.txt
 
           NEW_COUNT="${{ steps.process.outputs.NEW_COUNT }}"
           DISCOVERED_COUNT="${{ steps.process.outputs.DISCOVERED_COUNT }}"
           RESOLVED_COUNT="${{ steps.process.outputs.RESOLVED_COUNT }}"
 
-          if [ -z "$NEW_COUNT" ]; then
-            NEW_COUNT="0"
-          fi
-
-          if [ -z "$DISCOVERED_COUNT" ]; then
-            DISCOVERED_COUNT="0"
-          fi
-
-          if [ -z "$RESOLVED_COUNT" ]; then
-            RESOLVED_COUNT="0"
-          fi
+          [ -z "$NEW_COUNT" ] && NEW_COUNT="0"
+          [ -z "$DISCOVERED_COUNT" ] && DISCOVERED_COUNT="0"
+          [ -z "$RESOLVED_COUNT" ] && RESOLVED_COUNT="0"
 
           if [ "$NEW_COUNT" -gt 0 ]; then
 
@@ -302,8 +436,10 @@ jobs:
           🆕 New subdomains:"
 
             while IFS= read -r sub; do
-              MESSAGE="${MESSAGE}
+              if [ -n "$sub" ]; then
+                MESSAGE="${MESSAGE}
           ${sub}"
+              fi
             done < results/new.txt
 
           else
@@ -318,12 +454,12 @@ jobs:
 
           fi
 
-          echo "=============================="
+          echo "================================"
           echo "Telegram report:"
           printf '%s\n' "$MESSAGE"
-          echo "=============================="
+          echo "================================"
 
-          RESPONSE=$(curl -sS -X POST \
+          RESPONSE=$(timeout 30s curl -sS -X POST \
             "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
             --data-urlencode "text=${MESSAGE}" \
@@ -332,12 +468,9 @@ jobs:
           echo "Telegram API response:"
           echo "$RESPONSE"
 
-          if ! echo "$RESPONSE" | grep -q '"ok":true'; then
-            echo "Telegram notification failed."
-            exit 1
-          fi
-
-          echo "Telegram notification sent."
+      # ============================================================
+      # COMMIT HISTORY
+      # ============================================================
 
       - name: Commit history
         if: always()
@@ -362,6 +495,10 @@ jobs:
             -m "Update subdomain history - $(date '+%Y-%m-%d')"
 
           git push
+
+      # ============================================================
+      # UPLOAD RESULTS
+      # ============================================================
 
       - name: Upload results
         if: always()
