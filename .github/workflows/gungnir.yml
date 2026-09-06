@@ -1,4 +1,4 @@
-
+```yaml
 name: Passive Subdomain Monitor
 
 on:
@@ -18,7 +18,6 @@ jobs:
     timeout-minutes: 60
 
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -64,26 +63,28 @@ jobs:
         run: |
           set -e
 
-          MESSAGE=$(cat <<'EOF'
-🔔 Recon starts in 5 minutes
+          MESSAGE='🔔 Recon starts in 5 minutes
 
-⏰ Scheduled scan: 6:00 PM Egypt
-🎯 Passive subdomain monitoring
+          ⏰ Scheduled scan: 6:00 PM Egypt
+          🎯 Passive subdomain monitoring
 
-🔎 Subfinder
-🔎 Amass passive
-🔎 Assetfinder
-🌐 DNS validation
-EOF
-          )
+          🔎 Subfinder
+          🔎 Amass passive
+          🔎 Assetfinder
+          🌐 DNS validation'
 
           RESPONSE=$(curl -sS -X POST \
             "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
             --data-urlencode "text=${MESSAGE}" \
-            -d "disable_web_page_preview=true")
+            --data-urlencode "disable_web_page_preview=true")
 
           echo "$RESPONSE"
+
+          if ! echo "$RESPONSE" | grep -q '"ok":true'; then
+            echo "Telegram reminder failed."
+            exit 1
+          fi
 
       - name: Wait 5 minutes
         if: github.event_name == 'schedule'
@@ -99,25 +100,27 @@ EOF
         run: |
           set -e
 
-          MESSAGE=$(cat <<'EOF'
-🚀 Recon started
+          MESSAGE='🚀 Recon started
 
-🔎 Subfinder
-🔎 Amass passive
-🔎 Assetfinder
-🌐 DNS validation
+          🔎 Subfinder
+          🔎 Amass passive
+          🔎 Assetfinder
+          🌐 DNS validation
 
-⏳ Running passive discovery...
-EOF
-          )
+          ⏳ Running passive discovery...'
 
           RESPONSE=$(curl -sS -X POST \
             "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
             --data-urlencode "text=${MESSAGE}" \
-            -d "disable_web_page_preview=true")
+            --data-urlencode "disable_web_page_preview=true")
 
           echo "$RESPONSE"
+
+          if ! echo "$RESPONSE" | grep -q '"ok":true'; then
+            echo "Telegram started notification failed."
+            exit 1
+          fi
 
       - name: Subfinder
         shell: bash
@@ -131,7 +134,9 @@ EOF
             -o results/subfinder.txt \
             > results/subfinder.log 2>&1
 
-          echo "Subfinder finished with status: $?"
+          STATUS=$?
+
+          echo "Subfinder finished with status: $STATUS"
 
       - name: Amass passive
         shell: bash
@@ -144,7 +149,9 @@ EOF
             -o results/amass.txt \
             > results/amass.log 2>&1
 
-          echo "Amass finished with status: $?"
+          STATUS=$?
+
+          echo "Amass finished with status: $STATUS"
 
       - name: Assetfinder
         shell: bash
@@ -194,6 +201,8 @@ EOF
         run: |
           set +e
 
+          touch results/discovered.txt
+
           if [ -s results/discovered.txt ]; then
             dnsx \
               -l results/discovered.txt \
@@ -202,6 +211,8 @@ EOF
           else
             : > results/resolved.txt
           fi
+
+          touch results/resolved.txt
 
           sort -u results/resolved.txt -o results/resolved.txt
 
@@ -214,6 +225,10 @@ EOF
         shell: bash
         run: |
           set -e
+
+          touch all_subs.txt
+          touch results/discovered.txt
+          touch results/resolved.txt
 
           sort -u all_subs.txt \
             | sed '/^[[:space:]]*$/d' \
@@ -256,6 +271,10 @@ EOF
         run: |
           set -e
 
+          mkdir -p results
+
+          touch results/new.txt
+
           NEW_COUNT="${{ steps.process.outputs.NEW_COUNT }}"
           DISCOVERED_COUNT="${{ steps.process.outputs.DISCOVERED_COUNT }}"
           RESOLVED_COUNT="${{ steps.process.outputs.RESOLVED_COUNT }}"
@@ -274,34 +293,28 @@ EOF
 
           if [ "$NEW_COUNT" -gt 0 ]; then
 
-            MESSAGE=$(cat <<EOF
-🚨 Recon completed
+            MESSAGE="🚨 Recon completed
 
-📊 Discovered: ${DISCOVERED_COUNT}
-🌐 Resolved: ${RESOLVED_COUNT}
-🆕 New: ${NEW_COUNT}
+          📊 Discovered: ${DISCOVERED_COUNT}
+          🌐 Resolved: ${RESOLVED_COUNT}
+          🆕 New: ${NEW_COUNT}
 
-🆕 New subdomains:
-EOF
-            )
+          🆕 New subdomains:"
 
             while IFS= read -r sub; do
               MESSAGE="${MESSAGE}
-${sub}"
+          ${sub}"
             done < results/new.txt
 
           else
 
-            MESSAGE=$(cat <<EOF
-✅ Recon completed
+            MESSAGE="✅ Recon completed
 
-📊 Discovered: ${DISCOVERED_COUNT}
-🌐 Resolved: ${RESOLVED_COUNT}
-🆕 New: 0
+          📊 Discovered: ${DISCOVERED_COUNT}
+          🌐 Resolved: ${RESOLVED_COUNT}
+          🆕 New: 0
 
-✅ No new subdomains found.
-EOF
-            )
+          ✅ No new subdomains found."
 
           fi
 
@@ -314,7 +327,7 @@ EOF
             "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
             --data-urlencode "text=${MESSAGE}" \
-            -d "disable_web_page_preview=true")
+            --data-urlencode "disable_web_page_preview=true")
 
           echo "Telegram API response:"
           echo "$RESPONSE"
@@ -335,6 +348,9 @@ EOF
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          touch all_subs.txt
+          touch resolved_subs.txt
+
           git add all_subs.txt resolved_subs.txt
 
           if git diff --cached --quiet; then
@@ -354,4 +370,4 @@ EOF
           name: recon-results-${{ github.run_number }}
           path: results/
           retention-days: 7
-
+```
