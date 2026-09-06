@@ -1,4 +1,3 @@
-```yaml
 name: Bug Bounty Subdomain Monitor
 
 on:
@@ -332,4 +331,3 @@ jobs:
             || echo "No changes"
 
           git push
-```
