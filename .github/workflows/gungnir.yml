@@ -1,4 +1,4 @@
-```yaml
+
 name: Passive Subdomain Monitor
 
 on:
@@ -338,4 +338,4 @@ jobs:
             || echo "No changes"
 
           git push
-```
+
