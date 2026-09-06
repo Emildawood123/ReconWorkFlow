@@ -3,10 +3,7 @@ name: Passive Subdomain Monitor
 
 on:
   schedule:
-    # 5:55 PM Egypt time (UTC+3)
-    # Workflow starts, sends reminder, waits 5 minutes, then scans at ~6:00 PM
     - cron: '55 14 * * *'
-
   workflow_dispatch:
 
 permissions:
@@ -21,53 +18,27 @@ jobs:
     timeout-minutes: 60
 
     steps:
-
-      # ==========================================
-      # CHECKOUT
-      # ==========================================
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      # ==========================================
-      # SETUP GO
-      # ==========================================
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
           go-version: ${{ env.GO_VERSION }}
 
-      # ==========================================
-      # INSTALL TOOLS
-      # ==========================================
-      - name: Install passive discovery tools
+      - name: Install tools
         shell: bash
         run: |
           set -e
 
           echo "$HOME/go/bin" >> "$GITHUB_PATH"
 
-          echo "Installing Subfinder..."
           go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-
-          echo "Installing DNSX..."
           go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest
-
-          echo "Installing Assetfinder..."
           go install github.com/tomnomnom/assetfinder@latest
-
-          echo "Installing Amass..."
           go install github.com/owasp-amass/amass/v4/...@master
 
-          echo "Installed tools:"
-          subfinder -version || true
-          dnsx -version || true
-          assetfinder -h >/dev/null 2>&1 || true
-          amass -version || true
-
-      # ==========================================
-      # PREPARE
-      # ==========================================
-      - name: Prepare files
+      - name: Prepare
         shell: bash
         run: |
           set -e
@@ -77,37 +48,25 @@ jobs:
           touch all_subs.txt
           touch resolved_subs.txt
 
-          # Normalize root.txt
           sed -i 's/\r//' root.txt
           sed -i '/^[[:space:]]*$/d' root.txt
 
-          echo "================================"
           echo "Targets:"
-          echo "================================"
           cat root.txt
-          echo "================================"
 
-      # ==========================================
-      # TELEGRAM REMINDER
-      # ==========================================
       - name: Telegram reminder
         if: github.event_name == 'schedule'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-
+        shell: bash
         run: |
           set -e
 
-          MESSAGE="🔔 Recon starts in 5 minutes
+          MESSAGE='🔔 Recon starts in 5 minutes
 
 ⏰ Scheduled scan: 6:00 PM Egypt
-🎯 Passive subdomain monitoring
-
-🔎 Subfinder
-🔎 Amass passive
-🔎 Assetfinder
-🌐 DNS validation"
+🎯 Passive subdomain monitoring'
 
           RESPONSE=$(curl -sS -X POST \
             "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
@@ -117,39 +76,28 @@ jobs:
 
           echo "$RESPONSE"
 
-          if ! echo "$RESPONSE" | grep -q '"ok":true'; then
-            echo "Telegram reminder failed"
-            exit 1
-          fi
-
-      # ==========================================
-      # WAIT 5 MINUTES
-      # ==========================================
-      - name: Wait until 6 PM Egypt
+      - name: Wait 5 minutes
         if: github.event_name == 'schedule'
+        shell: bash
         run: |
-          echo "Waiting 5 minutes..."
           sleep 300
 
-      # ==========================================
-      # TELEGRAM STARTED
-      # ==========================================
-      - name: Telegram scan started
+      - name: Telegram started
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-
+        shell: bash
         run: |
           set -e
 
-          MESSAGE="🚀 Recon started
+          MESSAGE='🚀 Recon started
 
 🔎 Subfinder
 🔎 Amass passive
 🔎 Assetfinder
 🌐 DNS validation
 
-⏳ Running passive discovery..."
+⏳ Running passive discovery...'
 
           RESPONSE=$(curl -sS -X POST \
             "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
@@ -159,14 +107,6 @@ jobs:
 
           echo "$RESPONSE"
 
-          if ! echo "$RESPONSE" | grep -q '"ok":true'; then
-            echo "Telegram start notification failed"
-            exit 1
-          fi
-
-      # ==========================================
-      # PASSIVE DISCOVERY
-      # ==========================================
       - name: Passive discovery
         shell: bash
         run: |
@@ -174,77 +114,51 @@ jobs:
 
           mkdir -p results
 
-          echo "Starting Subfinder..."
-          (
-            subfinder \
-              -dL root.txt \
-              -all \
-              -silent \
-              -o results/subfinder.txt
-          ) > results/subfinder.log 2>&1 &
+          echo "Running Subfinder..."
 
-          PID_SUBFINDER=$!
+          subfinder \
+            -dL root.txt \
+            -all \
+            -silent \
+            -o results/subfinder.txt \
+            > results/subfinder.log 2>&1
 
-          echo "Starting Amass passive..."
-          (
-            amass enum \
-              -passive \
-              -df root.txt \
-              -o results/amass.txt
-          ) > results/amass.log 2>&1 &
-
-          PID_AMASS=$!
-
-          echo "Starting Assetfinder..."
-          (
-            while IFS= read -r domain; do
-              [ -z "$domain" ] && continue
-
-              assetfinder --subs-only "$domain" || true
-
-            done < root.txt
-          ) > results/assetfinder.txt 2> results/assetfinder.log &
-
-          PID_ASSETFINDER=$!
-
-          echo "Waiting for Subfinder..."
-          wait $PID_SUBFINDER
           SUBFINDER_STATUS=$?
 
-          echo "Waiting for Amass..."
-          wait $PID_AMASS
+          echo "Running Amass passive..."
+
+          amass enum \
+            -passive \
+            -df root.txt \
+            -o results/amass.txt \
+            > results/amass.log 2>&1
+
           AMASS_STATUS=$?
 
-          echo "Waiting for Assetfinder..."
-          wait $PID_ASSETFINDER
+          echo "Running Assetfinder..."
+
+          : > results/assetfinder.txt
+          : > results/assetfinder.log
+
+          while IFS= read -r domain; do
+            if [ -n "$domain" ]; then
+              assetfinder --subs-only "$domain" \
+                >> results/assetfinder.txt \
+                2>> results/assetfinder.log
+            fi
+          done < root.txt
+
           ASSETFINDER_STATUS=$?
 
           echo ""
           echo "================================"
           echo "Discovery status"
           echo "================================"
-
           echo "Subfinder:   $SUBFINDER_STATUS"
           echo "Amass:       $AMASS_STATUS"
           echo "Assetfinder: $ASSETFINDER_STATUS"
-
-          echo ""
-          echo "Raw result counts:"
-
-          echo "Subfinder:"
-          wc -l results/subfinder.txt 2>/dev/null || true
-
-          echo "Amass:"
-          wc -l results/amass.txt 2>/dev/null || true
-
-          echo "Assetfinder:"
-          wc -l results/assetfinder.txt 2>/dev/null || true
-
           echo "================================"
 
-      # ==========================================
-      # COMBINE RESULTS
-      # ==========================================
       - name: Combine discoveries
         shell: bash
         run: |
@@ -265,65 +179,44 @@ jobs:
 
           DISCOVERED_COUNT=$(wc -l < results/discovered.txt | tr -d ' ')
 
-          echo ""
           echo "================================"
-          echo "Passive discovery completed"
-          echo "================================"
-          echo "Unique discovered: $DISCOVERED_COUNT"
+          echo "Passive discovery complete"
+          echo "Discovered: $DISCOVERED_COUNT"
           echo "================================"
 
-      # ==========================================
-      # DNS VALIDATION
-      # ==========================================
       - name: DNS validation
         shell: bash
         run: |
           set +e
 
           if [ -s results/discovered.txt ]; then
-
-            echo "Running DNS validation..."
-
             dnsx \
               -l results/discovered.txt \
               -silent \
               -o results/resolved.txt
-
           else
-
-            echo "No discovered subdomains."
-
-            touch results/resolved.txt
-
+            : > results/resolved.txt
           fi
 
           sort -u results/resolved.txt -o results/resolved.txt
 
           RESOLVED_COUNT=$(wc -l < results/resolved.txt | tr -d ' ')
 
-          echo ""
           echo "================================"
-          echo "DNS validation completed"
-          echo "================================"
+          echo "DNS validation complete"
           echo "Resolved: $RESOLVED_COUNT"
           echo "================================"
 
-      # ==========================================
-      # FIND NEW SUBDOMAINS
-      # ==========================================
       - name: Find new subdomains
         id: process
         shell: bash
         run: |
           set -e
 
-          # Normalize history
-          sort -u all_subs.txt \
-            | sed '/^[[:space:]]*$/d' \
-            > results/history.txt
+          sort -u all_subs.txt > results/history.txt
 
-          # Find newly discovered subdomains
-          comm -13 \
+          comm \
+            -13 \
             results/history.txt \
             results/discovered.txt \
             > results/new.txt
@@ -336,56 +229,36 @@ jobs:
           echo "RESOLVED_COUNT=$RESOLVED_COUNT" >> "$GITHUB_OUTPUT"
           echo "NEW_COUNT=$NEW_COUNT" >> "$GITHUB_OUTPUT"
 
-          echo ""
           echo "================================"
-          echo "RESULTS"
+          echo "FINAL RESULTS"
           echo "================================"
-
           echo "Discovered: $DISCOVERED_COUNT"
           echo "Resolved:   $RESOLVED_COUNT"
           echo "New:        $NEW_COUNT"
+          echo "================================"
 
           echo ""
           echo "New subdomains:"
-          echo "--------------------------------"
+          cat results/new.txt || true
 
-          if [ "$NEW_COUNT" -gt 0 ]; then
-            cat results/new.txt
-          else
-            echo "None"
-          fi
-
-          echo "================================"
-
-          # ======================================
-          # IMPORTANT:
-          # Save ALL discovered subdomains,
-          # not only DNS-resolving ones.
-          # ======================================
-
+          # Save ALL discovered subdomains to history.
           cat results/discovered.txt >> all_subs.txt
-
           sort -u all_subs.txt -o all_subs.txt
 
-          # Keep resolving hosts separately
+          # Save resolving subdomains separately.
           cp results/resolved.txt resolved_subs.txt
 
-      # ==========================================
-      # TELEGRAM FINAL RESULTS
-      # ==========================================
       - name: Telegram final results
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-
+        shell: bash
         run: |
           set -e
 
           NEW_COUNT="${{ steps.process.outputs.NEW_COUNT }}"
           DISCOVERED_COUNT="${{ steps.process.outputs.DISCOVERED_COUNT }}"
           RESOLVED_COUNT="${{ steps.process.outputs.RESOLVED_COUNT }}"
-
-          echo "Preparing Telegram report..."
 
           if [ "$NEW_COUNT" -gt 0 ]; then
 
@@ -395,12 +268,11 @@ jobs:
 🌐 Resolved: ${RESOLVED_COUNT}
 🆕 New: ${NEW_COUNT}
 
-🆕 New subdomains:
-"
+🆕 New subdomains:"
 
             while IFS= read -r sub; do
-              MESSAGE="${MESSAGE}${sub}
-"
+              MESSAGE="${MESSAGE}
+${sub}"
             done < results/new.txt
 
           else
@@ -415,9 +287,8 @@ jobs:
 
           fi
 
-          echo ""
           echo "================================"
-          echo "Telegram message:"
+          echo "Telegram report"
           echo "================================"
           printf '%s\n' "$MESSAGE"
           echo "================================"
@@ -428,21 +299,17 @@ jobs:
             --data-urlencode "text=${MESSAGE}" \
             -d "disable_web_page_preview=true")
 
-          echo ""
-          echo "Telegram API response:"
           echo "$RESPONSE"
 
           if ! echo "$RESPONSE" | grep -q '"ok":true'; then
-            echo "❌ Telegram notification failed"
+            echo "Telegram notification failed"
             exit 1
           fi
 
-          echo "✅ Telegram notification sent successfully"
+          echo "Telegram notification sent successfully."
 
-      # ==========================================
-      # COMMIT HISTORY
-      # ==========================================
-      - name: Commit updated history
+      - name: Commit history
+        shell: bash
         run: |
           set +e
 
@@ -451,9 +318,7 @@ jobs:
 
           git add all_subs.txt resolved_subs.txt
 
-          git diff --cached --quiet
-
-          if [ $? -eq 0 ]; then
+          if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
           fi
@@ -463,10 +328,7 @@ jobs:
 
           git push
 
-      # ==========================================
-      # UPLOAD RESULTS AS ARTIFACT
-      # ==========================================
-      - name: Upload scan results
+      - name: Upload results
         if: always()
         uses: actions/upload-artifact@v4
         with:
