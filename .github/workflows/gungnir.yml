@@ -1,0 +1,14 @@
+      - name: Send to Telegram (TEST)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          echo "Bot Token exists: ${{ secrets.TELEGRAM_BOT_TOKEN != '' }}"
+          echo "Chat ID exists: ${{ secrets.TELEGRAM_CHAT_ID != '' }}"
+          
+          RESPONSE=$(curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -d chat_id="${TELEGRAM_CHAT_ID}" \
+            -d text="✅ Gungnir Test - $(date)" )
+          
+          echo "Telegram Response:"
+          echo "$RESPONSE"
