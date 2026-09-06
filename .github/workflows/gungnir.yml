@@ -1,3 +1,4 @@
+```yaml
 name: Bug Bounty Subdomain Monitor
 
 on:
@@ -13,6 +14,9 @@ on:
 permissions:
   contents: write
 
+env:
+  GO_VERSION: '1.22'
+
 jobs:
 
   reminder:
@@ -20,17 +24,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Telegram Reminder
+      - name: Telegram reminder
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          MESSAGE="🔔 Recon starts in 5 minutes%0A%0A⏰ 6:00 PM Egypt%0A🎯 Passive subdomain monitoring"
-
-          curl -s -X POST \
+          curl -sS -X POST \
             "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-            -d chat_id="${TELEGRAM_CHAT_ID}" \
-            -d text="${MESSAGE}" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=🔔 Recon starts in 5 minutes%0A%0A⏰ 6:00 PM Egypt%0A🎯 Scope: root.txt" \
             -d disable_web_page_preview=true
 
 
@@ -48,72 +50,138 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version: '1.22'
+          go-version: ${{ env.GO_VERSION }}
 
       - name: Install tools
+        shell: bash
         run: |
+          set -e
+
           echo "$HOME/go/bin" >> "$GITHUB_PATH"
 
           go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
           go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest
           go install github.com/tomnomnom/assetfinder@latest
-          go install github.com/owasp-amass/amass/v4/...@master
           go install github.com/g0ldencybersec/gungnir/cmd/gungnir@latest
+
+          # Amass
+          go install github.com/owasp-amass/amass/v4/...@master
 
       - name: Prepare
         run: |
           mkdir -p results
 
           touch all_subs.txt
+          touch resolved_subs.txt
+
+          sed -i 's/\r//' root.txt
 
           echo "Targets:"
           cat root.txt
 
-
-      - name: Subfinder
+      - name: Telegram scan started
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          subfinder \
-            -dL root.txt \
-            -all \
-            -silent \
-            -o results/subfinder.txt \
-            || true
+          curl -sS -X POST \
+            "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=🚀 Recon started%0A%0A⏰ $(date '+%H:%M:%S UTC')%0A🎯 Targets loaded from root.txt%0A%0A🔎 Running passive discovery..." \
+            -d disable_web_page_preview=true
 
+      # ---------------------------------------------------------
+      # Run discovery sources in PARALLEL
+      # ---------------------------------------------------------
 
-      - name: Amass Passive
+      - name: Passive discovery
+        shell: bash
         run: |
-          amass enum \
-            -passive \
-            -df root.txt \
-            -o results/amass.txt \
-            || true
+          set +e
 
+          mkdir -p results
 
-      - name: Assetfinder
-        run: |
-          touch results/assetfinder.txt
+          echo "[+] Starting passive discovery..."
 
-          while IFS= read -r domain; do
-            [ -z "$domain" ] && continue
+          (
+            echo "[Subfinder] started"
+            subfinder \
+              -dL root.txt \
+              -all \
+              -silent \
+              -o results/subfinder.txt
+            echo "[Subfinder] finished"
+          ) > results/subfinder.log 2>&1 &
 
-            assetfinder \
-              --subs-only "$domain" \
-              >> results/assetfinder.txt \
-              || true
+          PID_SUBFINDER=$!
 
-          done < root.txt
+          (
+            echo "[Amass] started"
+            amass enum \
+              -passive \
+              -df root.txt \
+              -o results/amass.txt
+            echo "[Amass] finished"
+          ) > results/amass.log 2>&1 &
 
+          PID_AMASS=$!
 
-      - name: Gungnir
-        run: |
-          timeout 40m \
-            gungnir \
-            -r root.txt \
-            > results/gungnir.txt \
-            || true
+          (
+            echo "[Assetfinder] started"
 
+            while IFS= read -r domain; do
+              [ -z "$domain" ] && continue
 
-      - name: Combine discoveries
+              assetfinder --subs-only "$domain" || true
+
+            done < root.txt
+
+            echo "[Assetfinder] finished"
+          ) > results/assetfinder.txt 2> results/assetfinder.log &
+
+          PID_ASSETFINDER=$!
+
+          (
+            echo "[Gungnir] started"
+
+            timeout 35m \
+              gungnir -r root.txt
+
+            echo "[Gungnir] finished"
+
+          ) > results/gungnir.txt 2> results/gungnir.log &
+
+          PID_GUNGNIR=$!
+
+          echo "[+] All discovery jobs started"
+
+          wait $PID_SUBFINDER
+          SUBFINDER_STATUS=$?
+
+          wait $PID_AMASS
+          AMASS_STATUS=$?
+
+          wait $PID_ASSETFINDER
+          ASSETFINDER_STATUS=$?
+
+          wait $PID_GUNGNIR
+          GUNGNIR_STATUS=$?
+
+          echo ""
+          echo "=============================="
+          echo "Discovery completed"
+          echo "=============================="
+
+          echo "Subfinder:    $SUBFINDER_STATUS"
+          echo "Amass:        $AMASS_STATUS"
+          echo "Assetfinder:  $ASSETFINDER_STATUS"
+          echo "Gungnir:      $GUNGNIR_STATUS"
+
+      # ---------------------------------------------------------
+      # Combine everything
+      # ---------------------------------------------------------
+
+      - name: Deduplicate discoveries
         run: |
           cat \
             results/subfinder.txt \
@@ -124,81 +192,132 @@ jobs:
             | sed 's/\r//' \
             | sed 's/^[[:space:]]*//' \
             | sed 's/[[:space:]]*$//' \
-            | grep -v '^$' \
+            | grep -E '^[A-Za-z0-9*._-]+\.[A-Za-z]{2,}$' \
+            | tr '[:upper:]' '[:lower:]' \
             | sort -u \
-            > results/all_discovered.txt
+            > results/discovered.txt
 
-          echo "Total unique discovered:"
-          wc -l results/all_discovered.txt
+          echo "Unique discovered:"
+          wc -l results/discovered.txt
 
+      # ---------------------------------------------------------
+      # DNS validation
+      # ---------------------------------------------------------
 
-      - name: DNS validation
+      - name: Resolve subdomains
         run: |
-          dnsx \
-            -l results/all_discovered.txt \
-            -silent \
-            -o results/resolved.txt \
-            || true
+          if [ -s results/discovered.txt ]; then
 
-          sort -u results/resolved.txt \
-            > results/current.txt
+            dnsx \
+              -l results/discovered.txt \
+              -silent \
+              -resp \
+              -o results/resolved_raw.txt \
+              || true
 
-          echo "Currently resolving:"
-          wc -l results/current.txt
+            awk '{print $1}' results/resolved_raw.txt \
+              | sort -u \
+              > results/resolved.txt
 
+          else
+            touch results/resolved.txt
+          fi
 
-      - name: Find NEW subdomains
+          echo "Resolving subdomains:"
+          wc -l results/resolved.txt
+
+      # ---------------------------------------------------------
+      # Compare against historical database
+      # ---------------------------------------------------------
+
+      - name: Find new subdomains
         id: process
+        shell: bash
         run: |
-          sort -u all_subs.txt > results/old.txt
+          sort -u all_subs.txt \
+            > results/history.txt
 
           comm -13 \
-            results/old.txt \
-            results/current.txt \
+            results/history.txt \
+            results/resolved.txt \
             > results/new.txt
 
           NEW_COUNT=$(wc -l < results/new.txt | tr -d ' ')
+          TOTAL_COUNT=$(wc -l < results/resolved.txt | tr -d ' ')
+          DISCOVERED_COUNT=$(wc -l < results/discovered.txt | tr -d ' ')
 
           echo "NEW_COUNT=$NEW_COUNT" >> "$GITHUB_OUTPUT"
+          echo "TOTAL_COUNT=$TOTAL_COUNT" >> "$GITHUB_OUTPUT"
+          echo "DISCOVERED_COUNT=$DISCOVERED_COUNT" >> "$GITHUB_OUTPUT"
 
           echo ""
-          echo "================================"
-          echo "NEW SUBDOMAINS: $NEW_COUNT"
-          echo "================================"
+          echo "=============================="
+          echo "Results"
+          echo "=============================="
+          echo "Discovered: $DISCOVERED_COUNT"
+          echo "Resolved:   $TOTAL_COUNT"
+          echo "NEW:        $NEW_COUNT"
 
           if [ "$NEW_COUNT" -gt 0 ]; then
+            echo ""
+            echo "NEW SUBDOMAINS:"
             cat results/new.txt
-
-            cat results/current.txt >> all_subs.txt
-            sort -u all_subs.txt -o all_subs.txt
-          else
-            echo "No new resolving subdomains."
           fi
 
+          # Permanent historical database
+          cat results/resolved.txt >> all_subs.txt
+          sort -u all_subs.txt -o all_subs.txt
 
-      - name: Send Telegram
-        if: steps.process.outputs.NEW_COUNT != '0'
+          # Current DNS-resolving database
+          cp results/resolved.txt resolved_subs.txt
+
+      # ---------------------------------------------------------
+      # Final Telegram report
+      # ---------------------------------------------------------
+
+      - name: Telegram final report
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           NEW_COUNT="${{ steps.process.outputs.NEW_COUNT }}"
+          TOTAL_COUNT="${{ steps.process.outputs.TOTAL_COUNT }}"
+          DISCOVERED_COUNT="${{ steps.process.outputs.DISCOVERED_COUNT }}"
 
-          MESSAGE="🚨 NEW SUBDOMAINS%0A%0A"
-          MESSAGE="${MESSAGE}🎯 Targets: root.txt%0A"
-          MESSAGE="${MESSAGE}📊 New: ${NEW_COUNT}%0A"
-          MESSAGE="${MESSAGE}📅 $(date +%Y-%m-%d)%0A%0A"
+          if [ "$NEW_COUNT" -gt 0 ]; then
 
-          while IFS= read -r sub; do
-            MESSAGE="${MESSAGE}${sub}%0A"
-          done < results/new.txt
+            HEADER="🚨 NEW SUBDOMAINS FOUND"
 
-          curl -s -X POST \
+            BODY="📊 Discovered: ${DISCOVERED_COUNT}%0A"
+            BODY="${BODY}🌐 Resolving: ${TOTAL_COUNT}%0A"
+            BODY="${BODY}🆕 New: ${NEW_COUNT}%0A"
+            BODY="${BODY}📅 $(date '+%Y-%m-%d')%0A%0A"
+
+            while IFS= read -r sub; do
+              BODY="${BODY}${sub}%0A"
+            done < results/new.txt
+
+          else
+
+            HEADER="✅ Recon completed"
+
+            BODY="📊 Discovered: ${DISCOVERED_COUNT}%0A"
+            BODY="${BODY}🌐 Resolving: ${TOTAL_COUNT}%0A"
+            BODY="${BODY}🆕 New: 0%0A"
+            BODY="${BODY}📅 $(date '+%Y-%m-%d')%0A%0A"
+            BODY="${BODY}No new resolving subdomains."
+
+          fi
+
+          curl -sS -X POST \
             "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-            -d chat_id="${TELEGRAM_CHAT_ID}" \
-            --data-urlencode "text=${MESSAGE}" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=${HEADER}%0A%0A${BODY}" \
             -d disable_web_page_preview=true
 
+      # ---------------------------------------------------------
+      # Commit historical data
+      # ---------------------------------------------------------
 
       - name: Commit history
         if: steps.process.outputs.NEW_COUNT != '0'
@@ -206,10 +325,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add all_subs.txt
+          git add all_subs.txt resolved_subs.txt
 
           git commit \
             -m "Update subdomain history - $(date +%Y-%m-%d)" \
             || echo "No changes"
 
           git push
+```
