@@ -1,27 +1,31 @@
-name: Wolt Gungnir Monitor
+name: Bug Bounty Subdomain Monitor
 
 on:
   schedule:
-    # 5:55 PM Egypt time (UTC+3) - reminder
+    # 5:55 PM Egypt time (UTC+3)
     - cron: '55 14 * * *'
 
-    # 6:00 PM Egypt time (UTC+3) - Gungnir scan
+    # 6:00 PM Egypt time (UTC+3)
     - cron: '0 15 * * *'
 
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
+
   reminder:
     if: github.event_name == 'schedule' && github.event.schedule == '55 14 * * *'
     runs-on: ubuntu-latest
 
     steps:
-      - name: Send Telegram Reminder
+      - name: Telegram Reminder
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          MESSAGE="🔔 Wolt Gungnir Monitor starts in 5 minutes%0A%0A⏰ Time: 6:00 PM Egypt%0A🎯 Target: Wolt"
+          MESSAGE="🔔 Recon starts in 5 minutes%0A%0A⏰ 6:00 PM Egypt%0A🎯 Passive subdomain monitoring"
 
           curl -s -X POST \
             "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
@@ -32,10 +36,12 @@ jobs:
 
   monitor:
     if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 15 * * *'
+
     runs-on: ubuntu-latest
-    timeout-minutes: 50
+    timeout-minutes: 55
 
     steps:
+
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -44,58 +50,155 @@ jobs:
         with:
           go-version: '1.22'
 
-      - name: Install Gungnir
+      - name: Install tools
         run: |
-          go install github.com/g0ldencybersec/gungnir/cmd/gungnir@latest
           echo "$HOME/go/bin" >> "$GITHUB_PATH"
 
-      - name: Run Gungnir
+          go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+          go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+          go install github.com/tomnomnom/assetfinder@latest
+          go install github.com/owasp-amass/amass/v4/...@master
+          go install github.com/g0ldencybersec/gungnir/cmd/gungnir@latest
+
+      - name: Prepare
         run: |
           mkdir -p results
-          timeout 40m gungnir -r root.txt > results/raw.txt || true
 
-      - name: Find new subdomains
-        id: process
-        run: |
           touch all_subs.txt
 
-          cat results/raw.txt \
+          echo "Targets:"
+          cat root.txt
+
+
+      - name: Subfinder
+        run: |
+          subfinder \
+            -dL root.txt \
+            -all \
+            -silent \
+            -o results/subfinder.txt \
+            || true
+
+
+      - name: Amass Passive
+        run: |
+          amass enum \
+            -passive \
+            -df root.txt \
+            -o results/amass.txt \
+            || true
+
+
+      - name: Assetfinder
+        run: |
+          touch results/assetfinder.txt
+
+          while IFS= read -r domain; do
+            [ -z "$domain" ] && continue
+
+            assetfinder \
+              --subs-only "$domain" \
+              >> results/assetfinder.txt \
+              || true
+
+          done < root.txt
+
+
+      - name: Gungnir
+        run: |
+          timeout 40m \
+            gungnir \
+            -r root.txt \
+            > results/gungnir.txt \
+            || true
+
+
+      - name: Combine discoveries
+        run: |
+          cat \
+            results/subfinder.txt \
+            results/amass.txt \
+            results/assetfinder.txt \
+            results/gungnir.txt \
+            2>/dev/null \
+            | sed 's/\r//' \
+            | sed 's/^[[:space:]]*//' \
+            | sed 's/[[:space:]]*$//' \
             | grep -v '^$' \
             | sort -u \
-            > results/clean.txt
+            > results/all_discovered.txt
+
+          echo "Total unique discovered:"
+          wc -l results/all_discovered.txt
+
+
+      - name: DNS validation
+        run: |
+          dnsx \
+            -l results/all_discovered.txt \
+            -silent \
+            -o results/resolved.txt \
+            || true
+
+          sort -u results/resolved.txt \
+            > results/current.txt
+
+          echo "Currently resolving:"
+          wc -l results/current.txt
+
+
+      - name: Find NEW subdomains
+        id: process
+        run: |
+          sort -u all_subs.txt > results/old.txt
 
           comm -13 \
-            <(sort -u all_subs.txt) \
-            results/clean.txt \
+            results/old.txt \
+            results/current.txt \
             > results/new.txt
 
-          NEW_COUNT=$(wc -l < results/new.txt)
+          NEW_COUNT=$(wc -l < results/new.txt | tr -d ' ')
 
           echo "NEW_COUNT=$NEW_COUNT" >> "$GITHUB_OUTPUT"
 
+          echo ""
+          echo "================================"
+          echo "NEW SUBDOMAINS: $NEW_COUNT"
+          echo "================================"
+
           if [ "$NEW_COUNT" -gt 0 ]; then
-            echo "Found $NEW_COUNT new subdomains"
             cat results/new.txt
 
-            cat results/clean.txt >> all_subs.txt
+            cat results/current.txt >> all_subs.txt
             sort -u all_subs.txt -o all_subs.txt
           else
-            echo "No new subdomains found"
+            echo "No new resolving subdomains."
           fi
 
-      - name: Send to Telegram
+
+      - name: Send Telegram
         if: steps.process.outputs.NEW_COUNT != '0'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          MESSAGE="🚨 New Wolt Subdomains - $(date +%Y-%m-%d)%0A%0A$(cat results/new.txt | sed ':a;N;$!ba;s/\n/%0A/g')"
+          NEW_COUNT="${{ steps.process.outputs.NEW_COUNT }}"
+
+          MESSAGE="🚨 NEW SUBDOMAINS%0A%0A"
+          MESSAGE="${MESSAGE}🎯 Targets: root.txt%0A"
+          MESSAGE="${MESSAGE}📊 New: ${NEW_COUNT}%0A"
+          MESSAGE="${MESSAGE}📅 $(date +%Y-%m-%d)%0A%0A"
+
+          while IFS= read -r sub; do
+            MESSAGE="${MESSAGE}${sub}%0A"
+          done < results/new.txt
 
           curl -s -X POST \
             "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             -d chat_id="${TELEGRAM_CHAT_ID}" \
-            -d text="${MESSAGE}" \
+            --data-urlencode "text=${MESSAGE}" \
             -d disable_web_page_preview=true
+
 
       - name: Commit history
         if: steps.process.outputs.NEW_COUNT != '0'
@@ -106,7 +209,7 @@ jobs:
           git add all_subs.txt
 
           git commit \
-            -m "Update wolt.com subdomains - $(date +%Y-%m-%d)" \
+            -m "Update subdomain history - $(date +%Y-%m-%d)" \
             || echo "No changes"
 
           git push
