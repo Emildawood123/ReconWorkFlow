@@ -4,6 +4,7 @@ name: Passive Subdomain Monitor
 on:
   schedule:
     # 5:55 PM Egypt time (UTC+3)
+    # Workflow starts, sends reminder, waits 5 minutes, then scans at ~6:00 PM
     - cron: '55 14 * * *'
 
   workflow_dispatch:
@@ -21,100 +22,151 @@ jobs:
 
     steps:
 
-      # =========================================================
-      # Checkout
-      # =========================================================
-
-      - name: Checkout
+      # ==========================================
+      # CHECKOUT
+      # ==========================================
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      # =========================================================
-      # Go
-      # =========================================================
-
+      # ==========================================
+      # SETUP GO
+      # ==========================================
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
           go-version: ${{ env.GO_VERSION }}
 
-      # =========================================================
-      # Install passive discovery tools
-      # =========================================================
-
-      - name: Install tools
+      # ==========================================
+      # INSTALL TOOLS
+      # ==========================================
+      - name: Install passive discovery tools
         shell: bash
         run: |
           set -e
 
           echo "$HOME/go/bin" >> "$GITHUB_PATH"
 
+          echo "Installing Subfinder..."
           go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+
+          echo "Installing DNSX..."
           go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+
+          echo "Installing Assetfinder..."
           go install github.com/tomnomnom/assetfinder@latest
 
+          echo "Installing Amass..."
           go install github.com/owasp-amass/amass/v4/...@master
 
-      # =========================================================
-      # Prepare
-      # =========================================================
+          echo "Installed tools:"
+          subfinder -version || true
+          dnsx -version || true
+          assetfinder -h >/dev/null 2>&1 || true
+          amass -version || true
 
-      - name: Prepare
+      # ==========================================
+      # PREPARE
+      # ==========================================
+      - name: Prepare files
+        shell: bash
         run: |
+          set -e
+
           mkdir -p results
 
           touch all_subs.txt
           touch resolved_subs.txt
 
+          # Normalize root.txt
           sed -i 's/\r//' root.txt
+          sed -i '/^[[:space:]]*$/d' root.txt
 
-          echo "=============================="
-          echo "Targets"
-          echo "=============================="
-
+          echo "================================"
+          echo "Targets:"
+          echo "================================"
           cat root.txt
+          echo "================================"
 
-      # =========================================================
-      # Telegram reminder
-      # =========================================================
-
+      # ==========================================
+      # TELEGRAM REMINDER
+      # ==========================================
       - name: Telegram reminder
+        if: github.event_name == 'schedule'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
         run: |
-          curl -sS -X POST \
+          set -e
+
+          MESSAGE="🔔 Recon starts in 5 minutes
+
+⏰ Scheduled scan: 6:00 PM Egypt
+🎯 Passive subdomain monitoring
+
+🔎 Subfinder
+🔎 Amass passive
+🔎 Assetfinder
+🌐 DNS validation"
+
+          RESPONSE=$(curl -sS -X POST \
             "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
-            --data-urlencode "text=🔔 Recon starts in 5 minutes%0A%0A⏰ 6:00 PM Egypt%0A🎯 Passive subdomain monitoring" \
-            -d disable_web_page_preview=true
+            --data-urlencode "text=${MESSAGE}" \
+            -d "disable_web_page_preview=true")
 
-      # =========================================================
-      # Wait until 6 PM
-      # =========================================================
+          echo "$RESPONSE"
 
-      - name: Wait 5 minutes
+          if ! echo "$RESPONSE" | grep -q '"ok":true'; then
+            echo "Telegram reminder failed"
+            exit 1
+          fi
+
+      # ==========================================
+      # WAIT 5 MINUTES
+      # ==========================================
+      - name: Wait until 6 PM Egypt
+        if: github.event_name == 'schedule'
         run: |
+          echo "Waiting 5 minutes..."
           sleep 300
 
-      # =========================================================
-      # Telegram scan started
-      # =========================================================
-
-      - name: Telegram started
+      # ==========================================
+      # TELEGRAM STARTED
+      # ==========================================
+      - name: Telegram scan started
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
         run: |
-          curl -sS -X POST \
+          set -e
+
+          MESSAGE="🚀 Recon started
+
+🔎 Subfinder
+🔎 Amass passive
+🔎 Assetfinder
+🌐 DNS validation
+
+⏳ Running passive discovery..."
+
+          RESPONSE=$(curl -sS -X POST \
             "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
-            --data-urlencode "text=🚀 Recon started%0A%0A🔎 Subfinder%0A🔎 Amass passive%0A🔎 Assetfinder%0A🌐 DNS validation" \
-            -d disable_web_page_preview=true
+            --data-urlencode "text=${MESSAGE}" \
+            -d "disable_web_page_preview=true")
 
-      # =========================================================
-      # Passive discovery — RUN IN PARALLEL
-      # =========================================================
+          echo "$RESPONSE"
 
+          if ! echo "$RESPONSE" | grep -q '"ok":true'; then
+            echo "Telegram start notification failed"
+            exit 1
+          fi
+
+      # ==========================================
+      # PASSIVE DISCOVERY
+      # ==========================================
       - name: Passive discovery
         shell: bash
         run: |
@@ -122,10 +174,7 @@ jobs:
 
           mkdir -p results
 
-          # -------------------------
-          # Subfinder
-          # -------------------------
-
+          echo "Starting Subfinder..."
           (
             subfinder \
               -dL root.txt \
@@ -136,10 +185,7 @@ jobs:
 
           PID_SUBFINDER=$!
 
-          # -------------------------
-          # Amass passive
-          # -------------------------
-
+          echo "Starting Amass passive..."
           (
             amass enum \
               -passive \
@@ -149,50 +195,61 @@ jobs:
 
           PID_AMASS=$!
 
-          # -------------------------
-          # Assetfinder
-          # -------------------------
-
+          echo "Starting Assetfinder..."
           (
             while IFS= read -r domain; do
-
               [ -z "$domain" ] && continue
 
-              assetfinder \
-                --subs-only "$domain" || true
+              assetfinder --subs-only "$domain" || true
 
             done < root.txt
-
           ) > results/assetfinder.txt 2> results/assetfinder.log &
 
           PID_ASSETFINDER=$!
 
-          # Wait for all sources
-
+          echo "Waiting for Subfinder..."
           wait $PID_SUBFINDER
           SUBFINDER_STATUS=$?
 
+          echo "Waiting for Amass..."
           wait $PID_AMASS
           AMASS_STATUS=$?
 
+          echo "Waiting for Assetfinder..."
           wait $PID_ASSETFINDER
           ASSETFINDER_STATUS=$?
 
           echo ""
-          echo "=============================="
-          echo "Discovery completed"
-          echo "=============================="
+          echo "================================"
+          echo "Discovery status"
+          echo "================================"
 
           echo "Subfinder:   $SUBFINDER_STATUS"
           echo "Amass:       $AMASS_STATUS"
           echo "Assetfinder: $ASSETFINDER_STATUS"
 
-      # =========================================================
-      # Combine + deduplicate
-      # =========================================================
+          echo ""
+          echo "Raw result counts:"
 
+          echo "Subfinder:"
+          wc -l results/subfinder.txt 2>/dev/null || true
+
+          echo "Amass:"
+          wc -l results/amass.txt 2>/dev/null || true
+
+          echo "Assetfinder:"
+          wc -l results/assetfinder.txt 2>/dev/null || true
+
+          echo "================================"
+
+      # ==========================================
+      # COMBINE RESULTS
+      # ==========================================
       - name: Combine discoveries
+        shell: bash
         run: |
+          set -e
+
           cat \
             results/subfinder.txt \
             results/amass.txt \
@@ -206,136 +263,214 @@ jobs:
             | sort -u \
             > results/discovered.txt
 
-          DISCOVERED=$(wc -l < results/discovered.txt | tr -d ' ')
+          DISCOVERED_COUNT=$(wc -l < results/discovered.txt | tr -d ' ')
 
-          echo "Unique discovered: $DISCOVERED"
+          echo ""
+          echo "================================"
+          echo "Passive discovery completed"
+          echo "================================"
+          echo "Unique discovered: $DISCOVERED_COUNT"
+          echo "================================"
 
-      # =========================================================
-      # DNS validation
-      # =========================================================
-
+      # ==========================================
+      # DNS VALIDATION
+      # ==========================================
       - name: DNS validation
+        shell: bash
         run: |
+          set +e
+
           if [ -s results/discovered.txt ]; then
+
+            echo "Running DNS validation..."
 
             dnsx \
               -l results/discovered.txt \
               -silent \
-              -o results/resolved.txt \
-              || true
+              -o results/resolved.txt
 
           else
+
+            echo "No discovered subdomains."
+
             touch results/resolved.txt
+
           fi
 
-          sort -u results/resolved.txt \
-            -o results/resolved.txt
+          sort -u results/resolved.txt -o results/resolved.txt
 
-          RESOLVED=$(wc -l < results/resolved.txt | tr -d ' ')
+          RESOLVED_COUNT=$(wc -l < results/resolved.txt | tr -d ' ')
 
-          echo "Currently resolving: $RESOLVED"
+          echo ""
+          echo "================================"
+          echo "DNS validation completed"
+          echo "================================"
+          echo "Resolved: $RESOLVED_COUNT"
+          echo "================================"
 
-      # =========================================================
-      # Compare against historical results
-      # =========================================================
-
+      # ==========================================
+      # FIND NEW SUBDOMAINS
+      # ==========================================
       - name: Find new subdomains
         id: process
         shell: bash
         run: |
+          set -e
+
+          # Normalize history
           sort -u all_subs.txt \
+            | sed '/^[[:space:]]*$/d' \
             > results/history.txt
 
+          # Find newly discovered subdomains
           comm -13 \
             results/history.txt \
-            results/resolved.txt \
+            results/discovered.txt \
             > results/new.txt
 
-          NEW_COUNT=$(wc -l < results/new.txt | tr -d ' ')
           DISCOVERED_COUNT=$(wc -l < results/discovered.txt | tr -d ' ')
           RESOLVED_COUNT=$(wc -l < results/resolved.txt | tr -d ' ')
+          NEW_COUNT=$(wc -l < results/new.txt | tr -d ' ')
 
-          echo "NEW_COUNT=$NEW_COUNT" >> "$GITHUB_OUTPUT"
           echo "DISCOVERED_COUNT=$DISCOVERED_COUNT" >> "$GITHUB_OUTPUT"
           echo "RESOLVED_COUNT=$RESOLVED_COUNT" >> "$GITHUB_OUTPUT"
+          echo "NEW_COUNT=$NEW_COUNT" >> "$GITHUB_OUTPUT"
 
           echo ""
-          echo "=============================="
-          echo "FINAL RESULTS"
-          echo "=============================="
+          echo "================================"
+          echo "RESULTS"
+          echo "================================"
+
           echo "Discovered: $DISCOVERED_COUNT"
           echo "Resolved:   $RESOLVED_COUNT"
           echo "New:        $NEW_COUNT"
 
+          echo ""
+          echo "New subdomains:"
+          echo "--------------------------------"
+
           if [ "$NEW_COUNT" -gt 0 ]; then
-            echo ""
-            echo "NEW SUBDOMAINS:"
             cat results/new.txt
+          else
+            echo "None"
           fi
 
-          # Permanent history
-          cat results/resolved.txt >> all_subs.txt
+          echo "================================"
+
+          # ======================================
+          # IMPORTANT:
+          # Save ALL discovered subdomains,
+          # not only DNS-resolving ones.
+          # ======================================
+
+          cat results/discovered.txt >> all_subs.txt
+
           sort -u all_subs.txt -o all_subs.txt
 
-          # Current resolving hosts
+          # Keep resolving hosts separately
           cp results/resolved.txt resolved_subs.txt
 
-      # =========================================================
-      # Telegram result
-      # =========================================================
-
-      - name: Telegram results
+      # ==========================================
+      # TELEGRAM FINAL RESULTS
+      # ==========================================
+      - name: Telegram final results
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
         run: |
+          set -e
+
           NEW_COUNT="${{ steps.process.outputs.NEW_COUNT }}"
           DISCOVERED_COUNT="${{ steps.process.outputs.DISCOVERED_COUNT }}"
           RESOLVED_COUNT="${{ steps.process.outputs.RESOLVED_COUNT }}"
 
+          echo "Preparing Telegram report..."
+
           if [ "$NEW_COUNT" -gt 0 ]; then
 
-            TEXT="🚨 NEW SUBDOMAINS FOUND%0A%0A"
-            TEXT="${TEXT}📊 Discovered: ${DISCOVERED_COUNT}%0A"
-            TEXT="${TEXT}🌐 Resolving: ${RESOLVED_COUNT}%0A"
-            TEXT="${TEXT}🆕 New: ${NEW_COUNT}%0A"
-            TEXT="${TEXT}📅 $(date '+%Y-%m-%d')%0A%0A"
+            MESSAGE="🚨 Recon completed
+
+📊 Discovered: ${DISCOVERED_COUNT}
+🌐 Resolved: ${RESOLVED_COUNT}
+🆕 New: ${NEW_COUNT}
+
+🆕 New subdomains:
+"
 
             while IFS= read -r sub; do
-              TEXT="${TEXT}${sub}%0A"
+              MESSAGE="${MESSAGE}${sub}
+"
             done < results/new.txt
 
           else
 
-            TEXT="✅ Recon completed%0A%0A"
-            TEXT="${TEXT}📊 Discovered: ${DISCOVERED_COUNT}%0A"
-            TEXT="${TEXT}🌐 Resolving: ${RESOLVED_COUNT}%0A"
-            TEXT="${TEXT}🆕 New: 0%0A%0A"
-            TEXT="${TEXT}No new resolving subdomains."
+            MESSAGE="✅ Recon completed
+
+📊 Discovered: ${DISCOVERED_COUNT}
+🌐 Resolved: ${RESOLVED_COUNT}
+🆕 New: 0
+
+✅ No new subdomains found."
 
           fi
 
-          curl -sS -X POST \
+          echo ""
+          echo "================================"
+          echo "Telegram message:"
+          echo "================================"
+          printf '%s\n' "$MESSAGE"
+          echo "================================"
+
+          RESPONSE=$(curl -sS -X POST \
             "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
-            --data-urlencode "text=${TEXT}" \
-            -d disable_web_page_preview=true
+            --data-urlencode "text=${MESSAGE}" \
+            -d "disable_web_page_preview=true")
 
-      # =========================================================
-      # Commit history
-      # =========================================================
+          echo ""
+          echo "Telegram API response:"
+          echo "$RESPONSE"
 
-      - name: Commit history
-        if: steps.process.outputs.NEW_COUNT != '0'
+          if ! echo "$RESPONSE" | grep -q '"ok":true'; then
+            echo "❌ Telegram notification failed"
+            exit 1
+          fi
+
+          echo "✅ Telegram notification sent successfully"
+
+      # ==========================================
+      # COMMIT HISTORY
+      # ==========================================
+      - name: Commit updated history
         run: |
+          set +e
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git add all_subs.txt resolved_subs.txt
 
+          git diff --cached --quiet
+
+          if [ $? -eq 0 ]; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
           git commit \
-            -m "Update subdomain history - $(date '+%Y-%m-%d')" \
-            || echo "No changes"
+            -m "Update subdomain history - $(date '+%Y-%m-%d')"
 
           git push
+
+      # ==========================================
+      # UPLOAD RESULTS AS ARTIFACT
+      # ==========================================
+      - name: Upload scan results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: recon-results-${{ github.run_number }}
+          path: results/
+          retention-days: 7
 
