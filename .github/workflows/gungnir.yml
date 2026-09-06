@@ -57,25 +57,16 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           DATE=$(date +%Y-%m-%d)
-          
-          if [ -s results/new.txt ]; then
-            MESSAGE="🔥 *New Wolt Subdomains* - $DATE
 
-\`\`\`
-$(cat results/new.txt)
-\`\`\`"
+          if [ -s results/new.txt ]; then
+            MESSAGE="🔥 New Wolt Subdomains - $DATE%0A%0A$(cat results/new.txt | sed ':a;N;$!ba;s/\n/%0A/g')"
           else
-            MESSAGE="✅ *Gungnir Test Successful*
-Date: $DATE
-Target: wolt.com
-Status: No new subdomains found (this is normal)
-Workflow is working correctly 👍"
+            MESSAGE="✅ Gungnir Test Successful%0ADate: $DATE%0ATarget: wolt.com%0AStatus: No new subdomains found (this is normal)%0AWorkflow is working correctly 👍"
           fi
 
           curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             -d chat_id="${TELEGRAM_CHAT_ID}" \
-            -d text="$MESSAGE" \
-            -d parse_mode="Markdown" \
+            -d text="${MESSAGE}" \
             -d disable_web_page_preview=true
 
       - name: Commit history
