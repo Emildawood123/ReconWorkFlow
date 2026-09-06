@@ -1,4 +1,4 @@
-```yaml
+
 name: Passive Subdomain Monitor
 
 on:
@@ -370,4 +370,4 @@ jobs:
           name: recon-results-${{ github.run_number }}
           path: results/
           retention-days: 7
-```
+
