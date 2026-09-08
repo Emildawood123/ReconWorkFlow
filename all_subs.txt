@@ -121,6 +121,7 @@ account.converse-api-dd.wolt.com
 account.gear.anduril.com
 account.help.whatnot.com
 account.images.whatnot.com
+accounts.staging-superhuman.com
 accounts.superhuman.com
 acme.superhuman.com
 acp-chaos-test-dev.andurildev.com
@@ -149,6 +150,7 @@ admin.rdf-dev.gov.anduril.dev
 admin.rdf-prod.gov.anduril.dev
 admin.rdf.anduril.au
 admin.rdf.jip.anduril.com
+admin.staging-superhuman.com
 admin.superhuman.com
 admin.whatnot.com
 adp-qa.eng.anduril.dev
@@ -677,6 +679,7 @@ breaker-bot.anduril.dev
 breaker-bot.andurildev.au
 breakpad-staging.superhuman.com
 breakpad.admin.superhuman.com
+breakpad.staging-superhuman.com
 breakpad.superhuman.com
 breakthebank.whatnot.com
 bridge.cascade.andurildev.com
@@ -1320,6 +1323,7 @@ elder-brain.non-prod.eng.anduril.dev
 elm.voyager-engineering.anduril.dev
 email-assets.superhuman.com
 email-link.superhuman.com
+email-media.wolt.com
 email.comms.wolt.com
 email.link.superhuman.com
 email.recruiting.anduril.com
@@ -2390,6 +2394,7 @@ mail.cosmos.anduril.com
 mail.crocodile.anduril.au
 mail.cuas.andurildev.com
 mail.cw-demo.andurildev.com
+mail.cybersdr-dev.andurildev.com
 mail.dash-internal.wolt.com
 mail.dashboard.dive.anduril.dev
 mail.dashboard.whatfix.anduril.dev
@@ -2578,8 +2583,10 @@ mail.obs-lattice-dev.andurildev.com
 mail.obs-sandbox-dev.andurildev.com
 mail.observability-island-dev.andurildev.com
 mail.observability-trinode.andurildev.com
+mail.onboarding.andurildev.com
 mail.owners-bot-staging.andurildev.com
 mail.owners-bot.anduril.dev
+mail.palm.anduril.com
 mail.perception.andurildev.com
 mail.phoenix.anduril.com
 mail.pipelines-staging.andurildev.com
@@ -2862,6 +2869,7 @@ mesh.narsil.andurildev.com
 mesh.non-prod.eng.anduril.dev
 metabase-staging.superhuman.com
 metabase.admin.superhuman.com
+metabase.staging-superhuman.com
 metabase.superhuman.com
 metrics-cluster.metrics.andurildev.au
 metrics-dev.andurildev.com
@@ -3419,6 +3427,7 @@ quonset-golf-league.non-prod.eng.anduril.dev
 quota-enforcer.non-prod.eng.anduril.dev
 r-api-grpc-consumer.wolt.com
 r-api-grpc-internal.wolt.com
+r.staging-superhuman.com
 r.staging.superhuman.com
 r.superhuman.com
 r2c2.lepus.anduril.com
@@ -4644,6 +4653,7 @@ www.crocodile.anduril.au
 www.cuas.andurildev.com
 www.customerportal.anduril.com
 www.cw-demo.andurildev.com
+www.cybersdr-dev.andurildev.com
 www.dash-internal.wolt.com
 www.dashboard.dive.anduril.dev
 www.dashboard.whatfix.anduril.dev
@@ -4842,9 +4852,11 @@ www.obs-lattice-dev.andurildev.com
 www.obs-sandbox-dev.andurildev.com
 www.observability-island-dev.andurildev.com
 www.observability-trinode.andurildev.com
+www.onboarding.andurildev.com
 www.onering.whatnot.com
 www.owners-bot-staging.andurildev.com
 www.owners-bot.anduril.dev
+www.palm.anduril.com
 www.perception.andurildev.com
 www.phoenix.anduril.com
 www.pipelines-staging.andurildev.com
