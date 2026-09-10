@@ -125,6 +125,7 @@ accounts.staging-superhuman.com
 accounts.superhuman.com
 acme.superhuman.com
 acp-chaos-test-dev.andurildev.com
+acp-govcom-corpnet-test-2.andurildev.com
 acp-govcom-create-test-1.andurildev.com
 acp-storage-restore.andurildev.com
 act.anduril.com
@@ -479,6 +480,7 @@ assets.mail.superhuman.com
 assets.non-prod.eng.anduril.dev
 assets.whatnot.com
 ast-internal.anduril.com
+aster.anduril.com
 astraea.dive-xl.andurildev.au
 asv.maritime.anduril.com
 asv.maritime.andurildev.com
@@ -611,6 +613,7 @@ basecamp-dev.andurildev.com
 basecamp.anduril.com
 bb.anduril.dev
 bcache.anduril.dev
+bct-service.non-prod.eng.anduril.dev
 bdr.anduril.com
 be.superhuman.com
 beaconbot.itools-dev.anduril.dev
@@ -685,6 +688,7 @@ breakpad.staging-superhuman.com
 breakpad.superhuman.com
 breakthebank.whatnot.com
 bridge.cascade.andurildev.com
+brief-staging.andurildev.com
 broker.security.anduril.dev
 brokkr.anduril.com
 browser-extensions-qa.eng.anduril.dev
@@ -1027,6 +1031,8 @@ cybertruck.whatnot.com
 daas-ecommerce-service.wolt.com
 daas-internal-api.wolt.com
 daas.wolt.com
+dagster-dev.analytics.eng.anduril.dev
+dagster-kubecost-dev.analytics.eng.anduril.dev
 dagster-kubecost.gov.analytics-prod.anduril.dev
 dagster-readonly.gov.analytics-prod.anduril.dev
 dagster.gov.analytics-prod.anduril.dev
@@ -1415,6 +1421,7 @@ explosives-support.non-prod.eng.anduril.dev
 express-slack-dev.anduril.dev
 express-slack.anduril.dev
 ext-dev.mimosa.anduril.com
+ext-stark.anduril.com
 ext.wolt.com
 extern.anduril.dev
 external.connect.epicgames.dev
@@ -1583,12 +1590,14 @@ foxglove.bunker.anduril.dev
 foxglove.chaos.anduril.dev
 foxglove.gov.anduril.dev
 freight-cost-tool.non-prod.eng.anduril.dev
+freymiller.non-prod.eng.anduril.dev
 front-door.sitl-manager.andurildev.com
 ftcl2-dotmatrix.network.anduril.com
 ftp.anduril.au
 ftp.connect.epicgames.dev
 ftp.consumer-user.wolt.com
 ftp.converse-api.wolt.com
+fulcrum.non-prod.eng.anduril.dev
 fulfillment.wolt.com
 fulmor-remote.anduril.com
 fulmor.anduril.com
@@ -1609,6 +1618,7 @@ g3-te-dashboard.qa.eng.anduril.dev
 g5-irad.anduril.dev
 g5-sim-mgr.anduril.com
 gandalf.non-prod.eng.anduril.dev
+garrisoned-forge.non-prod.eng.anduril.dev
 gate04-throwaway.eng.anduril.dev
 gate04-throwaway.non-prod.eng.anduril.dev
 gatekeeper.wolt.com
@@ -1857,6 +1867,7 @@ hub.images.whatnot.com
 hub.ldm.anduril.com
 hw-planning-tool-qa.eng.anduril.dev
 hw-planning-tool.non-prod.eng.anduril.dev
+hybris.edm.anduril.com
 hydra.anduril.dev
 hydra.ory-dev.eng.anduril.dev
 hydra.ory.eng.anduril.dev
@@ -2374,6 +2385,7 @@ mail.boomerang-vpn.andurildev.com
 mail.breaker-bot-staging.andurildev.com
 mail.breaker-bot.anduril.dev
 mail.breaker-bot.andurildev.au
+mail.brief-staging.andurildev.com
 mail.brokkr.anduril.com
 mail.bunker.anduril.com
 mail.c2n-integrationtest-lattice.andurildev.com
@@ -2390,6 +2402,7 @@ mail.c3p-test-dsb-2.andurildev.com
 mail.c3p-test-dsb-3.andurildev.com
 mail.c3p-test-dsb-4.andurildev.com
 mail.caiman2.andurildev.com
+mail.camphor.anduril.com
 mail.cascade.anduril.com
 mail.cascade.andurildev.com
 mail.castor.andurildev.com
@@ -2482,6 +2495,7 @@ mail.eris.anduril.com
 mail.ess-dev.andurildev.com
 mail.eu-dd-internal.wolt.com
 mail.ext-dev.mimosa.anduril.com
+mail.ext-stark.anduril.com
 mail.falcon-peak.anduril.com
 mail.fire.andurildev.com
 mail.fleetcore.anduril.dev
@@ -3580,6 +3594,7 @@ rmq.forge-stg.eng.anduril.dev
 rms-document-review.non-prod.eng.anduril.dev
 rms-document-review.qa.eng.anduril.dev
 rms-safety-dashboard-qa.eng.anduril.dev
+rms-safety-dashboard.eng.anduril.dev
 rms-safety-dashboard.non-prod.eng.anduril.dev
 rms-scheduling.non-prod.eng.anduril.dev
 rms-vilya.non-prod.eng.anduril.dev
@@ -3597,6 +3612,7 @@ rollouts.chidori.eng.anduril.dev
 rolodex.anduril.dev
 rosemary.anduril.com
 rps.mfx.andurildev.com
+rr-efm-readiness-tracker.non-prod.eng.anduril.dev
 rules-engine.anduril.dev
 rz.security.anduril.dev
 s007d.sandbox.sitl-manager-dev.andurildev.com
@@ -3910,6 +3926,7 @@ sresly.non-prod.eng.anduril.dev
 sse-development.non-prod.eng.anduril.dev
 ssh-manager.flux-vpn-bastion.andurildev.com
 ssn-harness.anduril.com
+ssn-sie.anduril.com
 ssn.anduril.com
 ssn.andurildev.com
 sso.superhuman.com
@@ -4193,6 +4210,7 @@ texlyre-texlive.mfx.andurildev.com
 texlyre-ywebrtc.mfx.andurildev.com
 texlyre.mfx.andurildev.com
 tfe.anduril.dev
+tfx-dashboard.non-prod.eng.anduril.dev
 thalia.anduril.com
 thanos-store-grpc.wolt.com
 thelasttestofthenight.non-prod.eng.anduril.dev
@@ -4655,6 +4673,7 @@ www.breaker-bot-staging.andurildev.com
 www.breaker-bot.anduril.dev
 www.breaker-bot.andurildev.au
 www.breakthebank.whatnot.com
+www.brief-staging.andurildev.com
 www.brokkr.anduril.com
 www.bunker.anduril.com
 www.c2n-integrationtest-lattice.andurildev.com
@@ -4671,6 +4690,7 @@ www.c3p-test-dsb-2.andurildev.com
 www.c3p-test-dsb-3.andurildev.com
 www.c3p-test-dsb-4.andurildev.com
 www.caiman2.andurildev.com
+www.camphor.anduril.com
 www.careers.whatnot.com
 www.cascade.anduril.com
 www.cascade.andurildev.com
@@ -4769,6 +4789,7 @@ www.eris.anduril.com
 www.ess-dev.andurildev.com
 www.eu-dd-internal.wolt.com
 www.ext-dev.mimosa.anduril.com
+www.ext-stark.anduril.com
 www.falcon-peak.anduril.com
 www.fire.andurildev.com
 www.fleetcore.anduril.dev
