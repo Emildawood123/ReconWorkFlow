@@ -347,6 +347,7 @@ api.dev.whatnot.com
 api.e.preview.dev.whatnot.com
 api.epicgames.dev
 api.etl-dev.gov.anduril.dev
+api.feedback.anduril.com
 api.fiftyone.anduril.dev
 api.flow-eval.eng.anduril.dev
 api.ghe.anduril.com
@@ -412,6 +413,7 @@ app.rdf-dev.gov.anduril.dev
 app.rdf-prod.gov.anduril.dev
 app.rdf.anduril.au
 app.rdf.jip.anduril.com
+app.test-cci-auto.anduril.dev
 app.test-cci.anduril.dev
 app.wickr.network.anduril.dev
 apps.anduril.com
@@ -446,6 +448,7 @@ argocd.rke2-sandbox.andurildev.com
 argocd.security.anduril.dev
 argocd.shared-services.itools.anduril.dev
 argus-dev.andurildev.com
+argus.non-prod.eng.anduril.dev
 ariel.itools.anduril.dev
 arma.andurildev.com
 armada.anduril.com
@@ -939,6 +942,7 @@ confluence-vygr.anduril.dev
 confluence.anduril.dev
 confluence.corp.anduril.dev
 confluence.wolt.com
+conmon-partybus.non-prod.eng.anduril.dev
 conmon.prodsec-dev.anduril.dev
 connect.brokkr.anduril.com
 connect.cedar.sie.andurildev.com
@@ -1656,6 +1660,7 @@ gds.anduril.com
 gear.anduril.com
 gemini.anduril.com
 generic-lattice-pipeline.andurildev.com
+genesis-design-system.non-prod.eng.anduril.dev
 genesis-qa.eng.anduril.dev
 genesis-s3.non-prod.eng.anduril.dev
 genesis-stg.eng.anduril.dev
@@ -1818,6 +1823,7 @@ heavy-metal-periscope-slack.non-prod.eng.anduril.dev
 heavy-metal-periscope-v2.non-prod.eng.anduril.dev
 heavy-metal-periscope-v2.qa.eng.anduril.dev
 heavy-metal-periscope.non-prod.eng.anduril.dev
+heavy-metal-routing-importer.non-prod.eng.anduril.dev
 heavymetal-poc.non-prod.eng.anduril.dev
 heimdall-qa.eng.anduril.dev
 heimdall-stg.eng.anduril.dev
@@ -2186,6 +2192,7 @@ lattice-release.andurildev.com
 lattice-signing-ca.platsec-dev.anduril.dev
 lattice-signing-ca.platsec-prod.anduril.dev
 lattice.nova.anduril.au
+lattice.ssn-sie.anduril.com
 lb.schema-registry.developer.anduril.com
 lc2-integration-1.andurildev.com
 lc2-integration-2.andurildev.com
@@ -2649,6 +2656,7 @@ mail.pluto-alpha.anduril.com
 mail.policy-bot-staging.andurildev.com
 mail.policy-bot.anduril.dev
 mail.policy-bot.andurildev.au
+mail.praetorian-orbital.andurildev.com
 mail.praetorian-sbm.andurildev.com
 mail.praetorian-sim.andurildev.com
 mail.praetorian.andurildev.com
@@ -2677,6 +2685,7 @@ mail.sandbox-external.sie-dev.andurildev.com
 mail.sandbox-external.sie.anduril.au
 mail.sandbox-external.sie.anduril.dev
 mail.sandbox-external.sie.sitl.anduril.dev
+mail.sandbox.andurildev.au
 mail.sandbox.sie-dev-2.andurildev.com
 mail.sandbox.sie-dev.andurildev.com
 mail.sandbox.sie-staging.andurildev.com
@@ -2804,6 +2813,7 @@ mail2.anduril.com
 mail2.converse-rtm-api.wolt.com
 mail2.converse-telemetry-api.wolt.com
 mail2.live-service.whatnot.com
+mantech-routing-uploader.non-prod.eng.anduril.dev
 manufacturing-demo.mdp-dev.eng.anduril.dev
 manufacturing-qa.anduril.com
 manufacturinghub-qa.eng.anduril.dev
@@ -4200,6 +4210,7 @@ test-9001.non-prod.eng.anduril.dev
 test-9002.non-prod.eng.anduril.dev
 test-again.non-prod.eng.anduril.dev
 test-amichalik.andurildev.com
+test-cci-auto.anduril.dev
 test-cci.anduril.dev
 test-cluster-1.anduril-resiliency-ext.andurildev.com
 test-cluster-2.anduril-resiliency-ext.andurildev.com
@@ -4969,6 +4980,7 @@ www.policy-bot-staging.andurildev.com
 www.policy-bot.anduril.dev
 www.policy-bot.andurildev.au
 www.postmalone.whatnot.com
+www.praetorian-orbital.andurildev.com
 www.praetorian-sbm.andurildev.com
 www.praetorian-sim.andurildev.com
 www.praetorian.andurildev.com
@@ -4998,6 +5010,7 @@ www.sandbox-external.sie-dev.andurildev.com
 www.sandbox-external.sie.anduril.au
 www.sandbox-external.sie.anduril.dev
 www.sandbox-external.sie.sitl.anduril.dev
+www.sandbox.andurildev.au
 www.sandbox.sie-dev-2.andurildev.com
 www.sandbox.sie-dev.andurildev.com
 www.sandbox.sie-staging.andurildev.com
