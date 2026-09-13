@@ -1350,6 +1350,7 @@ edm-gateway-charlie.anduril.com
 edm-staging.anduril.com
 edm-transfer.anduril.com
 edm.anduril.com
+education.superhuman.com
 elasticsearch1.wolt.com
 elder-brain-github.non-prod.eng.anduril.dev
 elder-brain.non-prod.eng.anduril.dev
@@ -1378,6 +1379,7 @@ engos-thermalstruct-qa.eng.anduril.dev
 engos-thermalstruct.eng.anduril.dev
 engos-thermalstruct.non-prod.eng.anduril.dev
 enterpriseenrollment.superhuman.com
+enterpriseregistration.superhuman.com
 env.brokkr.anduril.com
 env.cedar.sie.andurildev.com
 env.kal-sandbox.anduril.com
@@ -1434,6 +1436,7 @@ ew-production.qa.eng.anduril.dev
 ew-production.stage.eng.anduril.dev
 ew-staff-plan-qa.eng.anduril.dev
 ew-staff-plan.non-prod.eng.anduril.dev
+ew.anduril.com
 experience.anduril.com
 explore.wolt.com
 explosives-support.non-prod.eng.anduril.dev
@@ -2012,6 +2015,7 @@ internal.whatfix.dev.anduril.dev
 internal.wolt.com
 internalmaps.andurildev.com
 international.e.preview.dev.whatnot.com
+inventory-management-service.wolt.com
 investment-sandbox-qa.eng.anduril.dev
 investment-sandbox-stg.eng.anduril.dev
 investment-sandbox.non-prod.eng.anduril.dev
@@ -2315,6 +2319,7 @@ ma-v2.andurildev.com
 ma-v2.dev.anduril.com
 ma.andurildev.com
 ma.dev.anduril.com
+ma.superhuman.com
 machine-simulator.mdp-sandbox.eng.anduril.dev
 madis-ces.anduril.com
 magnum.andurildev.com
@@ -2399,6 +2404,7 @@ mail.authorization.andurildev.com
 mail.authorization.armory-staging.andurildev.com
 mail.avr-dev-1.andurildev.com
 mail.avr-dev-2.andurildev.com
+mail.avr.anduril.com
 mail.axon.andurildev.com
 mail.basecamp.anduril.com
 mail.bdr.anduril.com
@@ -2645,9 +2651,11 @@ mail.obs-sandbox-dev.andurildev.com
 mail.observability-island-dev.andurildev.com
 mail.observability-trinode.andurildev.com
 mail.onboarding.andurildev.com
+mail.orchestrator.anduril.com
 mail.owners-bot-staging.andurildev.com
 mail.owners-bot.anduril.dev
 mail.palm.anduril.com
+mail.palmetto.anduril.com
 mail.perception.andurildev.com
 mail.phoenix.anduril.com
 mail.pipelines-staging.andurildev.com
@@ -2902,6 +2910,7 @@ mdp-web.mdp-prod.eng.anduril.dev
 mdp-web.mdp-qa.eng.anduril.dev
 mdp.eng.anduril.dev
 me-work-management.hm-poc.anduril.dev
+meat.superhuman.com
 media-staging.superhuman.com
 media.converse-api.wolt.com
 media.converse-rtm-ps.wolt.com
@@ -3651,6 +3660,7 @@ roadrunner.anduril.dev
 rollouts.chidori-dev.eng.anduril.dev
 rollouts.chidori.eng.anduril.dev
 rolodex.anduril.dev
+root.anduril.com
 rosemary.anduril.com
 rps.mfx.andurildev.com
 rr-efm-readiness-tracker.non-prod.eng.anduril.dev
@@ -3739,6 +3749,7 @@ sanitize.security.anduril.dev
 sat.anduril.com
 satori.anduril.dev
 saturn.anduril.au
+saturn.anduril.com
 sauron-agent.non-prod.eng.anduril.dev
 sauron-qa.eng.anduril.dev
 sauron-stg.eng.anduril.dev
@@ -4705,6 +4716,7 @@ www.authorization.andurildev.com
 www.authorization.armory-staging.andurildev.com
 www.avr-dev-1.andurildev.com
 www.avr-dev-2.andurildev.com
+www.avr.anduril.com
 www.axon.andurildev.com
 www.basecamp.anduril.com
 www.bdr.anduril.com
@@ -4968,9 +4980,11 @@ www.observability-island-dev.andurildev.com
 www.observability-trinode.andurildev.com
 www.onboarding.andurildev.com
 www.onering.whatnot.com
+www.orchestrator.anduril.com
 www.owners-bot-staging.andurildev.com
 www.owners-bot.anduril.dev
 www.palm.anduril.com
+www.palmetto.anduril.com
 www.perception.andurildev.com
 www.phoenix.anduril.com
 www.pipelines-staging.andurildev.com
