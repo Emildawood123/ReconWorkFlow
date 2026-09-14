@@ -627,6 +627,7 @@ beaconbot.itools-dev.anduril.dev
 beaconbot.itools.anduril.dev
 belsof.anduril.com
 benediction.non-prod.eng.anduril.dev
+benediction.qa.eng.anduril.dev
 benning.usarmy.anduril.com
 beta-witness.anduril.au
 beta-witness.anduril.dev
@@ -2938,6 +2939,7 @@ menace-test.andurildev.com
 menace.anduril.com
 merch.whatnot.com
 merchant-access-control.wolt.com
+merchant-api.wolt.com
 merchant-gateway.wolt.com
 merchant.links.wolt.com
 merchant.wolt.com
@@ -3189,6 +3191,9 @@ observability-trinode.anduril-dev-sandbox.andurildev.com
 observability-trinode.andurildev.com
 observability.andurildev.com
 observability.dev.anduril.com
+observatory.non-prod.eng.anduril.dev
+observatory.qa.eng.anduril.dev
+observatory.stage.eng.anduril.dev
 occupio.mdp-sandbox.eng.anduril.dev
 odoo-admin-dashboard-qa.eng.anduril.dev
 odoo-admin-dashboard-stg.eng.anduril.dev
@@ -4166,6 +4171,7 @@ te-sitrep.qa.eng.anduril.dev
 te-training-projects.non-prod.eng.anduril.dev
 te-training-projects.qa.eng.anduril.dev
 te-training-projects.stage.eng.anduril.dev
+team.wolt.com
 teamcenter-eval.corp.anduril.dev
 teamcenter-writeback-server-qa.eng.anduril.dev
 teamcenter-writeback-server-stg.eng.anduril.dev
