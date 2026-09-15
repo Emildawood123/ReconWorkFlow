@@ -670,6 +670,7 @@ bluetide.anduril.com
 bogey.anduril.com
 bolt-dev.anduril.dev
 bolt-dev.andurildev.com
+bolt-flight-app.non-prod.eng.anduril.dev
 bolt-qa.anduril.dev
 bolt-service-dashboard-qa.eng.anduril.dev
 bolt-service-dashboard.non-prod.eng.anduril.dev
@@ -1469,6 +1470,7 @@ fawkes-qa.eng.anduril.dev
 fawkes-stg.eng.anduril.dev
 fawkes.eng.anduril.dev
 fawkes.non-prod.eng.anduril.dev
+fbdi-formatter.non-prod.eng.anduril.dev
 fbx-optimizer.hm-poc.anduril.dev
 feature.anduril.com
 ffscountdown.non-prod.eng.anduril.dev
@@ -2703,6 +2705,7 @@ mail.sandbox.sie.anduril.dev
 mail.sandbox.sie.sitl-manager-dev.andurildev.com
 mail.sandbox.sie.sitl.anduril.dev
 mail.sandboxes.developer.anduril.com
+mail.sat-agent-runner-staging.andurildev.com
 mail.sauron.anduril.com
 mail.sauron2.anduril.com
 mail.sbmc-ai.andurildev.com
@@ -2788,6 +2791,7 @@ mail.valkyrie-training-acp.anduril.com
 mail.valkyrie-training.anduril.com
 mail.valkyrie.anduril.com
 mail.vehicle-infra.andurildev.com
+mail.video.andurildev.com
 mail.violet.jip.anduril.com
 mail.vuln-mgmt-staging.andurildev.com
 mail.web-apps-qa.andurildev.com
@@ -3464,6 +3468,7 @@ prodsec-dsb.andurildev.com
 prodsec.anduril.dev
 profile-api.non-prod.eng.anduril.dev
 profile-avatar-cdn.wolt.com
+program-hub.non-prod.eng.anduril.dev
 project-code-roster-app.non-prod.eng.anduril.dev
 project-code-roster.non-prod.eng.anduril.dev
 project.erp.anduril.dev
@@ -3751,6 +3756,7 @@ sandbox.tower.sitlm.anduril.dev
 sandbox.vulture.sitlm.anduril.dev
 sandboxes.developer.anduril.com
 sanitize.security.anduril.dev
+sat-agent-runner-staging.andurildev.com
 sat.anduril.com
 satori.anduril.dev
 saturn.anduril.au
@@ -5039,6 +5045,7 @@ www.sandbox.sie.anduril.dev
 www.sandbox.sie.sitl-manager-dev.andurildev.com
 www.sandbox.sie.sitl.anduril.dev
 www.sandboxes.developer.anduril.com
+www.sat-agent-runner-staging.andurildev.com
 www.sauron.anduril.com
 www.sauron2.anduril.com
 www.sbmc-ai.andurildev.com
@@ -5134,6 +5141,7 @@ www.valkyrie-training.anduril.com
 www.valkyrie.anduril.com
 www.vegas.whatnot.com
 www.vehicle-infra.andurildev.com
+www.video.andurildev.com
 www.violet.jip.anduril.com
 www.vuln-mgmt-staging.andurildev.com
 www.web-apps-qa.andurildev.com
