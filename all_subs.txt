@@ -276,6 +276,7 @@ anduril-aus-core-nix-cache.cachix.andurildev.au
 anduril-bolt-sitl-cluster.sitlm.anduril.dev
 anduril-class-it-support.corp.anduril.dev
 anduril-cloudos-aws-cp.andurildev.com
+anduril-cloudos-com-dev-2.andurildev.com
 anduril-cloudos-com-dev.andurildev.com
 anduril-cloudos-dev-2.andurildev.com
 anduril-cloudos-dev-3.andurildev.com
@@ -2385,6 +2386,7 @@ mail.alyssum.jip.anduril.com
 mail.andromeda.dive-xl.andurildev.au
 mail.anduril-acp-obs-dev.andurildev.com
 mail.anduril-cloudos-aws-cp.andurildev.com
+mail.anduril-cloudos-com-dev-2.andurildev.com
 mail.anduril-cloudos-com-dev.andurildev.com
 mail.anduril-cloudos-dev-2.andurildev.com
 mail.anduril-cloudos-dev-3.andurildev.com
@@ -2563,6 +2565,7 @@ mail.ext-dev.mimosa.anduril.com
 mail.ext-stark.anduril.com
 mail.falcon-peak.anduril.com
 mail.fire.andurildev.com
+mail.fleet-management.andurildev.com
 mail.fleetcore.anduril.dev
 mail.flights-dsb.andurildev.com
 mail.flights.andurildev.com
@@ -2582,6 +2585,7 @@ mail.generic-lattice-pipeline.andurildev.com
 mail.ghost.anduril.com
 mail.ghost.andurildev.com
 mail.ginkgo.anduril.com
+mail.github-mcp.agent-platform-dev.andurildev.com
 mail.groundcover.observability-dev.andurildev.com
 mail.groundcover.observability-staging.andurildev.com
 mail.groundcover.observability.anduril.dev
@@ -2633,6 +2637,7 @@ mail.lc2-sre-3.andurildev.com
 mail.lc2-sre-data-load-dev.andurildev.com
 mail.lc2-sre-dev.andurildev.com
 mail.lc2-sre-large-cloud.andurildev.com
+mail.lc2-sre-standard-cloud.andurildev.com
 mail.lectronimo-ait.anduril.com
 mail.lectronimo-ops.anduril.com
 mail.lectronimo-staging.andurildev.com
@@ -2685,6 +2690,7 @@ mail.obs-lattice-dev.andurildev.com
 mail.obs-sandbox-dev.andurildev.com
 mail.observability-island-dev.andurildev.com
 mail.observability-trinode.andurildev.com
+mail.onboarding-resilience1.andurildev.com
 mail.onboarding.andurildev.com
 mail.orchestrator.anduril.com
 mail.owners-bot-staging.andurildev.com
@@ -2850,6 +2856,8 @@ mail.world-model-pipeline-0.andurildev.com
 mail.world-model-pipeline-1.andurildev.com
 mail.world-model-pipeline-2.andurildev.com
 mail.world-model-pipeline-3.andurildev.com
+mail.world-model-v2-pipeline-0.andurildev.com
+mail.world-model-v2-pipeline-1.andurildev.com
 mail.ws-3p-dev.anduril.com
 mail.ws-demo.anduril.com
 mail.wyldkat.anduril.com
@@ -4737,6 +4745,7 @@ www.alyssum.jip.anduril.com
 www.andromeda.dive-xl.andurildev.au
 www.anduril-acp-obs-dev.andurildev.com
 www.anduril-cloudos-aws-cp.andurildev.com
+www.anduril-cloudos-com-dev-2.andurildev.com
 www.anduril-cloudos-com-dev.andurildev.com
 www.anduril-cloudos-dev-2.andurildev.com
 www.anduril-cloudos-dev-3.andurildev.com
@@ -4927,6 +4936,7 @@ www.ext-dev.mimosa.anduril.com
 www.ext-stark.anduril.com
 www.falcon-peak.anduril.com
 www.fire.andurildev.com
+www.fleet-management.andurildev.com
 www.fleetcore.anduril.dev
 www.flights-dsb.andurildev.com
 www.flights.andurildev.com
@@ -4948,6 +4958,7 @@ www.ghe.anduril.dev
 www.ghost.anduril.com
 www.ghost.andurildev.com
 www.ginkgo.anduril.com
+www.github-mcp.agent-platform-dev.andurildev.com
 www.gitlab.yellowstone.anduril.dev
 www.groundcover.observability-dev.andurildev.com
 www.groundcover.observability-staging.andurildev.com
@@ -5002,6 +5013,7 @@ www.lc2-sre-3.andurildev.com
 www.lc2-sre-data-load-dev.andurildev.com
 www.lc2-sre-dev.andurildev.com
 www.lc2-sre-large-cloud.andurildev.com
+www.lc2-sre-standard-cloud.andurildev.com
 www.lectronimo-ait.anduril.com
 www.lectronimo-ops.anduril.com
 www.lectronimo-staging.andurildev.com
@@ -5057,6 +5069,7 @@ www.obs-lattice-dev.andurildev.com
 www.obs-sandbox-dev.andurildev.com
 www.observability-island-dev.andurildev.com
 www.observability-trinode.andurildev.com
+www.onboarding-resilience1.andurildev.com
 www.onboarding.andurildev.com
 www.onering.whatnot.com
 www.orchestrator.anduril.com
@@ -5240,6 +5253,8 @@ www.world-model-pipeline-0.andurildev.com
 www.world-model-pipeline-1.andurildev.com
 www.world-model-pipeline-2.andurildev.com
 www.world-model-pipeline-3.andurildev.com
+www.world-model-v2-pipeline-0.andurildev.com
+www.world-model-v2-pipeline-1.andurildev.com
 www.ws-3p-dev.anduril.com
 www.ws-demo.anduril.com
 www.wyldkat.anduril.com
