@@ -2097,6 +2097,7 @@ jesse-delete-2.non-prod.eng.anduril.dev
 jesse-forge-connector.non-prod.eng.anduril.dev
 jesse-forge-connector.qa.eng.anduril.dev
 jesse-gonna-delete.non-prod.eng.anduril.dev
+jesse-okta-token-exchange.non-prod.eng.anduril.dev
 jiatf-integrations.anduril.com
 jip-test.anduril.dev
 jip.anduril.dev
@@ -2753,6 +2754,7 @@ mail.sbmc-ai.andurildev.com
 mail.sbmca-dev-azure.andurildev.com
 mail.sbmca-dev.anduril.com
 mail.sentry-manufacturing.andurildev.com
+mail.serpent.anduril.com
 mail.shafter.usarmy.anduril.com
 mail.sheath-bot-prod.anduril.dev
 mail.sheath-bot-staging.andurildev.com
@@ -2809,6 +2811,8 @@ mail.time-series-large-aws-dev.andurildev.com
 mail.time-series-standard-aws-dev.andurildev.com
 mail.timeseries-alpha-1.andurildev.com
 mail.timeseries-alpha-2.andurildev.com
+mail.timeseries-alpha-3.andurildev.com
+mail.timeseries-alpha-4.andurildev.com
 mail.training.anduril.com
 mail.trionda.anduril.com
 mail.trs-ci.andurildev.com
@@ -3624,6 +3628,7 @@ red-rover-dev.andurildev.com
 red-rover.anduril.com
 red-rover.andurildev.com
 redash.admin.superhuman.com
+redbook.non-prod.eng.anduril.dev
 redpanda.mdp-dev.eng.anduril.dev
 redpanda.mdp-sandbox.eng.anduril.dev
 redstone.usarmy.anduril.com
@@ -4080,6 +4085,7 @@ staging.docs.anduril.com
 staging.e.preview.dev.whatnot.com
 staging.email.whatnot.com
 staging.live-service.whatnot.com
+staging.ngc2-me.anduril.dev
 staging.superhuman.com
 staging.trs.framework.anduril.dev
 state-of-the-floor-3100.non-prod.eng.anduril.dev
@@ -4560,6 +4566,8 @@ violet.jip.anduril.com
 vmalert.mdp-dev.eng.anduril.dev
 vmalert.mdp-sandbox.eng.anduril.dev
 volta.anduril.dev
+voy-logistics-intake-dash.non-prod.eng.anduril.dev
+voy-logistics-receive-dash.non-prod.eng.anduril.dev
 voyager-engineering.anduril.dev
 voyagerconfigurator.anduril.dev
 vpn.anduril.com
@@ -5137,6 +5145,7 @@ www.sbmca-dev.anduril.com
 www.selleracademy.whatnot.com
 www.sellersummit.whatnot.com
 www.sentry-manufacturing.andurildev.com
+www.serpent.anduril.com
 www.shafter.usarmy.anduril.com
 www.sheath-bot-prod.anduril.dev
 www.sheath-bot-staging.andurildev.com
@@ -5196,6 +5205,8 @@ www.time-series-large-aws-dev.andurildev.com
 www.time-series-standard-aws-dev.andurildev.com
 www.timeseries-alpha-1.andurildev.com
 www.timeseries-alpha-2.andurildev.com
+www.timeseries-alpha-3.andurildev.com
+www.timeseries-alpha-4.andurildev.com
 www.training.anduril.com
 www.trionda.anduril.com
 www.trs-ci.andurildev.com
