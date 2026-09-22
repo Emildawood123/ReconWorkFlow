@@ -472,6 +472,7 @@ arsenal2.eng.anduril.dev
 arsenal2.mdp-sandbox.eng.anduril.dev
 artifactory-test.anduril.dev
 artifactory.anduril.dev
+asdl-ingest.toolbox.security.anduril.dev
 asf-dev.eng.anduril.dev
 asf-slack-bolt-bot-qa.eng.anduril.dev
 asf-slack-bolt-bot.non-prod.eng.anduril.dev
@@ -905,6 +906,7 @@ cm-change-tracker-menace-i.non-prod.eng.anduril.dev
 cm-change-tracker-qa.eng.anduril.dev
 cm-change-tracker.non-prod.eng.anduril.dev
 cm-feedback-progress-tracker.non-prod.eng.anduril.dev
+cm-feedback-progress-tracker.stage.eng.anduril.dev
 cm-implementation-tracker.non-prod.eng.anduril.dev
 cm-implementation-v2-qa.eng.anduril.dev
 cm-implementation-v2.non-prod.eng.anduril.dev
@@ -1000,6 +1002,7 @@ corptech-ai-dev.andurildev.com
 corptech-annual-planning.non-prod.eng.anduril.dev
 corptech-annual-planning.qa.eng.anduril.dev
 corptech-platform-planner.non-prod.eng.anduril.dev
+corptech-resource-control-qa.eng.anduril.dev
 corptech-resource-control-stg.eng.anduril.dev
 corptech-resource-control.non-prod.eng.anduril.dev
 cosmos.anduril.com
@@ -1066,6 +1069,7 @@ daas.wolt.com
 dagster-dev.analytics.eng.anduril.dev
 dagster-kubecost-dev.analytics.eng.anduril.dev
 dagster-kubecost.gov.analytics-prod.anduril.dev
+dagster-readonly-dev.analytics.eng.anduril.dev
 dagster-readonly.gov.analytics-prod.anduril.dev
 dagster.gov.analytics-prod.anduril.dev
 danny-test.non-prod.eng.anduril.dev
@@ -1299,6 +1303,8 @@ dojo-api-stage.imaging.anduril.dev
 dop-qa.eng.anduril.dev
 dop-stg.eng.anduril.dev
 dop.non-prod.eng.anduril.dev
+dops-deployment-analytics-qa.eng.anduril.dev
+dops-deployment-analytics-stg.eng.anduril.dev
 dops-deployment-analytics.non-prod.eng.anduril.dev
 download-mac.superhuman.com
 download-windows.superhuman.com
@@ -2056,6 +2062,7 @@ itar.sitlm.anduril.dev
 iterable-email-link.superhuman.com
 iterable-links.superhuman.com
 itools-test.anduril.dev
+ivy-crown.anduril.com
 jackpine-dev.andurildev.com
 jackpine-qa.andurildev.com
 jackpine.anduril.com
@@ -2098,6 +2105,7 @@ jesse-forge-connector.non-prod.eng.anduril.dev
 jesse-forge-connector.qa.eng.anduril.dev
 jesse-gonna-delete.non-prod.eng.anduril.dev
 jesse-okta-token-exchange.non-prod.eng.anduril.dev
+jesse-scaffold.non-prod.eng.anduril.dev
 jiatf-integrations.anduril.com
 jip-test.anduril.dev
 jip.anduril.dev
@@ -2893,6 +2901,7 @@ marco-polo.non-prod.eng.anduril.dev
 marco-polo.qa.eng.anduril.dev
 marcus-dev.anduril.dev
 marcus.anduril.dev
+maritime-app-team-internal-tools.non-prod.eng.anduril.dev
 maritime-budget-forecast-staffing.non-prod.eng.anduril.dev
 maritime-dev.andurildev.com
 maritime-gs.anduril.com
@@ -2938,6 +2947,7 @@ md-launchpad.non-prod.eng.anduril.dev
 md-launchpad.stage.eng.anduril.dev
 md-master-schedule.non-prod.eng.anduril.dev
 md-metrics-explorer.non-prod.eng.anduril.dev
+md-monthly-finance-dashboard-qa.eng.anduril.dev
 md-monthly-finance-dashboard-stg.eng.anduril.dev
 md-monthly-finance-dashboard.eng.anduril.dev
 md-monthly-finance-dashboard.non-prod.eng.anduril.dev
@@ -2985,7 +2995,9 @@ memes.andurildev.com
 memory.anduril.dev
 memory.andurildev.com
 menace-hitl.anduril.dev
+menace-i-change-request-tracker-qa.eng.anduril.dev
 menace-i-change-request-tracker.non-prod.eng.anduril.dev
+menace-ice-2001-order-tracker-qa.eng.anduril.dev
 menace-ice-2001-order-tracker.non-prod.eng.anduril.dev
 menace-launchpad.anduril.dev
 menace-pki.anduril.com
@@ -3324,6 +3336,7 @@ owners-bot.anduril.dev
 ox.anduril.dev
 pacer.non-prod.eng.anduril.dev
 pages.anduril.dev
+pages.gitlab.jip.anduril.com
 palladium.anduril.dev
 pallas-k-cluster.andurildev.com
 pallas-k-dev.andurildev.com
@@ -3342,10 +3355,13 @@ payments-tips-service.wolt.com
 pc21.andurildev.com
 pc21.dev.anduril.com
 pcb-asl-selection-tool-qa.eng.anduril.dev
+pcb-asl-selection-tool-stg.eng.anduril.dev
 pcb-asl-selection-tool.non-prod.eng.anduril.dev
 pcb-asl-supplier-finder-jw.non-prod.eng.anduril.dev
 pcb-asl-supplier-finder.non-prod.eng.anduril.dev
 pcb-spend-analysis-tool-qa.eng.anduril.dev
+pcb-spend-analysis-tool-stg.eng.anduril.dev
+pcb-spend-analysis-tool.eng.anduril.dev
 pcb-spend-analysis-tool.non-prod.eng.anduril.dev
 pcluster-test.oak-hpc.anduril.dev
 pdp-dashboard-qa.eng.anduril.dev
@@ -3412,6 +3428,7 @@ platform-qa.eng.anduril.dev
 platform-stg.eng.anduril.dev
 platform.non-prod.eng.anduril.dev
 plimsoll.non-prod.eng.anduril.dev
+plimsoll.qa.eng.anduril.dev
 plm.anduril.au
 plm.anduril.com
 plm.anduril.dev
@@ -3569,6 +3586,7 @@ qri-labor-dashboard-qa.eng.anduril.dev
 qri-labor-dashboard.non-prod.eng.anduril.dev
 qri-labor-dashboard.qa.eng.anduril.dev
 qri-machine-shop-tracker.non-prod.eng.anduril.dev
+qri-material-stock-analysis-qa.eng.anduril.dev
 qri-material-stock-analysis.non-prod.eng.anduril.dev
 qri-tbi-dashboard.non-prod.eng.anduril.dev
 qri-urs-lineside-health.non-prod.eng.anduril.dev
@@ -3714,8 +3732,10 @@ rmq.forge-dev.eng.anduril.dev
 rmq.forge-prod.eng.anduril.dev
 rmq.forge-qa.eng.anduril.dev
 rmq.forge-stg.eng.anduril.dev
+rms-document-review.eng.anduril.dev
 rms-document-review.non-prod.eng.anduril.dev
 rms-document-review.qa.eng.anduril.dev
+rms-lot-allocate.non-prod.eng.anduril.dev
 rms-safety-dashboard-qa.eng.anduril.dev
 rms-safety-dashboard.eng.anduril.dev
 rms-safety-dashboard.non-prod.eng.anduril.dev
@@ -4032,6 +4052,7 @@ spds.anduril.dev
 spear.anduril.com
 spec-qa.eng.anduril.dev
 spec.non-prod.eng.anduril.dev
+spectra.non-prod.eng.anduril.dev
 spend-comrade-qa.eng.anduril.dev
 spend-comrade.non-prod.eng.anduril.dev
 sphf.anduril.dev
@@ -4442,6 +4463,7 @@ unclass-ra.dil-char.andurildev.com
 unclass-ra.dil-test.andurildev.com
 unclass-ra.jos.gcp.andurildev.com
 unclass.dil-test.andurildev.com
+undersea-dominance-action-center-qa.eng.anduril.dev
 undersea-dominance-action-center.non-prod.eng.anduril.dev
 undersea-dominance-war-room.non-prod.eng.anduril.dev
 united.anduril.com
@@ -4533,6 +4555,7 @@ venom-me-roadmap.non-prod.eng.anduril.dev
 venom.anduril.com
 venom.anduril.dev
 verify-serial-qa.eng.anduril.dev
+verify-serial-shadow-mode-qa.eng.anduril.dev
 verify-serial-shadow-mode.non-prod.eng.anduril.dev
 verify-serial-stg.eng.anduril.dev
 verify-serial.non-prod.eng.anduril.dev
