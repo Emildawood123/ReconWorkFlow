@@ -277,6 +277,7 @@ anduril-bolt-sitl-cluster.sitlm.anduril.dev
 anduril-class-it-support.corp.anduril.dev
 anduril-cloudos-aws-cp.andurildev.com
 anduril-cloudos-com-dev-2.andurildev.com
+anduril-cloudos-com-dev-3.andurildev.com
 anduril-cloudos-com-dev.andurildev.com
 anduril-cloudos-dev-2.andurildev.com
 anduril-cloudos-dev-3.andurildev.com
@@ -421,6 +422,7 @@ app.rdf.jip.anduril.com
 app.test-cci-auto.anduril.dev
 app.test-cci.anduril.dev
 app.wickr.network.anduril.dev
+approval-hub.non-prod.eng.anduril.dev
 apps.anduril.com
 apps.eng.anduril.au
 apse2.dev.dt.security.anduril.dev
@@ -1066,9 +1068,12 @@ cybertruck.whatnot.com
 daas-ecommerce-service.wolt.com
 daas-internal-api.wolt.com
 daas.wolt.com
+dagster-dev.analytics-dev.eng.anduril.dev
 dagster-dev.analytics.eng.anduril.dev
+dagster-kubecost-dev.analytics-dev.eng.anduril.dev
 dagster-kubecost-dev.analytics.eng.anduril.dev
 dagster-kubecost.gov.analytics-prod.anduril.dev
+dagster-readonly-dev.analytics-dev.eng.anduril.dev
 dagster-readonly-dev.analytics.eng.anduril.dev
 dagster-readonly.gov.analytics-prod.anduril.dev
 dagster.gov.analytics-prod.anduril.dev
@@ -2595,6 +2600,7 @@ mail.ghost.anduril.com
 mail.ghost.andurildev.com
 mail.ginkgo.anduril.com
 mail.github-mcp.agent-platform-dev.andurildev.com
+mail.grafana.dive.anduril.dev
 mail.groundcover.observability-dev.andurildev.com
 mail.groundcover.observability-staging.andurildev.com
 mail.groundcover.observability.anduril.dev
@@ -2615,6 +2621,7 @@ mail.internal.whatfix.anduril.dev
 mail.internal.wolt.com
 mail.internalmaps.andurildev.com
 mail.ironhalo.anduril.com
+mail.ivy-crown.anduril.com
 mail.jackpine-dev.andurildev.com
 mail.jackpine.anduril.com
 mail.jadc2.anduril.com
@@ -2670,6 +2677,7 @@ mail.maps3.anduril.com
 mail.maritime-dev.andurildev.com
 mail.maritime-gs.anduril.com
 mail.maritime-test.andurildev.com
+mail.maritime-urs-pipeline.andurildev.com
 mail.marlin.maritime.anduril.com
 mail.md-pipeline.andurildev.com
 mail.md.anduril.com
@@ -2692,6 +2700,7 @@ mail.n4.crucible.andurildev.com
 mail.narsil.andurildev.com
 mail.native.andurildev.com
 mail.nazgul.anduril.com
+mail.nebula.andurildev.au
 mail.netsuite.anduril.dev
 mail.netsuite.erp.anduril.dev
 mail.nswc-crane.anduril.com
@@ -2711,6 +2720,7 @@ mail.phoenix.anduril.com
 mail.pipelines-staging.andurildev.com
 mail.pipelines.anduril.dev
 mail.pluto-alpha.anduril.com
+mail.pluto.anduril.com
 mail.policy-bot-staging.andurildev.com
 mail.policy-bot.anduril.dev
 mail.policy-bot.andurildev.au
@@ -2926,6 +2936,7 @@ master.wolt.com
 mayhem-dast.anduril.dev
 mazarbul-qa.eng.anduril.dev
 mazarbul.non-prod.eng.anduril.dev
+mc-approval-hub.non-prod.eng.anduril.dev
 mc-ops.anduril.dev
 mc.whatnot.com
 mcape-prom.andurildev.com
@@ -3271,6 +3282,8 @@ offering-platform.wolt.com
 offering-service.wolt.com
 oidc.ghe-proxy.anduril.dev
 okta-test.non-prod.eng.anduril.dev
+okta-x-dev.eng.anduril.dev
+okta-x.eng.anduril.dev
 okta.anduril.com
 omega-red-demo.anduril.com
 omega-red-demo.andurildev.com
@@ -3544,6 +3557,7 @@ product-dev-cogs-forecastor.non-prod.eng.anduril.dev
 profile-api.non-prod.eng.anduril.dev
 profile-avatar-cdn.wolt.com
 prog-protect-dashboard.non-prod.eng.anduril.dev
+prog-protect-dashboard.qa.eng.anduril.dev
 program-hub.non-prod.eng.anduril.dev
 project-code-roster-app.non-prod.eng.anduril.dev
 project-code-roster.non-prod.eng.anduril.dev
@@ -3582,6 +3596,7 @@ qri-ballasting-qa.eng.anduril.dev
 qri-ballasting.non-prod.eng.anduril.dev
 qri-bom-diff-tool.non-prod.eng.anduril.dev
 qri-bom-diff-tool.qa.eng.anduril.dev
+qri-hydrostatic-pressure-tracker.non-prod.eng.anduril.dev
 qri-labor-dashboard-qa.eng.anduril.dev
 qri-labor-dashboard.non-prod.eng.anduril.dev
 qri-labor-dashboard.qa.eng.anduril.dev
@@ -4109,6 +4124,7 @@ staging.live-service.whatnot.com
 staging.ngc2-me.anduril.dev
 staging.superhuman.com
 staging.trs.framework.anduril.dev
+star-route.non-prod.eng.anduril.dev
 state-of-the-floor-3100.non-prod.eng.anduril.dev
 state-of-the-floor-3100.qa.eng.anduril.dev
 static.connect.epicgames.dev
@@ -4991,6 +5007,7 @@ www.ghost.andurildev.com
 www.ginkgo.anduril.com
 www.github-mcp.agent-platform-dev.andurildev.com
 www.gitlab.yellowstone.anduril.dev
+www.grafana.dive.anduril.dev
 www.groundcover.observability-dev.andurildev.com
 www.groundcover.observability-staging.andurildev.com
 www.groundcover.observability.anduril.dev
@@ -5012,6 +5029,7 @@ www.internal.whatfix.anduril.dev
 www.internal.wolt.com
 www.internalmaps.andurildev.com
 www.ironhalo.anduril.com
+www.ivy-crown.anduril.com
 www.jackpine-dev.andurildev.com
 www.jackpine.anduril.com
 www.jadc2.anduril.com
@@ -5069,6 +5087,7 @@ www.maps3.anduril.com
 www.maritime-dev.andurildev.com
 www.maritime-gs.anduril.com
 www.maritime-test.andurildev.com
+www.maritime-urs-pipeline.andurildev.com
 www.marlin.maritime.anduril.com
 www.md-pipeline.andurildev.com
 www.md.anduril.com
@@ -5093,6 +5112,7 @@ www.narsil.andurildev.com
 www.national.whatnot.com
 www.native.andurildev.com
 www.nazgul.anduril.com
+www.nebula.andurildev.au
 www.netsuite.anduril.dev
 www.netsuite.erp.anduril.dev
 www.nswc-crane.anduril.com
@@ -5113,6 +5133,7 @@ www.phoenix.anduril.com
 www.pipelines-staging.andurildev.com
 www.pipelines.anduril.dev
 www.pluto-alpha.anduril.com
+www.pluto.anduril.com
 www.policy-bot-staging.andurildev.com
 www.policy-bot.anduril.dev
 www.policy-bot.andurildev.au
