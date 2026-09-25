@@ -168,6 +168,7 @@ ads.anduril.dev
 ads.international.e.preview.dev.whatnot.com
 ads.live-service.whatnot.com
 adts.non-prod.eng.anduril.dev
+adts.qa.eng.anduril.dev
 advanced-effects.anduril.com
 advcapes.andurildev.com
 adw-dev.anduril.dev
@@ -207,6 +208,7 @@ aiden.local-dev.whatnot.com
 air.anduril.com
 airflow-dev.g5-irad.anduril.dev
 airflow.g5-irad.anduril.dev
+airflow.sunflower.anduril.dev
 airflow.wolt.com
 ais-demo-1.andurildev.com
 ais-infra-testing.andurildev.com
@@ -258,6 +260,7 @@ altius-dashboard.non-prod.eng.anduril.dev
 altius-dsb.andurildev.com
 altius-flight-test.andurildev.com
 altius-metric.non-prod.eng.anduril.dev
+altius-schedule.eng.anduril.dev
 altius-schedule.non-prod.eng.anduril.dev
 altius.andurildev.com
 altius.dev.anduril.com
@@ -535,6 +538,7 @@ atlantis.foundations-dev.anduril.dev
 atlantis.foundations.anduril.dev
 atlantis.itools.anduril.dev
 atlantis.prod.fg.wolt.com
+atlantis.sandbox.anduril.au
 atlantis.shared-services.itools.anduril.dev
 atlas-jcg.non-prod.eng.anduril.dev
 atlas-pipeline.non-prod.eng.anduril.dev
@@ -628,6 +632,7 @@ azure.discovery-cdn.wolt.com
 azure.foundations.anduril.dev
 azure.id.superhuman.com
 backend.contenta.andurildev.au
+bandit.andurildev.com
 bap.anduril.dev
 bark-tts-dev.itools-dev.anduril.dev
 basecamp-dev.andurildev.com
@@ -1788,6 +1793,7 @@ giza.itools-dev.anduril.dev
 giza.itools.anduril.dev
 gjallarhorn-qa.eng.anduril.dev
 gjallarhorn.non-prod.eng.anduril.dev
+global-supply-chain.non-prod.eng.anduril.dev
 glops-weekly-tracker.non-prod.eng.anduril.dev
 gm.superhuman.com
 gmail.superhuman.com
@@ -2154,10 +2160,14 @@ jenga.non-prod.eng.anduril.dev
 jenkins.andurildev.au
 jenkins.connect.epicgames.dev
 jenkins.converse-api.wolt.com
+jesse-app-template-2.non-prod.eng.anduril.dev
+jesse-app-template-3.non-prod.eng.anduril.dev
+jesse-app-template.non-prod.eng.anduril.dev
 jesse-delete-2.non-prod.eng.anduril.dev
 jesse-forge-connector.non-prod.eng.anduril.dev
 jesse-forge-connector.qa.eng.anduril.dev
 jesse-gonna-delete.non-prod.eng.anduril.dev
+jesse-new-template.non-prod.eng.anduril.dev
 jesse-okta-token-exchange.non-prod.eng.anduril.dev
 jesse-scaffold.non-prod.eng.anduril.dev
 jiatf-integrations.anduril.com
@@ -2356,6 +2366,7 @@ live.andurildev.com
 live.consumer-static-assets.wolt.com
 live.images.whatnot.com
 llm-dev.eng.anduril.dev
+llm-oui-dev.eng.anduril.dev
 llm.anduril.dev
 llm.eng.anduril.dev
 load1.whatnot.com
@@ -2714,6 +2725,7 @@ mail.lightcycle.anduril.com
 mail.load1.whatnot.com
 mail.locust-dev.anduril.com
 mail.locust.anduril.com
+mail.loki.mdp-sandbox.eng.anduril.dev
 mail.lonestar.anduril.com
 mail.lrpm-dev.anduril.com
 mail.lupine.anduril.com
@@ -2792,6 +2804,7 @@ mail.pursuit.anduril.com
 mail.rafl.anduril.com
 mail.rdf-dev.andurildev.com
 mail.redstone.usarmy.anduril.com
+mail.redwing.anduril.com
 mail.remora.andurildev.com
 mail.replicant.andurildev.com
 mail.resiliency.andurildev.com
@@ -3051,6 +3064,8 @@ meetups.whatnot.com
 meg-design-space.mdp-sandbox.eng.anduril.dev
 melby.cms-dev.anduril.dev
 melby.cms.anduril.dev
+melby.eng.anduril.dev
+melby.non-prod.eng.anduril.dev
 mem-dev.imaging.anduril.dev
 mem-stage.imaging.anduril.dev
 mem.imaging.anduril.dev
@@ -3431,6 +3446,7 @@ pc21.andurildev.com
 pc21.dev.anduril.com
 pcb-asl-selection-tool-qa.eng.anduril.dev
 pcb-asl-selection-tool-stg.eng.anduril.dev
+pcb-asl-selection-tool.eng.anduril.dev
 pcb-asl-selection-tool.non-prod.eng.anduril.dev
 pcb-asl-supplier-finder-jw.non-prod.eng.anduril.dev
 pcb-asl-supplier-finder.non-prod.eng.anduril.dev
@@ -3735,6 +3751,7 @@ redbook.non-prod.eng.anduril.dev
 redpanda.mdp-dev.eng.anduril.dev
 redpanda.mdp-sandbox.eng.anduril.dev
 redstone.usarmy.anduril.com
+redwing.anduril.com
 redwood-activation-qa.eng.anduril.dev
 redwood-activation-stg.eng.anduril.dev
 redwood-activation.non-prod.eng.anduril.dev
@@ -3788,9 +3805,11 @@ reynaga-howtf-stg.eng.anduril.dev
 reynaga-howtf.non-prod.eng.anduril.dev
 reynaga-no-mcp.non-prod.eng.anduril.dev
 reynaga-no-mcp.qa.eng.anduril.dev
+reynaga-okta-api.non-prod.eng.anduril.dev
 reynaga-okta-river-qa.eng.anduril.dev
 reynaga-okta-river-stg.eng.anduril.dev
 reynaga-okta-river.non-prod.eng.anduril.dev
+reynaga-okta-v2.non-prod.eng.anduril.dev
 reynaga-runthrough.non-prod.eng.anduril.dev
 reynaga-runthrough.qa.eng.anduril.dev
 reynaga-share-nodes.non-prod.eng.anduril.dev
@@ -4143,6 +4162,7 @@ spend-comrade-qa.eng.anduril.dev
 spend-comrade.non-prod.eng.anduril.dev
 sphf.anduril.dev
 splunkhec-ingest.toolbox.security.anduril.dev
+spqcd-supervisor-board.non-prod.eng.anduril.dev
 sqda-dashboard-qa.eng.anduril.dev
 sqda-dashboard-stg.eng.anduril.dev
 sqda-dashboard.eng.anduril.dev
@@ -5149,6 +5169,7 @@ www.load1.whatnot.com
 www.locust-dev.anduril.com
 www.locust.anduril.com
 www.loganpaul.whatnot.com
+www.loki.mdp-sandbox.eng.anduril.dev
 www.lonestar.anduril.com
 www.lrpm-dev.anduril.com
 www.lupine.anduril.com
@@ -5232,6 +5253,7 @@ www.questlove.whatnot.com
 www.rafl.anduril.com
 www.rdf-dev.andurildev.com
 www.redstone.usarmy.anduril.com
+www.redwing.anduril.com
 www.remora.andurildev.com
 www.replicant.andurildev.com
 www.resiliency.andurildev.com
@@ -5396,6 +5418,8 @@ xacta-prod.anduril.dev
 xacta-prod.network.anduril.com
 xacta.network.anduril.com
 xixia.local-dev.whatnot.com
+xl-plexus.non-prod.eng.anduril.dev
+xl-plexus.stage.eng.anduril.dev
 xwiki.anduril.dev
 yachty.whatnot.com
 yellowstone-performers-tmp.andurildev.com
