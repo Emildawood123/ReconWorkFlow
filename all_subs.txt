@@ -2456,6 +2456,7 @@ mail.agdsre-corp.anduril.dev
 mail.agdsre-sandbox.anduril.com
 mail.agdsre.anduril.dev
 mail.agent-compute-dev.andurildev.com
+mail.agent-platform.anduril.dev
 mail.agents-on-servers-dev.andurildev.com
 mail.ai-dev.andurildev.com
 mail.ai-staging.andurildev.com
@@ -2489,6 +2490,8 @@ mail.anduril-sdk-team.andurildev.com
 mail.anduril-swp-dev.andurildev.com
 mail.anduril-swp-qa-perf-test.andurildev.com
 mail.anduril-tembusu-external-cluster.anduril.com
+mail.anduril.au
+mail.anduril.com
 mail.anduril.com.au
 mail.anduroid-staging.andurildev.com
 mail.aol.anduril.com
@@ -2791,6 +2794,7 @@ mail.perception.andurildev.com
 mail.phoenix.anduril.com
 mail.pipelines-staging.andurildev.com
 mail.pipelines.anduril.dev
+mail.platsec-istio-spike.andurildev.com
 mail.pluto-alpha.anduril.com
 mail.pluto.anduril.com
 mail.policy-bot-staging.andurildev.com
@@ -2818,6 +2822,7 @@ mail.redwing.anduril.com
 mail.remora.andurildev.com
 mail.replicant.andurildev.com
 mail.resiliency.andurildev.com
+mail.riptide.andurildev.com
 mail.rivendell.anduril.com
 mail.roadhouse-dev.anduril.com
 mail.roadhouse.anduril.com
@@ -2897,6 +2902,7 @@ mail.terra-ghost-prod.anduril.com
 mail.terra.anduril.com
 mail.test-results-gateway.jama.andurildev.com
 mail.thalia.anduril.com
+mail.thuja.anduril.com
 mail.thunderforge.anduril.com
 mail.time-series-large-aws-dev.andurildev.com
 mail.time-series-standard-aws-dev.andurildev.com
@@ -3076,6 +3082,7 @@ melby.cms-dev.anduril.dev
 melby.cms.anduril.dev
 melby.eng.anduril.dev
 melby.non-prod.eng.anduril.dev
+melby.qa.eng.anduril.dev
 mem-dev.imaging.anduril.dev
 mem-stage.imaging.anduril.dev
 mem.imaging.anduril.dev
@@ -4888,6 +4895,7 @@ www.agdsre-corp.anduril.dev
 www.agdsre-sandbox.anduril.com
 www.agdsre.anduril.dev
 www.agent-compute-dev.andurildev.com
+www.agent-platform.anduril.dev
 www.agents-on-servers-dev.andurildev.com
 www.ahp.security.anduril.dev
 www.ai-dev.andurildev.com
@@ -5245,6 +5253,7 @@ www.perception.andurildev.com
 www.phoenix.anduril.com
 www.pipelines-staging.andurildev.com
 www.pipelines.anduril.dev
+www.platsec-istio-spike.andurildev.com
 www.pluto-alpha.anduril.com
 www.pluto.anduril.com
 www.policy-bot-staging.andurildev.com
@@ -5274,6 +5283,7 @@ www.redwing.anduril.com
 www.remora.andurildev.com
 www.replicant.andurildev.com
 www.resiliency.andurildev.com
+www.riptide.andurildev.com
 www.rivendell.anduril.com
 www.roadhouse-dev.anduril.com
 www.roadhouse.anduril.com
@@ -5358,6 +5368,7 @@ www.terra-ghost-prod.anduril.com
 www.terra.anduril.com
 www.test-results-gateway.jama.andurildev.com
 www.thalia.anduril.com
+www.thuja.anduril.com
 www.thunderforge.anduril.com
 www.time-series-large-aws-dev.andurildev.com
 www.time-series-standard-aws-dev.andurildev.com
