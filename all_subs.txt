@@ -199,6 +199,7 @@ agents-on-servers-dev.andurildev.com
 agentsim.docs.anduril.dev
 agni-test.network.anduril.dev
 ahp.security.anduril.dev
+ai-anduin.atlassian-stage.anduril.dev
 ai-dev.andurildev.com
 ai-sandbox.non-prod.eng.anduril.dev
 ai-staging.andurildev.com
@@ -699,6 +700,7 @@ bolt-service-dashboard-qa.eng.anduril.dev
 bolt-service-dashboard.non-prod.eng.anduril.dev
 bolt.anduril.dev
 bolt.sitlm.anduril.dev
+bom-editor-wc.non-prod.eng.anduril.dev
 boomerang-dsb.andurildev.com
 boomerang-vpn.andurildev.com
 boomerang.anduril.com
@@ -2170,6 +2172,8 @@ jesse-app-template-2.non-prod.eng.anduril.dev
 jesse-app-template-3.non-prod.eng.anduril.dev
 jesse-app-template-4.non-prod.eng.anduril.dev
 jesse-app-template-5.non-prod.eng.anduril.dev
+jesse-app-template-6.non-prod.eng.anduril.dev
+jesse-app-template-7.non-prod.eng.anduril.dev
 jesse-app-template.non-prod.eng.anduril.dev
 jesse-delete-2.non-prod.eng.anduril.dev
 jesse-forge-connector.non-prod.eng.anduril.dev
@@ -3078,6 +3082,7 @@ media.superhuman.com
 meeting-notes-kb.non-prod.eng.anduril.dev
 meetups.whatnot.com
 meg-design-space.mdp-sandbox.eng.anduril.dev
+meg-web.mdp-sandbox.eng.anduril.dev
 melby.cms-dev.anduril.dev
 melby.cms.anduril.dev
 melby.eng.anduril.dev
@@ -3784,6 +3789,7 @@ relay-stg.eng.anduril.dev
 relay.eng.anduril.dev
 relay.non-prod.eng.anduril.dev
 release-eng.jama-dev.andurildev.com
+release-feature-tracker.eng.anduril.dev
 release-feature-tracker.non-prod.eng.anduril.dev
 release-processor.non-prod.eng.anduril.dev
 release-tracker-qa.eng.anduril.dev
@@ -4165,6 +4171,7 @@ sotf-3100.non-prod.eng.anduril.dev
 sotf-3100.qa.eng.anduril.dev
 sourcegraph-test.anduril.dev
 sourcemaps.anduril.dev
+sourcemaps.internal.wolt.com
 sow-generator.non-prod.eng.anduril.dev
 sp-jira.anduril.dev
 space-lasers.non-prod.eng.anduril.dev
@@ -4658,6 +4665,7 @@ valkyrie.anduril.com
 vanguard-ingest.non-prod.eng.anduril.dev
 var-tracker-qa.eng.anduril.dev
 var-tracker.non-prod.eng.anduril.dev
+vast-admin-mcp.atlassian-stage.anduril.dev
 vault-dev.security.anduril.dev
 vault.anduril.au
 vault.anduril.dev
