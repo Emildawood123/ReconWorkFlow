@@ -1,3 +1,4 @@
+19769903-77b1-3-auth.anduril.com
 1pass-scim.anduril.dev
 1pass-scim.security.anduril.dev
 2024x-client.cameo.eng.anduril.dev
@@ -952,6 +953,7 @@ comments-for-prototypes.non-prod.eng.anduril.dev
 commodity-derisking-qa.eng.anduril.dev
 commodity-derisking-stg.eng.anduril.dev
 commodity-derisking.non-prod.eng.anduril.dev
+comms-team-clock.non-prod.eng.anduril.dev
 comms.wolt.com
 communications-service.wolt.com
 communitylink.superhuman.com
@@ -1044,6 +1046,7 @@ courier-termination-api.wolt.com
 courier.wolt.com
 cov.anduril.dev
 coverity.anduril.dev
+cowboy-dbt-dashboard.non-prod.eng.anduril.dev
 creator.whatnot.com
 creatorprogram.whatnot.com
 crl.dev.menace-pki.anduril.com
@@ -1409,6 +1412,7 @@ edm-transfer.anduril.com
 edm.anduril.com
 education.superhuman.com
 ekanban-app.non-prod.eng.anduril.dev
+ekanban-app.qa.eng.anduril.dev
 elasticsearch1.wolt.com
 elder-brain-github.non-prod.eng.anduril.dev
 elder-brain.non-prod.eng.anduril.dev
@@ -2148,6 +2152,7 @@ jays-and-cees.eng.anduril.dev
 jays-and-cees.non-prod.eng.anduril.dev
 jboyer-mcp-connectors-qa.eng.anduril.dev
 jboyer-mcp-connectors.non-prod.eng.anduril.dev
+jcg-app-s3.non-prod.eng.anduril.dev
 jcg-new-okta.non-prod.eng.anduril.dev
 jcg-pb-deleteme.non-prod.eng.anduril.dev
 jcg-pb-deleteme.qa.eng.anduril.dev
@@ -2174,6 +2179,7 @@ jesse-app-template-4.non-prod.eng.anduril.dev
 jesse-app-template-5.non-prod.eng.anduril.dev
 jesse-app-template-6.non-prod.eng.anduril.dev
 jesse-app-template-7.non-prod.eng.anduril.dev
+jesse-app-template-8.non-prod.eng.anduril.dev
 jesse-app-template.non-prod.eng.anduril.dev
 jesse-delete-2.non-prod.eng.anduril.dev
 jesse-forge-connector.non-prod.eng.anduril.dev
@@ -2466,6 +2472,7 @@ mail.ai-dev.andurildev.com
 mail.ai-staging.andurildev.com
 mail.ai.anduril.dev
 mail.ai.armory-staging.andurildev.com
+mail.ai.usgw1.aws.anduril.dev
 mail.ais-demo-1.andurildev.com
 mail.ais-infra-testing.andurildev.com
 mail.alder.anduril.com
@@ -2692,6 +2699,7 @@ mail.id.superhuman.com
 mail.imaging.andurildev.com
 mail.infosec-dev.andurildev.com
 mail.ingest.observability.anduril.dev
+mail.ingress-test.sandbox.anduril.com.au
 mail.int-dev.mimosa.anduril.com
 mail.integrate.anduril.com
 mail.internal-prod.anduril.com
@@ -3054,6 +3062,7 @@ md-program-health.qa.eng.anduril.dev
 md-staff-budget-qa.eng.anduril.dev
 md-staff-budget.non-prod.eng.anduril.dev
 md-staff-budget.qa.eng.anduril.dev
+md-techops.non-prod.eng.anduril.dev
 md-thunder-budget.non-prod.eng.anduril.dev
 md-thunder-budget.qa.eng.anduril.dev
 md-toolbox.non-prod.eng.anduril.dev
@@ -3083,6 +3092,7 @@ meeting-notes-kb.non-prod.eng.anduril.dev
 meetups.whatnot.com
 meg-design-space.mdp-sandbox.eng.anduril.dev
 meg-web.mdp-sandbox.eng.anduril.dev
+meg.eng.anduril.dev
 melby.cms-dev.anduril.dev
 melby.cms.anduril.dev
 melby.eng.anduril.dev
@@ -3915,6 +3925,7 @@ saber-minio.chariot.andurildev.com
 saber.chariot.andurildev.com
 sac.anduril.dev
 safari-0.crucible.andurildev.com
+saguaro-qa.anduril.com
 saguaro.andurildev.com
 saml.superhuman.com
 sandbox-external.ac.sitlm.anduril.dev
@@ -4485,6 +4496,7 @@ test.dev.anduril.com
 test.dev.whatnot.com
 test.email.whatnot.com
 test.gitlab.voyager-dev.anduril.dev
+test.gymnasium.anduril.dev
 test.jama-dev.eng.anduril.dev
 test.mdp-dev.eng.anduril.dev
 test.non-prod.eng.anduril.dev
@@ -4556,6 +4568,7 @@ travel.anduril.com
 trident-spectre.andurildev.com
 trino.rdf-dev.gov.anduril.dev
 trino.rdf-prod.gov.anduril.dev
+trino.rdf.anduril.au
 trionda.anduril.com
 troubleshooting-app.non-prod.eng.anduril.dev
 trs-ci.andurildev.com
@@ -4606,6 +4619,7 @@ undersea-dominance-action-center-qa.eng.anduril.dev
 undersea-dominance-action-center.non-prod.eng.anduril.dev
 undersea-dominance-war-room.non-prod.eng.anduril.dev
 united.anduril.com
+uns.mdp-sandbox.eng.anduril.dev
 upload.auction-service.whatnot.com
 upload.live-service.whatnot.com
 uranium.wolt.com
@@ -4910,6 +4924,7 @@ www.ai-dev.andurildev.com
 www.ai-staging.andurildev.com
 www.ai.anduril.dev
 www.ai.armory-staging.andurildev.com
+www.ai.usgw1.aws.anduril.dev
 www.ais-demo-1.andurildev.com
 www.ais-infra-testing.andurildev.com
 www.alder.anduril.com
@@ -5150,6 +5165,7 @@ www.id.superhuman.com
 www.imaging.andurildev.com
 www.infosec-dev.andurildev.com
 www.ingest.observability.anduril.dev
+www.ingress-test.sandbox.anduril.com.au
 www.int-dev.mimosa.anduril.com
 www.integrate.anduril.com
 www.internal-prod.anduril.com
