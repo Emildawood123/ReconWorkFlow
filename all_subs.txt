@@ -140,7 +140,9 @@ adam-stg.eng.anduril.dev
 adam.eng.anduril.dev
 adam.non-prod.eng.anduril.dev
 adma-query.non-prod.eng.anduril.dev
+admin-sitl-manager.andurildev.com
 admin-staging.superhuman.com
+admin.africom.anduril.com
 admin.agd-data-analytics.gov.anduril.dev
 admin.andurildev.au
 admin.assets.whatnot.com
@@ -149,13 +151,21 @@ admin.auth.superhuman.com
 admin.etl-dev.gov.anduril.dev
 admin.international.e.preview.dev.whatnot.com
 admin.live-service.whatnot.com
+admin.metrics-dev.andurildev.com
+admin.metrics.anduril.dev
 admin.ml-prod.gov.anduril.dev
+admin.picton.anduril.com
+admin.pluto.anduril.com
 admin.rdf-dev.gov.anduril.dev
 admin.rdf-prod.gov.anduril.dev
 admin.rdf.anduril.au
 admin.rdf.jip.anduril.com
+admin.rfml.anduril.com
+admin.sitl-manager.andurildev.com
 admin.staging-superhuman.com
 admin.superhuman.com
+admin.usaf.anduril.com
+admin.usarmy.anduril.com
 admin.whatnot.com
 adp-qa.eng.anduril.dev
 adp-stg.eng.anduril.dev
@@ -193,6 +203,7 @@ agent-compute-dev.andurildev.com
 agent-mission-control.non-prod.eng.anduril.dev
 agent-mission-control.qa.eng.anduril.dev
 agent-platform-dev.andurildev.com
+agent-platform-staging.andurildev.com
 agent-platform.anduril.dev
 agent-sandbox-dev.andurildev.com
 agentic-shopping.wolt.com
@@ -364,11 +375,13 @@ api.e.preview.dev.whatnot.com
 api.epicgames.dev
 api.etl-dev.gov.anduril.dev
 api.feedback.anduril.com
+api.fidlabs.anduril.dev
 api.fiftyone.anduril.dev
 api.flow-eval.eng.anduril.dev
 api.ghe.anduril.com
 api.hdp-dev.anduril.dev
 api.hdp.anduril.dev
+api.instrumental.anduril.dev
 api.itools.anduril.dev
 api.ml-prod.gov.anduril.dev
 api.nominal.gov.itar.anduril.dev
@@ -384,6 +397,7 @@ api.rdf-dev.gov.anduril.dev
 api.rdf-prod.gov.anduril.dev
 api.rdf.anduril.au
 api.rdf.jip.anduril.com
+api.space-nominal.anduril.dev
 api.superhuman.com
 api.tc-qa.eng.anduril.dev
 api.tc-staging.eng.anduril.dev
@@ -408,6 +422,8 @@ app.andurildev.com
 app.assets.whatnot.com
 app.aw-remote.anduril.dev
 app.bazel.anduril.dev
+app.buildos-dev.anduril.dev
+app.buildos-qa.anduril.dev
 app.cachix.anduril.au
 app.cachix.anduril.dev
 app.cachix.andurildev.au
@@ -421,6 +437,8 @@ app.converse-telemetry-api.wolt.com
 app.e.preview.dev.whatnot.com
 app.epicgames.dev
 app.etl-dev.gov.anduril.dev
+app.fidlabs.anduril.dev
+app.instrumental.anduril.dev
 app.ml-prod.gov.anduril.dev
 app.nominal.gov.itar.anduril.dev
 app.nominal.gov.mlops-test.anduril.dev
@@ -429,6 +447,7 @@ app.rdf-dev.gov.anduril.dev
 app.rdf-prod.gov.anduril.dev
 app.rdf.anduril.au
 app.rdf.jip.anduril.com
+app.space-nominal.anduril.dev
 app.test-cci-auto.anduril.dev
 app.test-cci.anduril.dev
 app.wickr.network.anduril.dev
@@ -483,6 +502,7 @@ arms-elims.network.anduril.com
 arsenal-os.itools-dev.anduril.dev
 arsenal.anduril.com
 arsenal.anduril.dev
+arsenal1-factory-launch.non-prod.eng.anduril.dev
 arsenal2.eng.anduril.dev
 arsenal2.mdp-sandbox.eng.anduril.dev
 artifactory-test.anduril.dev
@@ -636,6 +656,7 @@ azure.discovery-cdn.wolt.com
 azure.foundations.anduril.dev
 azure.id.superhuman.com
 backend.contenta.andurildev.au
+backup-lonestar.anduril.com
 bandit.andurildev.com
 bap.anduril.dev
 bark-tts-dev.itools-dev.anduril.dev
@@ -726,6 +747,7 @@ breakthebank.whatnot.com
 bridge.cascade.andurildev.com
 brief-staging.andurildev.com
 brief.anduril.dev
+brmonitor.anduril.com
 broker-jr.wolt.com
 broker.security.anduril.dev
 brokkr.anduril.com
@@ -841,6 +863,7 @@ cbp.anduril.com
 cci-test.anduril.dev
 cci.anduril.au
 cci.anduril.dev
+cci3-admin.anduril.dev
 cci3.anduril.dev
 cdn.anduril.com
 cdn.assets.whatnot.com
@@ -939,6 +962,7 @@ cms1-conductor01.network.anduril.com
 cobra.erp.anduril.dev
 cockpit.mfx.andurildev.com
 code-assurance.security.anduril.dev
+code.durin.anduril.dev
 codecov.anduril.dev
 codecov2.anduril.dev
 codegraph-anduril.non-prod.eng.anduril.dev
@@ -1056,6 +1080,7 @@ crocodile.anduril.au
 crossview.rdf-dev.gov.anduril.dev
 crowd.anduril.dev
 crp-sec.anduril.dev
+crs-netprobe.non-prod.eng.anduril.dev
 crucible-qa.eng.anduril.dev
 crucible-stg.eng.anduril.dev
 crucible.andurildev.com
@@ -1154,6 +1179,8 @@ dataloop.network.anduril.com
 db.courier-api.wolt.com
 db.international.e.preview.dev.whatnot.com
 db.plm.anduril.dev
+db.tc.anduril.au
+db.tc.eng.anduril.dev
 dbtdocs.agd-data-analytics.gov.anduril.dev
 dbtdocs.gov.talos.anduril.dev
 dbtdocs.gov.usaf.anduril.dev
@@ -1311,6 +1338,7 @@ doc-release-runner-qa.eng.anduril.dev
 doc-release-runner-stg.eng.anduril.dev
 doc-release-runner.eng.anduril.dev
 doc-release-runner.non-prod.eng.anduril.dev
+dock.mdp-dev.eng.anduril.dev
 dock.mdp-sandbox.eng.anduril.dev
 docling.atlas.eng.anduril.dev
 docs-desktop.superhuman.com
@@ -1413,6 +1441,7 @@ edm.anduril.com
 education.superhuman.com
 ekanban-app.non-prod.eng.anduril.dev
 ekanban-app.qa.eng.anduril.dev
+ekanban-app.stage.eng.anduril.dev
 elasticsearch1.wolt.com
 elder-brain-github.non-prod.eng.anduril.dev
 elder-brain.non-prod.eng.anduril.dev
@@ -2105,6 +2134,7 @@ internal.buildos-dev.anduril.dev
 internal.buildos-qa.anduril.dev
 internal.buildos.anduril.dev
 internal.dev.whatfix.anduril.dev
+internal.edm.anduril.com
 internal.live-service.whatnot.com
 internal.sentry.anduril.dev
 internal.tc.anduril.au
@@ -2173,6 +2203,8 @@ jenga.non-prod.eng.anduril.dev
 jenkins.andurildev.au
 jenkins.connect.epicgames.dev
 jenkins.converse-api.wolt.com
+jesse-app-template-10.non-prod.eng.anduril.dev
+jesse-app-template-11.non-prod.eng.anduril.dev
 jesse-app-template-2.non-prod.eng.anduril.dev
 jesse-app-template-3.non-prod.eng.anduril.dev
 jesse-app-template-4.non-prod.eng.anduril.dev
@@ -2180,6 +2212,7 @@ jesse-app-template-5.non-prod.eng.anduril.dev
 jesse-app-template-6.non-prod.eng.anduril.dev
 jesse-app-template-7.non-prod.eng.anduril.dev
 jesse-app-template-8.non-prod.eng.anduril.dev
+jesse-app-template-9.non-prod.eng.anduril.dev
 jesse-app-template.non-prod.eng.anduril.dev
 jesse-delete-2.non-prod.eng.anduril.dev
 jesse-forge-connector.non-prod.eng.anduril.dev
@@ -2404,6 +2437,7 @@ login.fulmor-remote.anduril.com
 login.netbird.fulmor-remote.anduril.com
 loki-gov.itools-dev.anduril.dev
 loki-gov.network.anduril.dev
+loki-vision.mdp-sandbox.eng.anduril.dev
 loki.mdp-dev.eng.anduril.dev
 loki.mdp-sandbox.eng.anduril.dev
 loki.network.anduril.dev
@@ -3472,8 +3506,10 @@ partybus-stg.eng.anduril.dev
 partybus-test-demo.non-prod.eng.anduril.dev
 partybus.eng.anduril.dev
 partybus.non-prod.eng.anduril.dev
+partyretro.eng.anduril.dev
 partyretro.non-prod.eng.anduril.dev
 partyretro.qa.eng.anduril.dev
+patriotbot.non-prod.eng.anduril.dev
 payment-service.wolt.com
 payments-tips-service.wolt.com
 pc21.andurildev.com
@@ -3900,6 +3936,7 @@ rosemary.anduril.com
 routing-diff.non-prod.eng.anduril.dev
 routing-diff.qa.eng.anduril.dev
 rps.mfx.andurildev.com
+rr-efm-readiness-tracker.eng.anduril.dev
 rr-efm-readiness-tracker.non-prod.eng.anduril.dev
 rules-engine.anduril.dev
 rz.security.anduril.dev
@@ -4197,7 +4234,9 @@ spds.anduril.dev
 spear.anduril.com
 spec-qa.eng.anduril.dev
 spec.non-prod.eng.anduril.dev
+spectra-rfcs.eng.anduril.dev
 spectra-rfcs.non-prod.eng.anduril.dev
+spectra-rfcs.stage.eng.anduril.dev
 spectra.non-prod.eng.anduril.dev
 spend-comrade-qa.eng.anduril.dev
 spend-comrade.non-prod.eng.anduril.dev
@@ -4530,6 +4569,7 @@ thuja.anduril.com
 thunder-launch-qa.eng.anduril.dev
 thunder-launch.non-prod.eng.anduril.dev
 thunderforge.anduril.com
+ticket-bot.non-prod.eng.anduril.dev
 tier1-call-sim.non-prod.eng.anduril.dev
 time-series-large-aws-dev.andurildev.com
 time-series-load-dev-az-0.andurildev.com
@@ -4619,6 +4659,7 @@ undersea-dominance-action-center-qa.eng.anduril.dev
 undersea-dominance-action-center.non-prod.eng.anduril.dev
 undersea-dominance-war-room.non-prod.eng.anduril.dev
 united.anduril.com
+uns.mdp-dev.eng.anduril.dev
 uns.mdp-sandbox.eng.anduril.dev
 upload.auction-service.whatnot.com
 upload.live-service.whatnot.com
@@ -4737,6 +4778,8 @@ video.live-service.whatnot.com
 video.wickr.network.anduril.dev
 view.mc.whatnot.com
 viewshed-tool-qa.eng.anduril.dev
+viewshed-tool-stg.eng.anduril.dev
+viewshed-tool.eng.anduril.dev
 viewshed-tool.non-prod.eng.anduril.dev
 viewshed.non-prod.eng.anduril.dev
 vincent.local-dev.whatnot.com
