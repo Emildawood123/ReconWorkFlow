@@ -825,6 +825,7 @@ cachix.anduril.au
 cachix.anduril.dev
 cachix.andurildev.au
 cad-decimation.hm-poc.anduril.dev
+cadence.eng.anduril.dev
 cadence.non-prod.eng.anduril.dev
 cadence.qa.eng.anduril.dev
 caiman2.andurildev.com
@@ -922,6 +923,7 @@ class-systems-qa.eng.anduril.dev
 class-systems-stg.eng.anduril.dev
 class-systems.eng.anduril.dev
 class-systems.non-prod.eng.anduril.dev
+claude.sandbox.anduril.au
 clearpass-auth-proxy.security.anduril.dev
 click.consumer-api.wolt.com
 click.converse-static-resources.wolt.com
@@ -1106,6 +1108,7 @@ customerportal.anduril.com
 cvat.gov.mlops-test.anduril.dev
 cvat.gov.united.anduril.dev
 cw-demo.andurildev.com
+cw-te-basecamp.eng.anduril.dev
 cw-te-basecamp.non-prod.eng.anduril.dev
 cwlatticemeshcore.andurildev.com
 cyberchef.anduril.dev
@@ -1258,6 +1261,7 @@ dev.dev.whatnot.com
 dev.docs.anduril.com
 dev.edm.anduril.com
 dev.forge-mgmt.anduril.dev
+dev.gymnasium.anduril.dev
 dev.k.wolt.com
 dev.live-service.whatnot.com
 dev.mdm.fleetdm.security.anduril.dev
@@ -1741,6 +1745,7 @@ g3-te-dashboard.qa.eng.anduril.dev
 g5-irad.anduril.dev
 g5-sim-mgr.anduril.com
 gandalf.non-prod.eng.anduril.dev
+gantry-api.condor-dev.anduril.dev
 garrisoned-forge.non-prod.eng.anduril.dev
 gate04-throwaway.eng.anduril.dev
 gate04-throwaway.non-prod.eng.anduril.dev
@@ -1753,6 +1758,7 @@ gateway.connect.epicgames.dev
 gateway.forge-dev.eng.anduril.dev
 gateway.id.superhuman.com
 gateway.non-prod.eng.anduril.dev
+gateway.orchestrator.andurildev.com
 gateway.superhuman.com
 gauntlet.andurildev.com
 gcp.connect.epicgames.dev
@@ -1983,6 +1989,7 @@ hivemq-edge.mdp-sandbox.eng.anduril.dev
 hivemq-ws.mdp-sandbox.eng.anduril.dev
 hivemq.mdp-sandbox.eng.anduril.dev
 hm-poc.anduril.dev
+hobbot.non-prod.eng.anduril.dev
 hoist.anduril.dev
 home.anduril.dev
 home.andurildev.au
@@ -2205,6 +2212,10 @@ jenkins.connect.epicgames.dev
 jenkins.converse-api.wolt.com
 jesse-app-template-10.non-prod.eng.anduril.dev
 jesse-app-template-11.non-prod.eng.anduril.dev
+jesse-app-template-11.qa.eng.anduril.dev
+jesse-app-template-11.stage.eng.anduril.dev
+jesse-app-template-12.non-prod.eng.anduril.dev
+jesse-app-template-14.non-prod.eng.anduril.dev
 jesse-app-template-2.non-prod.eng.anduril.dev
 jesse-app-template-3.non-prod.eng.anduril.dev
 jesse-app-template-4.non-prod.eng.anduril.dev
@@ -2335,6 +2346,7 @@ land-systems.andurildev.com
 landman.anduril.com
 landsys.andurildev.com
 langfuse.arena-atlas.eng.anduril.dev
+langfuse.mdp-sandbox.eng.anduril.dev
 laser-engraver-maritime.non-prod.eng.anduril.dev
 laser-engraver.non-prod.eng.anduril.dev
 last-test-otto.non-prod.eng.anduril.dev
@@ -2442,6 +2454,7 @@ loki.mdp-dev.eng.anduril.dev
 loki.mdp-sandbox.eng.anduril.dev
 loki.network.anduril.dev
 loki.rdf-dev.gov.anduril.dev
+lomatia.anduril.com
 lonestar-flux-ssh-bastion.andurildev.com
 lonestar-flux-ssh-cluster.andurildev.com
 lonestar.anduril.com
@@ -3072,6 +3085,7 @@ mcp-x.eng.anduril.dev
 mcp.auth.mail.superhuman.com
 mcp.mail.superhuman.com
 mcp.nema-workbench.eng.anduril.dev
+mcr-scheduler.non-prod.eng.anduril.dev
 md-ditlo.non-prod.eng.anduril.dev
 md-g5-spend-2.non-prod.eng.anduril.dev
 md-g5-spend.non-prod.eng.anduril.dev
@@ -3232,6 +3246,8 @@ mmi-demo-x.andurildev.com
 mmi-demo.andurildev.com
 mobile-sentry.andurildev.com
 mock.dev.odoo.anduril.dev
+monet-dev.redbud.anduril.dev
+monet.redbud.anduril.dev
 moneypenny.non-prod.eng.anduril.dev
 monitor.anduril.com
 monitor.andurildev.au
@@ -3819,6 +3835,7 @@ red-rover-dev.andurildev.com
 red-rover.anduril.com
 red-rover.andurildev.com
 redash.admin.superhuman.com
+redbook.eng.anduril.dev
 redbook.non-prod.eng.anduril.dev
 redpanda.mdp-dev.eng.anduril.dev
 redpanda.mdp-sandbox.eng.anduril.dev
@@ -3917,6 +3934,7 @@ rms-lot-allocate.non-prod.eng.anduril.dev
 rms-safety-dashboard-qa.eng.anduril.dev
 rms-safety-dashboard.eng.anduril.dev
 rms-safety-dashboard.non-prod.eng.anduril.dev
+rms-scheduling.eng.anduril.dev
 rms-scheduling.non-prod.eng.anduril.dev
 rms-vilya.non-prod.eng.anduril.dev
 roadhouse-dev.anduril.com
@@ -3927,6 +3945,7 @@ roadrunner-nest-board.non-prod.eng.anduril.dev
 roadrunner-nest-board.qa.eng.anduril.dev
 roadrunner-staging.andurildev.com
 roadrunner-te-logbooks.non-prod.eng.anduril.dev
+roadrunner-te-preflight-checklist.non-prod.eng.anduril.dev
 roadrunner.anduril.dev
 rollouts.chidori-dev.eng.anduril.dev
 rollouts.chidori.eng.anduril.dev
@@ -4274,6 +4293,7 @@ sso.teleport.anduril.dev
 sso.wolt.com
 staffing-budgeting-tool.non-prod.eng.anduril.dev
 staffing-tool.non-prod.eng.anduril.dev
+staffing.imaging.anduril.dev
 stage-api.whatnot.com
 stage.dev.odoo.anduril.dev
 stage.marcus.anduril.dev
