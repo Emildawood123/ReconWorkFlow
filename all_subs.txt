@@ -221,6 +221,7 @@ ai.usgw1.aws.anduril.dev
 aiden.local-dev.whatnot.com
 air.anduril.com
 airflow-dev.g5-irad.anduril.dev
+airflow.g5-atlas.anduril.dev
 airflow.g5-irad.anduril.dev
 airflow.sunflower.anduril.dev
 airflow.wolt.com
@@ -503,6 +504,7 @@ arsenal-os.itools-dev.anduril.dev
 arsenal.anduril.com
 arsenal.anduril.dev
 arsenal1-factory-launch.non-prod.eng.anduril.dev
+arsenal1-factory-launch.qa.eng.anduril.dev
 arsenal2.eng.anduril.dev
 arsenal2.mdp-sandbox.eng.anduril.dev
 artifactory-test.anduril.dev
@@ -748,6 +750,7 @@ bridge.cascade.andurildev.com
 brief-staging.andurildev.com
 brief.anduril.dev
 brmonitor.anduril.com
+brmonitor.anduril.dev
 broker-jr.wolt.com
 broker.security.anduril.dev
 brokkr.anduril.com
@@ -761,6 +764,7 @@ bubbledocket-qa.eng.anduril.dev
 bubbledocket-stg.eng.anduril.dev
 bubbledocket.eng.anduril.dev
 bubbledocket.non-prod.eng.anduril.dev
+build.anduril.dev
 build.andurildev.com
 builder101-qa.eng.anduril.dev
 builder101.non-prod.eng.anduril.dev
@@ -1912,6 +1916,8 @@ gs1-stage.eng.anduril.dev
 gs1-validator.non-prod.eng.anduril.dev
 gs1.eng.anduril.dev
 gs1.non-prod.eng.anduril.dev
+gsc-dev.andurildev.com
+gsc.anduril.com
 gssd-supplier-map.non-prod.eng.anduril.dev
 gssd-supplier-map.qa.eng.anduril.dev
 guardian.andurildev.com
@@ -2216,6 +2222,13 @@ jesse-app-template-11.qa.eng.anduril.dev
 jesse-app-template-11.stage.eng.anduril.dev
 jesse-app-template-12.non-prod.eng.anduril.dev
 jesse-app-template-14.non-prod.eng.anduril.dev
+jesse-app-template-15.non-prod.eng.anduril.dev
+jesse-app-template-15.qa.eng.anduril.dev
+jesse-app-template-15.stage.eng.anduril.dev
+jesse-app-template-16.non-prod.eng.anduril.dev
+jesse-app-template-16.qa.eng.anduril.dev
+jesse-app-template-16.stage.eng.anduril.dev
+jesse-app-template-17.non-prod.eng.anduril.dev
 jesse-app-template-2.non-prod.eng.anduril.dev
 jesse-app-template-3.non-prod.eng.anduril.dev
 jesse-app-template-4.non-prod.eng.anduril.dev
@@ -2378,6 +2391,7 @@ lc2-sre-data-load-dev.andurildev.com
 lc2-sre-dev.andurildev.com
 lc2-sre-large-cloud.andurildev.com
 lc2-sre-standard-cloud.andurildev.com
+ldra-license-monitor.non-prod.eng.anduril.dev
 ldra-vault.anduril.dev
 ldra.anduril.dev
 learn.anduril.com
@@ -2447,6 +2461,7 @@ login.consumer-static-assets.wolt.com
 login.developer.anduril.com
 login.fulmor-remote.anduril.com
 login.netbird.fulmor-remote.anduril.com
+login.portal-qa.anduril.dev
 loki-gov.itools-dev.anduril.dev
 loki-gov.network.anduril.dev
 loki-vision.mdp-sandbox.eng.anduril.dev
