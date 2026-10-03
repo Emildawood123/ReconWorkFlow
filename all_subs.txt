@@ -630,6 +630,7 @@ autolabel.anduril.au
 autolabel.anduril.dev
 autonomy-gym-leaderboard.non-prod.eng.anduril.dev
 autotime-dev.eng.anduril.dev
+autotime-staging.eng.anduril.dev
 autotime.eng.anduril.dev
 avenger.anduril.com
 avicii.non-prod.eng.anduril.dev
@@ -640,6 +641,7 @@ avr-dev-2.andurildev.com
 avr.anduril.com
 aw-remote-ext.aw-remote.anduril.dev
 aw-remote-ext.bazel.anduril.dev
+aw-remote.app.bazel.anduril.dev
 aw-remote.aw-remote.anduril.dev
 aw-remote.bazel.anduril.dev
 awc.tc.eng.anduril.au
@@ -839,6 +841,7 @@ cameo.eng.anduril.dev
 cameo.tc.anduril.dev
 campbell.usarmy.anduril.com
 camphor.anduril.com
+canary.app.bazel.anduril.dev
 capi-restricted.superhuman.com
 capi.superhuman.com
 capital.eng.anduril.dev
@@ -937,6 +940,7 @@ click.notification.superhuman.com
 clicks.superhuman.com
 clicks1.superhuman.com
 clmb1-dotmatrix.network.anduril.com
+clock.autotime-staging.eng.anduril.dev
 clock.autotime.eng.anduril.dev
 cloud-2.crucible.andurildev.com
 cloud-3.crucible.andurildev.com
@@ -1743,6 +1747,7 @@ fury-des.qa.eng.anduril.dev
 fury-des.stage.eng.anduril.dev
 fury-ramp.non-prod.eng.anduril.dev
 fury-test-app.non-prod.eng.anduril.dev
+fury-trainer.non-prod.eng.anduril.dev
 fury.anduril.com
 g3-te-dashboard.non-prod.eng.anduril.dev
 g3-te-dashboard.qa.eng.anduril.dev
@@ -1798,7 +1803,9 @@ ghe.anduril.com
 ghe.anduril.dev
 ghost-dashboard.non-prod.eng.anduril.dev
 ghost-data.arena-atlas.eng.anduril.dev
+ghost-fleet-tracker.non-prod.eng.anduril.dev
 ghost-flight-checklist.non-prod.eng.anduril.dev
+ghost-maintenance-record.non-prod.eng.anduril.dev
 ghost-te-projects.non-prod.eng.anduril.dev
 ghost.anduril.com
 ghost.andurildev.com
@@ -2094,6 +2101,7 @@ img.live-service.whatnot.com
 imgin-prod.instrumental.anduril.dev
 imgin.instrumental.anduril.dev
 imro-dashboard.non-prod.eng.anduril.dev
+incident-watchtower.anduril.dev
 incidentful.non-prod.eng.anduril.dev
 indirect-jira-ticket-dashboard.non-prod.eng.anduril.dev
 indirect-jira-ticket-dashboard.qa.eng.anduril.dev
@@ -2283,6 +2291,7 @@ joltbot.itools-qa.anduril.dev
 joltbot.itools.anduril.dev
 jos-azure.andurildev.com
 jos.anduril.com
+joule.non-prod.eng.anduril.dev
 jsdf-development.anduril.com
 jsdf-development.andurildev.com
 jsdf-dsb.anduril.com
@@ -3221,6 +3230,7 @@ mfg.akm.sauron.anduril.com
 mfg.teleport.anduril.dev
 mfgops-dev.akm.anduril.com
 mfgops-prod.akm.anduril.com
+mfx-feedback.eng.anduril.dev
 mfx-feedback.non-prod.eng.anduril.dev
 mfx-feedback.qa.eng.anduril.dev
 mfx-feedback.stage.eng.anduril.dev
@@ -4605,6 +4615,7 @@ thunder-launch-qa.eng.anduril.dev
 thunder-launch.non-prod.eng.anduril.dev
 thunderforge.anduril.com
 ticket-bot.non-prod.eng.anduril.dev
+tickets.whatnot.com
 tier1-call-sim.non-prod.eng.anduril.dev
 time-series-large-aws-dev.andurildev.com
 time-series-load-dev-az-0.andurildev.com
