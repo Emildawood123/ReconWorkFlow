@@ -400,6 +400,7 @@ api.rdf-dev.gov.anduril.dev
 api.rdf-prod.gov.anduril.dev
 api.rdf.anduril.au
 api.rdf.jip.anduril.com
+api.sandbox.anduril.com.au
 api.space-nominal.anduril.dev
 api.superhuman.com
 api.tc-qa.eng.anduril.dev
@@ -419,6 +420,7 @@ app-infra-dev.dev.anduril.com
 app-infra-sandbox.andurildev.com
 app-infra.andurildev.com
 app-infra.dev.anduril.com
+app-staging.sandbox.anduril.au
 app.anduril.com.au
 app.andurildev.au
 app.andurildev.com
@@ -1456,6 +1458,7 @@ edm-staging.anduril.com
 edm-transfer.anduril.com
 edm.anduril.com
 education.superhuman.com
+ehs-universal-dashboard.non-prod.eng.anduril.dev
 ekanban-app.non-prod.eng.anduril.dev
 ekanban-app.qa.eng.anduril.dev
 ekanban-app.stage.eng.anduril.dev
@@ -1686,6 +1689,7 @@ foo.non-prod.eng.anduril.dev
 foobar.anduril.dev
 foresight-beta.non-prod.eng.anduril.dev
 forge-c2.andurildev.com
+forge-ci.sandbox.anduril.au
 forge-connector-reference.eng.anduril.dev
 forge-connector-reference.non-prod.eng.anduril.dev
 forge-connector-reference.qa.eng.anduril.dev
@@ -1693,6 +1697,8 @@ forge-connector-reference.stage.eng.anduril.dev
 forge-dev.anduril.dev
 forge-dev.eng.anduril.dev
 forge-dev.itools-dev.anduril.dev
+forge-dev.sandbox.anduril.au
+forge-dev.sandbox.anduril.com.au
 forge-gateway.non-prod.eng.anduril.dev
 forge-mgmt.anduril.dev
 forge-mirror-qa.eng.anduril.dev
@@ -1713,6 +1719,7 @@ forge-stg.eng.anduril.dev
 forge-test.anduril.dev
 forge.anduril.dev
 forge.itools-dev.anduril.dev
+forge.mithril.anduril.dev
 forgemirror2.non-prod.eng.anduril.dev
 forgeproxy.anduril.dev
 fortress-dev.anduril.com
@@ -1787,6 +1794,7 @@ gds.anduril.com
 gear.anduril.com
 gemini.anduril.com
 generic-lattice-pipeline.andurildev.com
+genesis-air.non-prod.eng.anduril.dev
 genesis-design-system.non-prod.eng.anduril.dev
 genesis-qa.eng.anduril.dev
 genesis-s3.non-prod.eng.anduril.dev
@@ -4569,6 +4577,7 @@ terra-dev.andurildev.com
 terra-ghost-dev.anduril.com
 terra-ghost-prod.anduril.com
 terra.anduril.com
+terrainshaping.anduril.com
 terrapod.foundations-dev.anduril.dev
 terrapod.foundations.anduril.dev
 test-1.non-prod.eng.anduril.dev
