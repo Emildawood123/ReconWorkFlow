@@ -432,6 +432,7 @@ app.buildos-qa.anduril.dev
 app.cachix.anduril.au
 app.cachix.anduril.dev
 app.cachix.andurildev.au
+app.cci-auto.anduril.dev
 app.cci-test.anduril.dev
 app.cci.anduril.au
 app.cci.anduril.dev
@@ -701,6 +702,7 @@ bingo-qa.eng.anduril.dev
 bingo-stg.eng.anduril.dev
 bingo.non-prod.eng.anduril.dev
 binja.anduril.dev
+birch-avionics.non-prod.eng.anduril.dev
 birthcerts-dev.anduril.dev
 birthcerts-prod.anduril.dev
 birthcerts.anduril.dev
@@ -874,6 +876,7 @@ caveonix-demo.gov.mission-assurance.anduril.dev
 cbp-cace-test.andurildev.com
 cbp-sdk-dev.anduril.com
 cbp.anduril.com
+cci-auto.anduril.dev
 cci-test.anduril.dev
 cci.anduril.au
 cci.anduril.dev
@@ -1542,6 +1545,7 @@ event-tracking.non-prod.eng.anduril.dev
 event-tracking.qa.eng.anduril.dev
 events.superhuman.com
 events.whatnot.com
+ew-hub.eng.anduril.dev
 ew-hub.non-prod.eng.anduril.dev
 ew-hub.qa.eng.anduril.dev
 ew-hub.stage.eng.anduril.dev
@@ -1555,6 +1559,7 @@ ew.anduril.com
 ew.anduril.dev
 experience.anduril.com
 explore.wolt.com
+explosives-support.eng.anduril.dev
 explosives-support.non-prod.eng.anduril.dev
 express-slack-dev.anduril.dev
 express-slack.anduril.dev
@@ -1767,6 +1772,7 @@ fury-trainer.non-prod.eng.anduril.dev
 fury.anduril.com
 g3-te-dashboard.non-prod.eng.anduril.dev
 g3-te-dashboard.qa.eng.anduril.dev
+g5-dev.andurildev.com
 g5-irad.anduril.dev
 g5-sim-mgr.anduril.com
 gandalf.non-prod.eng.anduril.dev
@@ -1925,6 +1931,7 @@ granta.eng.anduril.dev
 graphs-staging.superhuman.com
 graphs.superhuman.com
 green-goblin-demo.andurildev.com
+greenhills-license-monitor.non-prod.eng.anduril.dev
 gremlins-agent.non-prod.eng.anduril.dev
 gremlins-headless.non-prod.eng.anduril.dev
 gremlins.non-prod.eng.anduril.dev
@@ -2028,6 +2035,7 @@ home.converse-web-static.wolt.com
 home.courier-api.wolt.com
 home.epicgames.dev
 home.help.whatnot.com
+hooks.agent-platform.anduril.dev
 hoop.jip.anduril.com
 horde.mdp-dev.eng.anduril.dev
 horizon-qa.eng.anduril.dev
@@ -2183,11 +2191,13 @@ internal.whatfix.dev.anduril.dev
 internal.wolt.com
 internalmaps.andurildev.com
 international.e.preview.dev.whatnot.com
+interview-track.non-prod.eng.anduril.dev
 inventory-management-service.wolt.com
 investment-sandbox-qa.eng.anduril.dev
 investment-sandbox-stg.eng.anduril.dev
 investment-sandbox.non-prod.eng.anduril.dev
 ipam.network.anduril.dev
+ipd-stage.imaging.anduril.dev
 ironhalo.anduril.com
 irvn1-dotmatrix.network.anduril.com
 it.anduril.dev
@@ -2419,6 +2429,7 @@ lc2-sre-data-load-dev.andurildev.com
 lc2-sre-dev.andurildev.com
 lc2-sre-large-cloud.andurildev.com
 lc2-sre-standard-cloud.andurildev.com
+ldra-license-monitor.eng.anduril.dev
 ldra-license-monitor.non-prod.eng.anduril.dev
 ldra-vault.anduril.dev
 ldra.anduril.dev
@@ -3107,6 +3118,7 @@ marketapi.whatnot.com
 marketing-dashboard-slt-qa.eng.anduril.dev
 marketing-dashboard-slt.non-prod.eng.anduril.dev
 marketing.superhuman.com
+markup.eng.anduril.dev
 markup.non-prod.eng.anduril.dev
 marlin.maritime.anduril.com
 mars-grpc.wolt.com
@@ -3146,6 +3158,7 @@ md-monthly-finance-dashboard-qa.eng.anduril.dev
 md-monthly-finance-dashboard-stg.eng.anduril.dev
 md-monthly-finance-dashboard.eng.anduril.dev
 md-monthly-finance-dashboard.non-prod.eng.anduril.dev
+md-ops-dashboard.non-prod.eng.anduril.dev
 md-pipeline.andurildev.com
 md-product-dashboard-qa.eng.anduril.dev
 md-product-dashboard.non-prod.eng.anduril.dev
@@ -3659,6 +3672,7 @@ platsec-istio-spike.andurildev.com
 platsec-prod.anduril.dev
 plimsoll.non-prod.eng.anduril.dev
 plimsoll.qa.eng.anduril.dev
+plimsoll.stage.eng.anduril.dev
 plm.anduril.au
 plm.anduril.com
 plm.anduril.dev
