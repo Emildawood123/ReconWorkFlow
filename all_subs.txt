@@ -181,6 +181,7 @@ ads.international.e.preview.dev.whatnot.com
 ads.live-service.whatnot.com
 adts.non-prod.eng.anduril.dev
 adts.qa.eng.anduril.dev
+adts.stage.eng.anduril.dev
 advanced-effects.anduril.com
 advcapes.andurildev.com
 adw-dev.anduril.dev
@@ -365,6 +366,7 @@ aol.anduril.com
 aonia.non-prod.eng.anduril.dev
 apaflowtool.foundations-dev.anduril.dev
 api-qa.itools.anduril.dev
+api.acme.superhuman.com
 api.agd-data-analytics.gov.anduril.dev
 api.ahp.security.anduril.dev
 api.anduril.com.au
@@ -697,6 +699,7 @@ bifrost-dev.eng.anduril.dev
 bifrost.anduril.dev
 bifrost.andurildev.com
 big-ol-test.non-prod.eng.anduril.dev
+billing.mail.superhuman.com
 billing.non-prod.eng.anduril.dev
 bingo-qa.eng.anduril.dev
 bingo-stg.eng.anduril.dev
@@ -1494,6 +1497,7 @@ engos-thermalstruct-qa.eng.anduril.dev
 engos-thermalstruct.eng.anduril.dev
 engos-thermalstruct.non-prod.eng.anduril.dev
 enterpriseenrollment.superhuman.com
+enterpriseregistration.external.wolt.com
 enterpriseregistration.superhuman.com
 env.brokkr.anduril.com
 env.cedar.sie.andurildev.com
@@ -1541,6 +1545,7 @@ eud.akm.anduril.com
 eud.akm.sauron.anduril.com
 eudops-dev.akm.anduril.com
 eudops-prod.akm.anduril.com
+event-tracking.eng.anduril.dev
 event-tracking.non-prod.eng.anduril.dev
 event-tracking.qa.eng.anduril.dev
 events.superhuman.com
@@ -1705,6 +1710,7 @@ forge-dev.itools-dev.anduril.dev
 forge-dev.sandbox.anduril.au
 forge-dev.sandbox.anduril.com.au
 forge-gateway.non-prod.eng.anduril.dev
+forge-guide-slackbot.non-prod.eng.anduril.dev
 forge-mgmt.anduril.dev
 forge-mirror-qa.eng.anduril.dev
 forge-mirror-stg.eng.anduril.dev
@@ -2393,6 +2399,7 @@ labs.whatnot.com
 lacplesis.anduril.com
 lacplesis.andurildev.com
 lad.eng.anduril.dev
+laguna.selfhosted-inference-dev-use2.andurildev.com
 land-systems.andurildev.com
 landman.anduril.com
 landsys.andurildev.com
@@ -3946,6 +3953,7 @@ requirementsapp.stage.eng.anduril.dev
 research.superhuman.com
 resiliency.andurildev.com
 resiliency.dev.anduril.com
+resource-monitor.non-prod.eng.anduril.dev
 restaurant-api.wolt.com
 restic.mfx.andurildev.com
 retailreport.wolt.com
@@ -4006,6 +4014,7 @@ rms-vilya.non-prod.eng.anduril.dev
 roadhouse-dev.anduril.com
 roadhouse.anduril.com
 roadmaps.non-prod.eng.anduril.dev
+roadrunner-docs.non-prod.eng.anduril.dev
 roadrunner-mfg-test.andurildev.com
 roadrunner-nest-board.non-prod.eng.anduril.dev
 roadrunner-nest-board.qa.eng.anduril.dev
@@ -4810,6 +4819,7 @@ valkyrie-training-acp.anduril.com
 valkyrie-training.anduril.com
 valkyrie.anduril.com
 vanguard-ingest.non-prod.eng.anduril.dev
+vanguard.andurildev.com
 var-tracker-qa.eng.anduril.dev
 var-tracker.non-prod.eng.anduril.dev
 vast-admin-mcp.atlassian-stage.anduril.dev
@@ -4884,6 +4894,7 @@ voy-logistics-receive-dash.non-prod.eng.anduril.dev
 voyager-engineering.anduril.dev
 voyager-irl.anduril.dev
 voyager-irldev.anduril.dev
+voyager-kb.non-prod.eng.anduril.dev
 voyagerconfigurator.anduril.dev
 vpn.anduril.com
 vpn.converse-api-dd.wolt.com
@@ -5028,6 +5039,7 @@ wrench-wms-toolkit.eng.anduril.dev
 wrench-wms-toolkit.non-prod.eng.anduril.dev
 ws-3p-dev.anduril.com
 ws-demo.anduril.com
+ws-part-pilot.non-prod.eng.anduril.dev
 wss.anduril.dev
 ww1.api.epicgames.dev
 ww1.converse-rtm-ps.wolt.com
