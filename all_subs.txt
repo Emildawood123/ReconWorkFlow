@@ -353,6 +353,8 @@ admin.auth.superhuman.com
 admin.epicgames.dev
 admin.etl-dev.gov.anduril.dev
 admin.international.e.preview.dev.whatnot.com
+admin.jama-dev.eng.anduril.dev
+admin.jama.eng.anduril.dev
 admin.live-service.whatnot.com
 admin.metrics-dev.andurildev.com
 admin.metrics.anduril.dev
@@ -589,6 +591,7 @@ anduril-fleet-management.andurildev.com
 anduril-gsc-release.andurildev.com
 anduril-gvsc-sdk.andurildev.com
 anduril-hyperion-sitl-cluster.sitlm.anduril.dev
+anduril-hyperion-sitl-clusterk.sitlm.anduril.dev
 anduril-imaging.andurildev.com
 anduril-infra-ms.andurildev.com
 anduril-interview-stg.eng.anduril.dev
@@ -709,6 +712,7 @@ apie.nominal.gov.itar.anduril.dev
 apiebsc.util.wolt.com
 apig.nominal.gov.mlops-test.anduril.dev
 apiget.util.wolt.com
+apio.nominal.gov.prime-dmp.anduril.dev
 apio.vault.anduril.dev
 apiy.dev.pallas.anduril.dev
 apiy.k8s.util.wolt.com
@@ -2876,6 +2880,7 @@ external.wolt.com
 external5.util.wolt.com
 externalbackup.util.wolt.com
 externalc.epicgames.dev
+externb.anduril.dev
 extra.epicgames.dev
 extra9.epicgames.dev
 extranet.epicgames.dev
@@ -2943,6 +2948,7 @@ fiftyone.gov.usaf.anduril.dev
 fiftyone.gov.usmc.anduril.dev
 fiftyone.lonestar.etl-dev.gov.anduril.dev
 fiftyone1.gov.ast-internal.anduril.dev
+fiftyonec.gov.pallas-1.anduril.dev
 fiftyonec.gov.sorrel.anduril.dev
 fiftyonei.anduril.au
 fiftyonei.gov.roadrunner.anduril.dev
@@ -3493,6 +3499,7 @@ gyhzjf0fpbhh4w.util.wolt.com
 gym-mocks.fai.anduril.dev
 gymnasium.anduril.dev
 h17.anduril.com
+haddock.andurildev.com
 hammer-02.non-prod.eng.anduril.dev
 hammer-04.non-prod.eng.anduril.dev
 hammer-08.non-prod.eng.anduril.dev
@@ -3566,6 +3573,7 @@ hercules.sitlm.anduril.dev
 hercules3.sitlm.anduril.dev
 herohouse.whatnot.com
 herohousea.whatnot.com
+herring.andurildev.com
 hexqjd455.util.wolt.com
 highcouncil.anduril.com
 hire.non-prod.eng.anduril.dev
@@ -4900,6 +4908,7 @@ menace-hitl.anduril.dev
 menace-i-change-request-tracker-qa.eng.anduril.dev
 menace-i-change-request-tracker.non-prod.eng.anduril.dev
 menace-ice-2001-order-tracker-qa.eng.anduril.dev
+menace-ice-2001-order-tracker.eng.anduril.dev
 menace-ice-2001-order-tracker.non-prod.eng.anduril.dev
 menace-launchpad.anduril.dev
 menace-pki.anduril.com
@@ -4920,6 +4929,7 @@ mesa.anduril.com
 mesh.narsil.andurildev.com
 mesh.non-prod.eng.anduril.dev
 messenger.dev2.k.wolt.com
+met-gateway-testing-1.andurildev.com
 metabase-ext.wolt.com
 metabase-ext9.wolt.com
 metabase-staging.superhuman.com
@@ -4953,6 +4963,7 @@ meverett2-test.workspace.non-prod.eng.anduril.dev
 meverett2-test9000.workspace.non-prod.eng.anduril.dev
 meverett2-wrench-wms-toolkit.workspace.non-prod.eng.anduril.dev
 mfe-partybuss.non-prod.eng.anduril.dev
+mfe-staffing-model.non-prod.eng.anduril.dev
 mfepracticepartybus.non-prod.eng.anduril.dev
 mfg-api.akm.anduril.com
 mfg-ghost.anduril.com
@@ -5144,6 +5155,8 @@ next-gen-c2-dev.andurildev.com
 nexus-stage.anduril.dev
 nexus.anduril.dev
 ngc2-0.crucible.andurildev.com
+ngc2-25id.andurildev.com
+ngc2-le-internal.andurildev.com
 ngc2-me.anduril.dev
 nightcrawler-dev.andurildev.com
 nimbus.foundations-dev.anduril.dev
@@ -5337,6 +5350,7 @@ pallas-3.anduril.dev
 pallas-dive-platform.anduril.dev
 pallas-k-cluster.andurildev.com
 pallas-k-dev.andurildev.com
+pallas-md.anduril.dev
 pallas.anduril.dev
 palm.anduril.com
 palmetto.anduril.com
@@ -6130,6 +6144,7 @@ sauron.eng.anduril.dev
 sauron.non-prod.eng.anduril.dev
 sauron2.anduril.com
 sbmc-ai.andurildev.com
+sbmc-failure-mode-lookup.non-prod.eng.anduril.dev
 sbmca-dev-azure.andurildev.com
 sbmca-dev.anduril.com
 sbmca-dev.andurildev.com
@@ -6212,6 +6227,7 @@ sensor-sim-jrm-codemeter-web.anduril.dev
 sensor-sim-unreal-ddc.anduril.dev
 sentry-data.arena-atlas.eng.anduril.dev
 sentry-manufacturing.andurildev.com
+sentry-phub.non-prod.eng.anduril.dev
 sentry-port.non-prod.eng.anduril.dev
 sentry-test.anduril.dev
 sentry.anduril.dev
@@ -6922,6 +6938,7 @@ valkyrie-training.anduril.com
 valkyrie.anduril.com
 vanguard-ingest.non-prod.eng.anduril.dev
 vanguard.andurildev.com
+vantage.imaging.anduril.dev
 var-tracker-qa.eng.anduril.dev
 var-tracker.non-prod.eng.anduril.dev
 vast-admin-mcp.atlassian-stage.anduril.dev
@@ -7329,6 +7346,7 @@ www.auth.superhuman.com
 www.authorization.andurildev.com
 www.authorization.armory-staging.andurildev.com
 www.autolabel.anduril.au
+www.autolabel.anduril.dev
 www.avr-dev-1.andurildev.com
 www.avr-dev-2.andurildev.com
 www.avr.anduril.com
@@ -8000,6 +8018,7 @@ www.sitl.andurildev.au
 www.skycole-dsb.anduril.com
 www.sl.whatnot.com
 www.slack.agent-platform-dev.andurildev.com
+www.slackbot.anduril.dev
 www.smbcai-obs.andurildev.com
 www.snapper.maritime.andurildev.com
 www.soabtis-2.anduril.com
@@ -8055,6 +8074,7 @@ www.teleport-dev-ext.security.anduril.dev
 www.teleport-dev.anduril.dev
 www.teleport-dev.security.anduril.dev
 www.teleport-test.security.anduril.dev
+www.teleport.anduril.dev
 www.tembusu-external.anduril.com
 www.terra-bolt-prod.anduril.com
 www.terra-dev.andurildev.com
