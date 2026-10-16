@@ -146,6 +146,7 @@
 a.epicgames.dev
 a.wolt.com
 a5mlrnesq.util.wolt.com
+a700-dashboard.non-prod.eng.anduril.dev
 aa-etc-status-tool.non-prod.eng.anduril.dev
 abc-revocation.platsec-dev.anduril.dev
 abc-revocation.platsec-prod.anduril.dev
@@ -398,6 +399,7 @@ adp-stg.eng.anduril.dev
 adp.non-prod.eng.anduril.dev
 adqa-testrail.anduril.dev
 ads-cluster.andurildev.com
+ads-clusterc.andurildev.com
 ads-rqmnts-hub-qa.eng.anduril.dev
 ads-rqmnts-hub.non-prod.eng.anduril.dev
 ads.anduril.au
@@ -417,6 +419,7 @@ ae-0.crucible.andurildev.com
 ae-gpu-0.crucible.andurildev.com
 aegeanmoodlei.dev2.k.wolt.com
 aegis.mdp-sandbox.eng.anduril.dev
+aes-ms.non-prod.eng.anduril.dev
 afintech-hta.wolt.com
 afn.anduril.com
 africom.anduril.com
@@ -1067,6 +1070,7 @@ backup-lonestar.anduril.com
 backup5.util.wolt.com
 backupbackup-alpha-alpha.dev-jenkins.util.wolt.com
 ballast.network.anduril.dev
+bandit-dashboard.eng.anduril.dev
 bandit-dashboard.non-prod.eng.anduril.dev
 bandit.andurildev.com
 bap.anduril.dev
@@ -1373,6 +1377,8 @@ ca.epicgames.dev
 ca.menace-pki.anduril.com
 ca.wolt.com
 ca7.epicgames.dev
+cache.build.anduril.dev
+cache.build.andurildev.com
 cachix.anduril.au
 cachix.anduril.dev
 cachix.andurildev.au
@@ -2730,6 +2736,7 @@ enc-wms.dive.anduril.dev
 enc-wms.maps.anduril.au
 enc2y.dev2.k.wolt.com
 endorse.dev.menace-pki.anduril.com
+endorse.menace-pki.anduril.com
 eng.anduril.au
 eng.anduril.dev
 eng.epicgames.dev
@@ -3114,6 +3121,7 @@ forge-dev.eng.anduril.dev
 forge-dev.itools-dev.anduril.dev
 forge-dev.sandbox.anduril.au
 forge-dev.sandbox.anduril.com.au
+forge-dev7.anduril.dev
 forge-devy.itools-dev.anduril.dev
 forge-gateway.non-prod.eng.anduril.dev
 forge-guide-slackbot.non-prod.eng.anduril.dev
@@ -3172,6 +3180,7 @@ freshia1.util.wolt.com
 freymiller.non-prod.eng.anduril.dev
 frfr.epicgames.dev
 front-door.sitl-manager.andurildev.com
+frontier-ai.anduril.dev
 frontierai.anduril.dev
 frontpage-bhsmediai.util.wolt.com
 frontpage-courier-servicedistribution.util.wolt.com
@@ -3455,6 +3464,7 @@ grafana2prod-wolt-venue-images-cdnbhsw.util.wolt.com
 grafana3.wolt.com
 grafana39.util.wolt.com
 grafana9.wolt.com
+grafanaa.network.anduril.dev
 grafanac.foundations.anduril.dev
 grafanag.shared-services.itools.anduril.dev
 grafanamill-cim.util.wolt.com
@@ -3640,6 +3650,7 @@ hydro-db.non-prod.eng.anduril.dev
 hyperion.sitlm.anduril.dev
 hz-site-task-tracker.non-prod.eng.anduril.dev
 i.epicgames.dev
+ians-app.non-prod.eng.anduril.dev
 iapps-kube-oauth.anduril.dev
 ibcs-m.anduril.com
 ibp.anduril.com
@@ -3979,6 +3990,7 @@ keycloak.rdf-prod.gov.anduril.dev
 keycloak.rdf.anduril.au
 keycloak.rdf.jip.anduril.com
 kibana.wolt.com
+knative.mdp-sandbox.eng.anduril.dev
 kr.epicgames.dev
 kraken.anduril.com
 kraken.andurildev.com
@@ -4030,6 +4042,7 @@ lattice-cluster.asv.maritime.andurildev.com
 lattice-ex.anduril.com
 lattice-intl.andurildev.au
 lattice-intle.andurildev.au
+lattice-mbta.non-prod.eng.anduril.dev
 lattice-release.andurildev.com
 lattice-signing-ca.platsec-dev.anduril.dev
 lattice-signing-ca.platsec-prod.anduril.dev
@@ -4993,8 +5006,10 @@ mimir.chariot.andurildev.com
 mimir.security.anduril.dev
 mimosa.anduril.com
 minio-sandbox.andurildev.com
+mirror.sscs.security.anduril.dev
 mirrorload0.whatnot.com
 mission-sim-ingest.observability-dev.andurildev.com
+mission-sim-ingest.observability.anduril.dev
 mission-systems-kpi-qa.eng.anduril.dev
 mission-systems-kpi.non-prod.eng.anduril.dev
 mission-systems-qa.eng.anduril.dev
@@ -5327,6 +5342,8 @@ otto2-e2e-live3.non-prod.eng.anduril.dev
 otto2-e2e-live4.non-prod.eng.anduril.dev
 otto2-e2e-live4.qa.eng.anduril.dev
 otto2-e2e-live4.stage.eng.anduril.dev
+otto2-v2e2e-cap1.non-prod.eng.anduril.dev
+otto2-v2e2e-cap1.qa.eng.anduril.dev
 outbound-mail.epicgames.dev
 outline.mfx.andurildev.com
 outline.non-prod.eng.anduril.dev
@@ -6110,6 +6127,7 @@ sandbox.itar.sitlm.anduril.dev
 sandbox.pine.sitlm.anduril.dev
 sandbox.prime.sie.andurildev.com
 sandbox.prime.sitlm.anduril.dev
+sandbox.security.anduril.dev
 sandbox.sie-dev-2.andurildev.com
 sandbox.sie-dev-3.andurildev.com
 sandbox.sie-dev-4.andurildev.com
@@ -6252,6 +6270,7 @@ sf9d7.sandbox.sitl-manager-dev.andurildev.com
 sfw-dev.security.anduril.dev
 sg.epicgames.dev
 shafter.usarmy.anduril.com
+shared-services-assistant.non-prod.eng.anduril.dev
 shared-services.itools.anduril.dev
 sharon-test.non-prod.eng.anduril.dev
 sheath-bot-prod.anduril.dev
@@ -7154,6 +7173,7 @@ wm-alpha-2.andurildev.com
 wm-alpha-3.andurildev.com
 wm-alpha-4.andurildev.com
 wm-dev.andurildev.com
+wms-loadtest.forge-dev.eng.anduril.dev
 wolf.wolt.com
 wolt-com-static-assets.wolt.com
 wolt-com-static-assets1.wolt.com
