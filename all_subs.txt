@@ -388,6 +388,7 @@ administratorpos.util.wolt.com
 administratorq.util.wolt.com
 administrators.util.wolt.com
 administratorselopu.util.wolt.com
+adminjs.allvoices-dev.eng.anduril.dev
 adminka.acme.superhuman.com
 adminlatin.util.wolt.com
 admload0.whatnot.com
@@ -420,6 +421,8 @@ ae-gpu-0.crucible.andurildev.com
 aegeanmoodlei.dev2.k.wolt.com
 aegis.mdp-sandbox.eng.anduril.dev
 aes-ms.non-prod.eng.anduril.dev
+aes-ms.qa.eng.anduril.dev
+aes-ms.stage.eng.anduril.dev
 afintech-hta.wolt.com
 afn.anduril.com
 africom.anduril.com
@@ -678,6 +681,7 @@ api.fidlabs.anduril.dev
 api.fiftyone.anduril.dev
 api.flow-eval.eng.anduril.dev
 api.ghe.anduril.com
+api.gondor.eng.anduril.dev
 api.hdp-dev.anduril.dev
 api.hdp.anduril.dev
 api.instrumental.anduril.dev
@@ -793,6 +797,7 @@ arcgis.maps.anduril.au
 archivist-dev.eng.anduril.dev
 archivist.eng.anduril.dev
 archon.non-prod.eng.anduril.dev
+archstreet.non-prod.eng.anduril.dev
 arcotransport-eek.mail.protection.dev2.k.wolt.com
 arda-ext.arda-prod-aws.eng.anduril.dev
 arda-ext.arda-qa-aws.eng.anduril.dev
@@ -1332,6 +1337,7 @@ c2-41.dev.anduril.com
 c2-archangel-dev.andurildev.com
 c2-bridge.andurildev.com
 c2-cert.andurildev.com
+c2-dashboard.non-prod.eng.anduril.dev
 c2-demo.andurildev.com
 c2-demo.dev.anduril.com
 c2-demo9.andurildev.com
@@ -1865,6 +1871,7 @@ content-station-2u.wolt.com
 content-station.wolt.com
 contenta.andurildev.au
 contiguousk.dev2.k.wolt.com
+continuum.non-prod.eng.anduril.dev
 contragear-comk.mail.protection.dev2.k.wolt.com
 control.util.wolt.com
 converse-api-dd.wolt.com
@@ -3398,6 +3405,7 @@ goldenfriends.epicgames.dev
 goldenfriendsg.epicgames.dev
 golf.epicgames.dev
 gondor-api.qa.eng.anduril.dev
+gondor.eng.anduril.dev
 gondor.non-prod.eng.anduril.dev
 gondor.qa.eng.anduril.dev
 goodnitesi.com.epicgames.dev
@@ -5169,6 +5177,7 @@ newsletterlink.superhuman.com
 next-gen-c2-dev.andurildev.com
 nexus-stage.anduril.dev
 nexus.anduril.dev
+nexuspartner.anduril.com
 ngc2-0.crucible.andurildev.com
 ngc2-25id.andurildev.com
 ngc2-le-internal.andurildev.com
@@ -5277,6 +5286,7 @@ omega-red-demo.anduril.com
 omega-red-demo.andurildev.com
 omega.andurildev.com
 omen.anduril.com
+omp-collab.non-prod.eng.anduril.dev
 onboarding-integration.andurildev.com
 onboarding-resilience1.andurildev.com
 onboarding.andurildev.com
@@ -5344,6 +5354,7 @@ otto2-e2e-live4.qa.eng.anduril.dev
 otto2-e2e-live4.stage.eng.anduril.dev
 otto2-v2e2e-cap1.non-prod.eng.anduril.dev
 otto2-v2e2e-cap1.qa.eng.anduril.dev
+otto2-v2e2e-cap2.non-prod.eng.anduril.dev
 outbound-mail.epicgames.dev
 outline.mfx.andurildev.com
 outline.non-prod.eng.anduril.dev
@@ -6615,6 +6626,7 @@ talos-lattice-ssh-cluster.andurildev.com
 talos.anduril.dev
 tarpon.andurildev.com
 task-mgmt.andurildev.com
+task-tracker.non-prod.eng.anduril.dev
 tasking-alpha-1.andurildev.com
 tasking-alpha-2.andurildev.com
 tasking-alpha-3.andurildev.com
@@ -7128,6 +7140,7 @@ whatfix.dev.anduril.dev
 whatnot.com
 whatnotcon.whatnot.com
 wheretf.non-prod.eng.anduril.dev
+whistler.andurildev.com
 wickr.network.anduril.dev
 wiki.accounts.superhuman.com
 wiki.anduril.au
