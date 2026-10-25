@@ -1706,8 +1706,10 @@ claude.sandbox.anduril.au
 cldmas-comy.mail.protection.dev2.k.wolt.com
 clearid-badge-retriever.non-prod.eng.anduril.dev
 clearid-badge-retriever.qa.eng.anduril.dev
+clearid-badge-retriever.stage.eng.anduril.dev
 clearid-iam-tools.non-prod.eng.anduril.dev
 clearid-iam-tools.qa.eng.anduril.dev
+clearid-iam-tools.stage.eng.anduril.dev
 clearpass-auth-proxy.security.anduril.dev
 click.consumer-api.wolt.com
 click.converse-static-resources.wolt.com
@@ -2816,6 +2818,8 @@ ekanban-app.non-prod.eng.anduril.dev
 ekanban-app.qa.eng.anduril.dev
 ekanban-app.stage.eng.anduril.dev
 ekanban-forge.non-prod.eng.anduril.dev
+ekanban-forge.qa.eng.anduril.dev
+ekanban-forge.stage.eng.anduril.dev
 eks.epicgames.dev
 eks.whatnot.com
 ekvcrugt72b31qsqsn80n2rb8b4nlasb.anduril.com
@@ -3452,6 +3456,7 @@ genesis-s3.non-prod.eng.anduril.dev
 genesis-stg.eng.anduril.dev
 genesis.eng.anduril.dev
 genesis.non-prod.eng.anduril.dev
+genetec-configurator.non-prod.eng.anduril.dev
 genetec-noram.anduril.dev
 geo.epicgames.dev
 get-er-done.non-prod.eng.anduril.dev
@@ -5503,6 +5508,7 @@ omega-red-demo.anduril.com
 omega-red-demo.andurildev.com
 omega.andurildev.com
 omen.anduril.com
+omnix.anduril.au
 omp-collab.non-prod.eng.anduril.dev
 onboarding-agent.non-prod.eng.anduril.dev
 onboarding-integration.andurildev.com
@@ -6835,6 +6841,8 @@ summer2019g.wolt.com
 super-pm.non-prod.eng.anduril.dev
 superhuman.com
 supermarket-app.non-prod.eng.anduril.dev
+supermarket-app.qa.eng.anduril.dev
+supermarket-app.stage.eng.anduril.dev
 supernova.dive-xl.andurildev.au
 superset-dev.itools-dev.anduril.dev
 superset-qa.itools-dev.anduril.dev
@@ -7474,6 +7482,7 @@ wildcard.sandbox.sitl.andurildev.au
 wildcard.sandbox.tower.sitlm.anduril.dev
 wildcard.sandbox.vulture.sitlm.anduril.dev
 wildcard.teleport.anduril.dev
+will-techops.non-prod.eng.anduril.dev
 winnowv2-qa.eng.anduril.dev
 winnowv2.eng.anduril.dev
 winnowv2.non-prod.eng.anduril.dev
