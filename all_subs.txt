@@ -49,6 +49,7 @@
 161.whatnot.com
 164-58e.resnet.dev2.k.wolt.com
 165-114q.resnet.dev2.k.wolt.com
+170765s.dev2.k.wolt.com
 175-21e.resnet.dev2.k.wolt.com
 17dim-patrasq.ach.dev2.k.wolt.com
 182e0030-d259-4fe0-8284-fc643b0e6dcc.vpn.dev2.k.wolt.com
@@ -1482,6 +1483,7 @@ carddav.it.anduril.dev
 careers.anduril.com
 careers.whatnot.com
 careers.wolt.com
+careers7.wolt.com
 careers9.whatnot.com
 careersatkcm.com.epicgames.dev
 cariru7.dev2.k.wolt.com
@@ -1858,6 +1860,7 @@ colander.wolt.com
 colander7.util.wolt.com
 colson.epicgames.dev
 colsoni.epicgames.dev
+columbustraders-com9.mail.protection.dev2.k.wolt.com
 com.anduril.dev
 com.cdn.dev2.k.wolt.com
 com.cn.cdn.dev2.k.wolt.com
@@ -2170,6 +2173,7 @@ dagster-readonly.analytics.eng.anduril.dev
 dagster-readonly.gov.analytics-prod.anduril.dev
 dagster.analytics.eng.anduril.dev
 dagster.gov.analytics-prod.anduril.dev
+daltonschoolzolder-be1.mail.protection.dev2.k.wolt.com
 damien07.dev2.k.wolt.com
 danny-test.non-prod.eng.anduril.dev
 dante.anduril.dev
@@ -2261,6 +2265,7 @@ datamill-ciservicedistributionw.util.wolt.com
 datamill-client-poso.util.wolt.com
 datamill-master-cmpicker-api-merchant-admin.util.wolt.com
 datamill-master.util.wolt.com
+datamill-master.wolt.com
 datamill-personalisation-apiq.util.wolt.com
 datamill-regionk.util.wolt.com
 datamillq.util.wolt.com
@@ -2283,6 +2288,7 @@ dc.plm.anduril.dev
 dce.epicgames.dev
 dci.dev2.k.wolt.com
 dcik.dev2.k.wolt.com
+dcorporateigna.util.wolt.com
 dd-internal.wolt.com
 dd-internale.wolt.com
 ddb-alpha-1.andurildev.com
@@ -2336,6 +2342,7 @@ demo.wolt.com
 demo1s3alrpnwoyf8k.centralus.cloudapp.dev2.k.wolt.com
 demoa.util.wolt.com
 democmpicker-api-merchant-admina.util.wolt.com
+democmpickerq.util.wolt.com
 demotest.epicgames.dev
 demotest.wolt.com
 dep-man-trial.non-prod.eng.anduril.dev
@@ -2475,6 +2482,7 @@ dev2.kubernetes.wolt.com
 dev2.tc.eng.andurildev.au
 dev21.epicgames.dev
 dev2billing.util.wolt.com
+dev7.ext.wolt.com
 deva.ahp.security.anduril.dev
 devcom.usarmy.anduril.com
 devdev.epicgames.dev
@@ -2895,6 +2903,7 @@ enc-wms.maps.anduril.au
 enc2y.dev2.k.wolt.com
 endorse.dev.menace-pki.anduril.com
 endorse.menace-pki.anduril.com
+ene.dev2.k.wolt.com
 eng.anduril.au
 eng.anduril.dev
 eng.epicgames.dev
@@ -2988,6 +2997,7 @@ eu-central-1.wolt.com
 eu-central-1a.wolt.com
 eu-dd-internal.wolt.com
 eu.epicgames.dev
+eu.wolt.com
 eu7.epicgames.dev
 eud.akm.anduril.com
 eud.akm.sauron.anduril.com
@@ -4185,6 +4195,8 @@ kargo.forge-dev.eng.anduril.dev
 kargo.forge-mgmt.anduril.dev
 kargo.forge-prod.eng.anduril.dev
 kargo.forge-qa.eng.anduril.dev
+kayz.util.wolt.com
+kcm.anduril.au
 kesasyomarit.wolt.com
 key-rotator.non-prod.eng.anduril.dev
 keycloak-sandbox.andurildev.com
@@ -5232,6 +5244,7 @@ mimosa.anduril.com
 minio-sandbox.andurildev.com
 mirror.sscs.security.anduril.dev
 mirrorload0.whatnot.com
+mirrorserv.anduril.au
 mission-sim-ingest.observability-dev.andurildev.com
 mission-sim-ingest.observability.anduril.dev
 mission-systems-kpi-qa.eng.anduril.dev
@@ -6208,6 +6221,7 @@ ribosome.wolt.com
 ricardo.wolt.com
 ricettepiu.wolt.com
 ricgw.wolt.com
+richard.wolt.com
 richmac.wolt.com
 richman.wolt.com
 ricke.wolt.com
@@ -7761,6 +7775,7 @@ www.camphor.anduril.com
 www.capital.wolt.com
 www.careers.anduril.com
 www.careers.whatnot.com
+www.careers.wolt.com
 www.cascade.anduril.com
 www.cascade.andurildev.com
 www.castor.andurildev.com
