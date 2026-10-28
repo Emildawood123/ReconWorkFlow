@@ -1284,6 +1284,7 @@ bolt-nc-dashboard.non-prod.eng.anduril.dev
 bolt-qa.anduril.dev
 bolt-service-dashboard-qa.eng.anduril.dev
 bolt-service-dashboard.non-prod.eng.anduril.dev
+bolt-trainer.non-prod.eng.anduril.dev
 bolt.anduril.dev
 bolt.sitlm.anduril.dev
 bolto.sitlm.anduril.dev
@@ -1461,6 +1462,7 @@ cadence.eng.anduril.dev
 cadence.non-prod.eng.anduril.dev
 cadence.qa.eng.anduril.dev
 cahabag.util.wolt.com
+cahntest.andurildev.com
 caiman2.andurildev.com
 cal.integrations.wolt.com
 calendar.superhuman.com
@@ -2304,6 +2306,7 @@ ddb-alpha-1.andurildev.com
 ddb-alpha-2.andurildev.com
 ddb-alpha-3.andurildev.com
 ddb-alpha-4.andurildev.com
+ddb-aws-dev-0.andurildev.com
 ddb-dev-0.andurildev.com
 ddb-dev-1.andurildev.com
 ddb-pipeline-0.andurildev.com
@@ -3852,6 +3855,7 @@ hs.superhuman.com
 hsfs.anduril.com
 html-docs-qa.eng.anduril.dev
 html-docs.non-prod.eng.anduril.dev
+hto-academy.non-prod.eng.anduril.dev
 hto-dashboard.non-prod.eng.anduril.dev
 hto-dashboard.qa.eng.anduril.dev
 hto-exec-rollup-dashboard.non-prod.eng.anduril.dev
@@ -5382,6 +5386,7 @@ namegame-apig.wolt.com
 namegame.wolt.com
 namegame2.wolt.com
 narsil.andurildev.com
+nasturtium.anduril.com
 national.whatnot.com
 nationale.whatnot.com
 native-dev.dev.anduril.com
@@ -5614,6 +5619,7 @@ otto2-electricboogaloo.stage.eng.anduril.dev
 otto2-jcg-app-new-all-envs.non-prod.eng.anduril.dev
 otto2-jcg-app-new.non-prod.eng.anduril.dev
 otto2-jcg-new.non-prod.eng.anduril.dev
+otto2-persist-probe.non-prod.eng.anduril.dev
 otto2-v2e2e-cap1.non-prod.eng.anduril.dev
 otto2-v2e2e-cap1.qa.eng.anduril.dev
 otto2-v2e2e-cap2.non-prod.eng.anduril.dev
@@ -5646,6 +5652,7 @@ pallas.anduril.dev
 palm.anduril.com
 palmetto.anduril.com
 palmetto.jip.anduril.com
+pangea-dev.non-prod.eng.anduril.dev
 panorama.network.anduril.dev
 partnerlinksbillingg.util.wolt.com
 partybus-stg.eng.anduril.dev
@@ -5666,6 +5673,7 @@ payments-tips-service.wolt.com
 payments.epicgames.dev
 payments.wolt.com
 pbo-project-tracker.eng.anduril.dev
+pbo-project-tracker.non-prod.eng.anduril.dev
 pc21.andurildev.com
 pc21.dev.anduril.com
 pcb-asl-selection-tool-qa.eng.anduril.dev
@@ -6139,6 +6147,7 @@ renew-metrics-mtls-cert.observability-dev.andurildev.com
 replicant.andurildev.com
 reports.wolt.com
 repos-test.security.anduril.dev
+repos.eng.anduril.dev
 repos.non-prod.eng.anduril.dev
 repos.security.anduril.dev
 repos.stage.eng.anduril.dev
@@ -6416,6 +6425,8 @@ saguaro-qa.anduril.com
 saguaro.andurildev.com
 saml.superhuman.com
 sammac.util.wolt.com
+sample-workload.sandbox.anduril.au
+sample.sandbox.anduril.com.au
 sandbox-external.ac.sitlm.anduril.dev
 sandbox-external.bolt.sitlm.anduril.dev
 sandbox-external.cedar.sitlm.anduril.dev
@@ -6727,6 +6738,7 @@ sp-jira.anduril.dev
 sp.epicgames.dev
 space-lasers.non-prod.eng.anduril.dev
 space-nominal.anduril.dev
+space-shift-scheduler.non-prod.eng.anduril.dev
 space-sim.andurildev.com
 space-sim.dev.anduril.com
 space.whatnot.com
@@ -6887,6 +6899,7 @@ superset.forge-prod.eng.anduril.dev
 superset.forge-qa.eng.anduril.dev
 superset.itools.anduril.dev
 supplements.superhuman.com
+supplier-chargebacks.non-prod.eng.anduril.dev
 supplier-portal.anduril.com
 supplier-profiles-qa.eng.anduril.dev
 supplier-terms.anduril.com
@@ -7205,6 +7218,7 @@ trust.whatnot.com
 trust4.superhuman.com
 tss-event-rom-qa.eng.anduril.dev
 tss-event-rom.non-prod.eng.anduril.dev
+tst-bed.non-prod.eng.anduril.dev
 tunnels-dev.anduril.dev
 tv.green-screen-dev.anduril.dev
 tv.green-screen.anduril.dev
@@ -7384,6 +7398,7 @@ viewshed-tool-stg.eng.anduril.dev
 viewshed-tool.eng.anduril.dev
 viewshed-tool.non-prod.eng.anduril.dev
 viewshed.non-prod.eng.anduril.dev
+vigil.eng.anduril.dev
 vigil.non-prod.eng.anduril.dev
 vigil.qa.eng.anduril.dev
 vigil.stage.eng.anduril.dev
@@ -7488,6 +7503,7 @@ whatfix.dev.anduril.dev
 whatnot.com
 whatnotcon.whatnot.com
 wheretf.non-prod.eng.anduril.dev
+whistler-training.anduril.com
 whistler.andurildev.com
 wickr.network.anduril.dev
 wiki.accounts.superhuman.com
