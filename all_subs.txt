@@ -935,6 +935,7 @@ asset-calibrationv.andurildev.com
 asset-ingest.observability-dev.andurildev.com
 asset.agdsre-sandbox.anduril.com
 asset.anduril-gvsc-sdk.andurildev.com
+asset.kraken.anduril.com
 asset.md.anduril.com
 assets-dev.whatnot.com
 assets-load1.whatnot.com
@@ -1236,6 +1237,7 @@ billingy.util.wolt.com
 billytheidiotm.dev2.k.wolt.com
 bingo-qa.eng.anduril.dev
 bingo-stg.eng.anduril.dev
+bingo.eng.anduril.dev
 bingo.non-prod.eng.anduril.dev
 binja.anduril.dev
 binzerg.dev2.k.wolt.com
@@ -1253,6 +1255,7 @@ bl1.plm.anduril.dev
 bl1g.tc.anduril.dev
 bl2.plm.anduril.dev
 bl2g.tc.anduril.dev
+bladerunner-node-registry.non-prod.eng.anduril.dev
 blast-10.non-prod.eng.anduril.dev
 blast-radius.non-prod.eng.anduril.dev
 blee.local-dev.whatnot.com
@@ -2046,6 +2049,7 @@ corptech-ops-team-resourcing.non-prod.eng.anduril.dev
 corptech-platform-planner.non-prod.eng.anduril.dev
 corptech-resource-control-qa.eng.anduril.dev
 corptech-resource-control-stg.eng.anduril.dev
+corptech-resource-control.eng.anduril.dev
 corptech-resource-control.non-prod.eng.anduril.dev
 cosmos.anduril.com
 cottonelle.com.epicgames.dev
@@ -3111,6 +3115,7 @@ facsys-otit-controltower-qa.eng.anduril.dev
 facsys-otit-controltower-stg.eng.anduril.dev
 facsys-otit-controltower.non-prod.eng.anduril.dev
 facsys-tpm-deployment-tracker.non-prod.eng.anduril.dev
+factory-sensing-demo.mdp-sandbox.eng.anduril.dev
 factory-sensing.mdp-sandbox.eng.anduril.dev
 faculty.superhuman.com
 fai.anduril.dev
@@ -3245,6 +3250,7 @@ fleetmillregattaibanak.util.wolt.com
 fleetmillwolfibana.util.wolt.com
 flight-hours-tracker.non-prod.eng.anduril.dev
 flight-hours-tracker.qa.eng.anduril.dev
+flightline.non-prod.eng.anduril.dev
 flights-dsb.andurildev.com
 flights-dsb7.andurildev.com
 flights-dsbva.andurildev.com
@@ -4282,6 +4288,7 @@ land-systems.andurildev.com
 landman.anduril.com
 landsys.andurildev.com
 langfuse.arena-atlas.eng.anduril.dev
+langfuse.dev.gymnasium.anduril.dev
 langfuse.mdp-sandbox.eng.anduril.dev
 laser-engraver-maritime.non-prod.eng.anduril.dev
 laser-engraver.non-prod.eng.anduril.dev
@@ -5536,6 +5543,7 @@ observability-trinode.andurildev.com
 observability.anduril.dev
 observability.andurildev.com
 observability.dev.anduril.com
+observatory.eng.anduril.dev
 observatory.non-prod.eng.anduril.dev
 observatory.qa.eng.anduril.dev
 observatory.stage.eng.anduril.dev
@@ -5637,6 +5645,7 @@ otto2-jcg-app-new-all-envs.non-prod.eng.anduril.dev
 otto2-jcg-app-new.non-prod.eng.anduril.dev
 otto2-jcg-new.non-prod.eng.anduril.dev
 otto2-persist-probe.non-prod.eng.anduril.dev
+otto2-persist-probe.qa.eng.anduril.dev
 otto2-v2e2e-cap1.non-prod.eng.anduril.dev
 otto2-v2e2e-cap1.qa.eng.anduril.dev
 otto2-v2e2e-cap2.non-prod.eng.anduril.dev
@@ -5871,6 +5880,7 @@ prime-dmp.anduril.dev
 prime-sie.andurildev.com
 prime-sitl-cluster.sitlm.anduril.dev
 prime-training.andurildev.com
+prime.anduril.com
 prime.andurildev.com
 prime.sie.andurildev.com
 prime.sitlm.anduril.dev
@@ -6612,6 +6622,7 @@ sentry-data.arena-atlas.eng.anduril.dev
 sentry-manufacturing.andurildev.com
 sentry-phub.non-prod.eng.anduril.dev
 sentry-port.non-prod.eng.anduril.dev
+sentry-prod-scoreboard.non-prod.eng.anduril.dev
 sentry-test.anduril.dev
 sentry.anduril.dev
 sentry.arena-atlas.eng.anduril.dev
@@ -6808,6 +6819,7 @@ ssn-sie.anduril.com
 ssn-test.andurildev.com
 ssn.anduril.com
 ssn.andurildev.com
+sso.autotime-dev.eng.anduril.dev
 sso.superhuman.com
 sso.teleport.anduril.dev
 sso.wolt.com
