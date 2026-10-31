@@ -1138,6 +1138,7 @@ backup-lonestar.anduril.com
 backup5.util.wolt.com
 backupbackup-alpha-alpha.dev-jenkins.util.wolt.com
 ballast.network.anduril.dev
+bamboo-forest.anduril.dev
 bandit-dashboard.eng.anduril.dev
 bandit-dashboard.non-prod.eng.anduril.dev
 bandit.andurildev.com
@@ -1165,6 +1166,7 @@ be.superhuman.com
 be.wolt.com
 be1fg.dev2.k.wolt.com
 bea.epicgames.dev
+beacon.anduril.com
 beaconbot.itools-dev.anduril.dev
 beaconbot.itools.anduril.dev
 beaconboty.itools-dev.anduril.dev
@@ -1472,6 +1474,7 @@ cadence.non-prod.eng.anduril.dev
 cadence.qa.eng.anduril.dev
 cahabag.util.wolt.com
 cahntest.andurildev.com
+cahntestaws.andurildev.com
 caiman2.andurildev.com
 cal.integrations.wolt.com
 calendar.superhuman.com
@@ -3025,6 +3028,7 @@ eu-central-1.wolt.com
 eu-central-1a.wolt.com
 eu-dd-internal.wolt.com
 eu.epicgames.dev
+eu.prod.teleport.anduril.dev
 eu.wolt.com
 eu7.epicgames.dev
 eud.akm.anduril.com
@@ -4293,6 +4297,7 @@ langfuse.mdp-sandbox.eng.anduril.dev
 laser-engraver-maritime.non-prod.eng.anduril.dev
 laser-engraver.non-prod.eng.anduril.dev
 last-test-otto.non-prod.eng.anduril.dev
+latest.agd.andurildev.com
 latex.mfx.andurildev.com
 lattice-ai.andurildev.com
 lattice-c2-bravo-1.andurildev.com
@@ -5547,6 +5552,7 @@ observatory.eng.anduril.dev
 observatory.non-prod.eng.anduril.dev
 observatory.qa.eng.anduril.dev
 observatory.stage.eng.anduril.dev
+oc-55-receiving-log.non-prod.eng.anduril.dev
 occupio.mdp-sandbox.eng.anduril.dev
 odc.epicgames.dev
 odoo-admin-dashboard-qa.eng.anduril.dev
@@ -7197,6 +7203,7 @@ timeseries-pipeline-3.andurildev.com
 tipqa.corp.anduril.dev
 tls-generic.itools-dev.anduril.dev
 to-dashboard.non-prod.eng.anduril.dev
+tokens.private.acme.superhuman.com
 toolbar.whatnot.com
 toolbox-dev.security.anduril.dev
 toolbox.security.anduril.dev
@@ -7220,6 +7227,7 @@ tracker.gov.united.anduril.dev
 training-dev.g5-irad.anduril.dev
 training.anduril.com
 training.g5-irad.anduril.dev
+trakaweb.anduril.dev
 travel-form-editor-qa.eng.anduril.dev
 travel-form-editor-stg.eng.anduril.dev
 travel-form-editor.eng.anduril.dev
@@ -7317,6 +7325,7 @@ usarmy.anduril.com
 uscg-sdk-dev.anduril.com
 uscg.anduril.com
 use1.dev.dt.security.anduril.dev
+user-management-private.acme.superhuman.com
 users.epicgames.dev
 usmc-lattice-ssh-bastion.andurildev.com
 usmc-lattice-ssh-cluster.andurildev.com
@@ -8660,6 +8669,7 @@ xl-plexus.eng.anduril.dev
 xl-plexus.non-prod.eng.anduril.dev
 xl-plexus.stage.eng.anduril.dev
 xoxobride.com.cdn.dev2.k.wolt.com
+xpressentry.anduril.dev
 xwiki.anduril.dev
 yachty.whatnot.com
 yachtya.whatnot.com
