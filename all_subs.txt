@@ -4294,6 +4294,7 @@ landsys.andurildev.com
 langfuse.arena-atlas.eng.anduril.dev
 langfuse.dev.gymnasium.anduril.dev
 langfuse.mdp-sandbox.eng.anduril.dev
+langfuse.test.gymnasium.anduril.dev
 laser-engraver-maritime.non-prod.eng.anduril.dev
 laser-engraver.non-prod.eng.anduril.dev
 last-test-otto.non-prod.eng.anduril.dev
@@ -5687,10 +5688,13 @@ palmetto.jip.anduril.com
 pangea-dev.non-prod.eng.anduril.dev
 panorama.network.anduril.dev
 partnerlinksbillingg.util.wolt.com
+partybus-api.non-prod.eng.anduril.dev
+partybus-api.stage.eng.anduril.dev
 partybus-stg.eng.anduril.dev
 partybus-test-demo.non-prod.eng.anduril.dev
 partybus.eng.anduril.dev
 partybus.non-prod.eng.anduril.dev
+partybus.stage.eng.anduril.dev
 partyretro.eng.anduril.dev
 partyretro.non-prod.eng.anduril.dev
 partyretro.qa.eng.anduril.dev
