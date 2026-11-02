@@ -2365,6 +2365,7 @@ demo.connect.epicgames.dev
 demo.epicgames.dev
 demo.huggies.com.epicgames.dev
 demo.id.superhuman.com
+demo.sandbox.anduril.com.au
 demo.whatnot.com
 demo.wolt.com
 demo1s3alrpnwoyf8k.centralus.cloudapp.dev2.k.wolt.com
@@ -2378,6 +2379,7 @@ depend.cz.epicgames.dev
 dependencytrack.anduril.dev
 dependpre.com.epicgames.dev
 dependu.co.kr.epicgames.dev
+deploy-demo.sandbox.anduril.au
 deploy-infra-ms-m.andurildev.com
 deploy-infra-ms.andurildev.com
 deploy-infra-ms.dev.anduril.com
@@ -3056,6 +3058,7 @@ eventscic.util.wolt.com
 eventsu.util.wolt.com
 everflowk.util.wolt.com
 evserver01dnwechat11.util.wolt.com
+ew-dev-1.andurildev.com
 ew-hub.eng.anduril.dev
 ew-hub.non-prod.eng.anduril.dev
 ew-hub.qa.eng.anduril.dev
@@ -5166,6 +5169,7 @@ md.anduril.com
 mde-webtools.corp.anduril.dev
 mdi.anduril.com
 mdm.trs-dev.fleetcore.anduril.dev
+mdm.trs-flightops.anduril.com
 mdm.wolt.com
 mdp-dev.eng.anduril.dev
 mdp-ebom-tool.non-prod.eng.anduril.dev
@@ -5688,6 +5692,7 @@ palmetto.jip.anduril.com
 pangea-dev.non-prod.eng.anduril.dev
 panorama.network.anduril.dev
 partnerlinksbillingg.util.wolt.com
+partybus-api.eng.anduril.dev
 partybus-api.non-prod.eng.anduril.dev
 partybus-api.stage.eng.anduril.dev
 partybus-stg.eng.anduril.dev
@@ -6227,6 +6232,7 @@ reynaga-okta-river-qa.eng.anduril.dev
 reynaga-okta-river-stg.eng.anduril.dev
 reynaga-okta-river.non-prod.eng.anduril.dev
 reynaga-okta-v2.non-prod.eng.anduril.dev
+reynaga-okta-v2.qa.eng.anduril.dev
 reynaga-runthrough.non-prod.eng.anduril.dev
 reynaga-runthrough.qa.eng.anduril.dev
 reynaga-share-nodes.non-prod.eng.anduril.dev
@@ -8686,6 +8692,7 @@ yj-article-2-parts-tracker.non-prod.eng.anduril.dev
 yj-article-2-parts-tracker.qa.eng.anduril.dev
 yj-article-2-parts-tracker.stage.eng.anduril.dev
 your-app.non-prod.eng.anduril.dev
+yum-repo.redbud.anduril.dev
 za.epicgames.dev
 zen.superhuman.com
 zentral.dev.security.anduril.dev
