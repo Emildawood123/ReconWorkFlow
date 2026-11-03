@@ -362,6 +362,7 @@ ad-server-indexingm.wolt.com
 ad.epicgames.dev
 ad.whatnot.com
 ad.wolt.com
+ad3.agd.andurildev.com
 ad7.epicgames.dev
 adam-qa.eng.anduril.dev
 adam-stg.eng.anduril.dev
@@ -481,6 +482,7 @@ agent-platform-staging.andurildev.com
 agent-platform.anduril.dev
 agent-sandbox-dev.andurildev.com
 agent-vault-api.dev.forge-mgmt.anduril.dev
+agent-vault-api.forge-mgmt.anduril.dev
 agentic-shopping.wolt.com
 agents-on-servers-dev.andurildev.com
 agentsim.docs.anduril.dev
@@ -1404,6 +1406,7 @@ buttersos.non-prod.eng.anduril.dev
 bv-troubleshooting-web-qa.eng.anduril.dev
 bv-troubleshooting-web.eng.anduril.dev
 bv-troubleshooting-web.non-prod.eng.anduril.dev
+bwood2-test.non-prod.eng.anduril.dev
 bydanie-comm.mail.protection.dev2.k.wolt.com
 c-wdm.dev2.k.wolt.com
 c0570075-9952-4c81-8fbf-84703cd17b88.vpn.dev2.k.wolt.com
@@ -1726,9 +1729,11 @@ class-systems.non-prod.eng.anduril.dev
 claude-bootstrap-dev.eng.anduril.dev
 claude.sandbox.anduril.au
 cldmas-comy.mail.protection.dev2.k.wolt.com
+clearid-badge-retriever.eng.anduril.dev
 clearid-badge-retriever.non-prod.eng.anduril.dev
 clearid-badge-retriever.qa.eng.anduril.dev
 clearid-badge-retriever.stage.eng.anduril.dev
+clearid-iam-tools.eng.anduril.dev
 clearid-iam-tools.non-prod.eng.anduril.dev
 clearid-iam-tools.qa.eng.anduril.dev
 clearid-iam-tools.stage.eng.anduril.dev
@@ -1779,6 +1784,7 @@ cloudflare.gov-east.security.anduril.dev
 cloudflare.gov-west.security.anduril.dev
 cloudfront-gateway-origin.id.superhuman.com
 cloudfront-prod-wolt-venue-images-cdnbhs.util.wolt.com
+cloudos-acp-aws-com-dev.andurildev.com
 cloudos-acp-dev.andurildev.com
 cloudos-acp-test.andurildev.com
 cloudos-bots.andurildev.com
@@ -2771,6 +2777,7 @@ dt-jira-app.non-prod.eng.anduril.dev
 dtool-reqs-prototyping-qa.eng.anduril.dev
 dtool-reqs-prototyping-stg.eng.anduril.dev
 dtool-reqs-prototyping.non-prod.eng.anduril.dev
+dtools-prototype-suite.non-prod.eng.anduril.dev
 dtools-prototypes-qa.eng.anduril.dev
 dtools-prototypes.non-prod.eng.anduril.dev
 dts-qa.eng.anduril.dev
@@ -6070,6 +6077,7 @@ qri-labor-dashboard-qa.eng.anduril.dev
 qri-labor-dashboard.non-prod.eng.anduril.dev
 qri-labor-dashboard.qa.eng.anduril.dev
 qri-machine-shop-tracker.non-prod.eng.anduril.dev
+qri-maritime-ballasting.eng.anduril.dev
 qri-maritime-ballasting.non-prod.eng.anduril.dev
 qri-maritime-ballasting.qa.eng.anduril.dev
 qri-maritime-ballasting.stage.eng.anduril.dev
@@ -6233,6 +6241,8 @@ reynaga-okta-river-stg.eng.anduril.dev
 reynaga-okta-river.non-prod.eng.anduril.dev
 reynaga-okta-v2.non-prod.eng.anduril.dev
 reynaga-okta-v2.qa.eng.anduril.dev
+reynaga-pb-v2.non-prod.eng.anduril.dev
+reynaga-pb-v2.qa.eng.anduril.dev
 reynaga-runthrough.non-prod.eng.anduril.dev
 reynaga-runthrough.qa.eng.anduril.dev
 reynaga-share-nodes.non-prod.eng.anduril.dev
@@ -6638,6 +6648,7 @@ sentry-data.arena-atlas.eng.anduril.dev
 sentry-manufacturing.andurildev.com
 sentry-phub.non-prod.eng.anduril.dev
 sentry-port.non-prod.eng.anduril.dev
+sentry-prod-scoreboard.eng.anduril.dev
 sentry-prod-scoreboard.non-prod.eng.anduril.dev
 sentry-test.anduril.dev
 sentry.anduril.dev
@@ -6705,6 +6716,7 @@ sie.tdm.anduril.com
 silvus-automation.non-prod.eng.anduril.dev
 sim-0-oai.mfx.andurildev.com
 sim-explorer-dev.g5-irad.anduril.dev
+sim-explorer.g5-atlas.anduril.dev
 sim-explorer.g5-irad.anduril.dev
 sim-infra-prod.dev.anduril.com
 sim-infra.dev.anduril.com
@@ -7499,6 +7511,7 @@ wandb.anduril.dev
 wandb.gov.mlops-test.anduril.dev
 wandb.gov.united.anduril.dev
 war-on-clicks.non-prod.eng.anduril.dev
+warehouse-utilization.non-prod.eng.anduril.dev
 warehouseapp.non-prod.eng.anduril.dev
 warfighter-systems-portal.eng.anduril.dev
 warfighter-systems-portal.non-prod.eng.anduril.dev
