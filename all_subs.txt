@@ -939,6 +939,7 @@ asset.agdsre-sandbox.anduril.com
 asset.anduril-gvsc-sdk.andurildev.com
 asset.kraken.anduril.com
 asset.md.anduril.com
+asset.soabtis-2.anduril.com
 assets-dev.whatnot.com
 assets-load1.whatnot.com
 assets-stage.whatnot.com
@@ -2438,6 +2439,7 @@ dev-catalog.dev.anduril.com
 dev-catalog9.andurildev.com
 dev-catalogb.andurildev.com
 dev-catalogu.dev.anduril.com
+dev-infra-sam-sam.anduril.com
 dev-infra.andurildev.com
 dev-infra.dev.anduril.com
 dev-infrax4.andurildev.com
@@ -3163,6 +3165,7 @@ fiftyone.anduril.au
 fiftyone.anduril.dev
 fiftyone.bowser.ml-prod.gov.anduril.dev
 fiftyone.core.etl-dev.gov.anduril.dev
+fiftyone.dragonblood.ml-prod.gov.anduril.dev
 fiftyone.etl-dev.gov.anduril.dev
 fiftyone.gov.airdefense.anduril.dev
 fiftyone.gov.ais-usaf.anduril.dev
@@ -3180,6 +3183,7 @@ fiftyone.gov.united.anduril.dev
 fiftyone.gov.usaf.anduril.dev
 fiftyone.gov.usmc.anduril.dev
 fiftyone.lonestar.etl-dev.gov.anduril.dev
+fiftyone.synapse.ml-prod.gov.anduril.dev
 fiftyone1.gov.ast-internal.anduril.dev
 fiftyonec.gov.pallas-1.anduril.dev
 fiftyonec.gov.sorrel.anduril.dev
@@ -4304,6 +4308,7 @@ landsys.andurildev.com
 langfuse.arena-atlas.eng.anduril.dev
 langfuse.dev.gymnasium.anduril.dev
 langfuse.mdp-sandbox.eng.anduril.dev
+langfuse.prod.gymnasium.anduril.dev
 langfuse.test.gymnasium.anduril.dev
 laser-engraver-maritime.non-prod.eng.anduril.dev
 laser-engraver.non-prod.eng.anduril.dev
@@ -5427,6 +5432,7 @@ namegame-apig.wolt.com
 namegame.wolt.com
 namegame2.wolt.com
 narsil.andurildev.com
+narsil.non-prod.eng.anduril.dev
 nasturtium.anduril.com
 national.whatnot.com
 nationale.whatnot.com
@@ -6013,6 +6019,7 @@ profumodilievito.wolt.com
 profvirtuel.wolt.com
 prog-protect-dashboard.non-prod.eng.anduril.dev
 prog-protect-dashboard.qa.eng.anduril.dev
+prog-protect-dashboard.stage.eng.anduril.dev
 progate.wolt.com
 progbeat-vvche.wolt.com
 progers.wolt.com
@@ -6718,6 +6725,7 @@ sim-0-oai.mfx.andurildev.com
 sim-explorer-dev.g5-irad.anduril.dev
 sim-explorer.g5-atlas.anduril.dev
 sim-explorer.g5-irad.anduril.dev
+sim-explorer.sunflower.anduril.dev
 sim-infra-prod.dev.anduril.com
 sim-infra.dev.anduril.com
 sim.andurildev.com
@@ -7049,6 +7057,7 @@ tasking-test-3.andurildev.com
 tasking-test-4.andurildev.com
 tasks-qa.eng.anduril.dev
 tasks-stg.eng.anduril.dev
+tasks.eng.anduril.dev
 tasks.non-prod.eng.anduril.dev
 tc-api-ext.plm.anduril.dev
 tc-api-ext.tc.anduril.au
@@ -7320,6 +7329,7 @@ undersea-dominance-action-center.non-prod.eng.anduril.dev
 undersea-dominance-war-room.non-prod.eng.anduril.dev
 united.anduril.com
 united.anduril.dev
+uns-bot.mdp-sandbox.eng.anduril.dev
 uns.mdp-dev.eng.anduril.dev
 uns.mdp-sandbox.eng.anduril.dev
 upload.auction-service.whatnot.com
@@ -7328,6 +7338,7 @@ uranium.wolt.com
 uraniume.wolt.com
 url7076.mail.whatnot.com
 urs-dev.andurildev.com
+urs-mfg-test-analyzer.non-prod.eng.anduril.dev
 urs-quality-qa.eng.anduril.dev
 urs-quality.non-prod.eng.anduril.dev
 urs-serpentine.andurildev.com
