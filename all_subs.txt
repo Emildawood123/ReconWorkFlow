@@ -1058,6 +1058,7 @@ auth-public.rdf-prod.gov.anduril.dev
 auth-public.rdf.anduril.au
 auth-public.rdf.jip.anduril.com
 auth-s3.util.wolt.com
+auth.dev.gymnasium.anduril.dev
 auth.developer.anduril.com
 auth.non-prod.eng.anduril.dev
 auth.superhuman.com
@@ -1467,6 +1468,7 @@ ca.menace-pki.anduril.com
 ca.wolt.com
 ca7.epicgames.dev
 caat.dev2.k.wolt.com
+cac.dev.trs.framework.anduril.dev
 cache.build.anduril.dev
 cache.build.andurildev.com
 cachix.anduril.au
@@ -2205,6 +2207,7 @@ dagster-readonly.analytics.eng.anduril.dev
 dagster-readonly.gov.analytics-prod.anduril.dev
 dagster.analytics.eng.anduril.dev
 dagster.gov.analytics-prod.anduril.dev
+daily-ops-manufacturing.non-prod.eng.anduril.dev
 daltonschoolzolder-be1.mail.protection.dev2.k.wolt.com
 damien07.dev2.k.wolt.com
 danny-test.non-prod.eng.anduril.dev
@@ -3462,6 +3465,7 @@ g0ddql0yq.util.wolt.com
 g3-te-dashboard.non-prod.eng.anduril.dev
 g3-te-dashboard.qa.eng.anduril.dev
 g5-dev.andurildev.com
+g5-growth.andurildev.com
 g5-irad.anduril.dev
 g5-sim-mgr.anduril.com
 galaxyi.util.wolt.com
@@ -4025,9 +4029,11 @@ int-dev.mimosa.anduril.com
 int-os-staging.andurildev.com
 int.wolt.com
 intaglio-data-hub.prodsec-dev.anduril.dev
+intaglio-data-hub.prodsec.anduril.dev
 intaglio-qa.eng.anduril.dev
 intaglio.non-prod.eng.anduril.dev
 intaglio.prodsec-dev.anduril.dev
+intaglio.prodsec.anduril.dev
 integrate.anduril.com
 integration-registry-ad-qa.eng.anduril.dev
 integration-registry-ad.non-prod.eng.anduril.dev
@@ -4254,6 +4260,7 @@ kargo.forge-mgmt.anduril.dev
 kargo.forge-prod.eng.anduril.dev
 kargo.forge-qa.eng.anduril.dev
 kayz.util.wolt.com
+kc.dev.trs.framework.anduril.dev
 kcm.anduril.au
 kenna.util.wolt.com
 kesasyomarit.wolt.com
@@ -4284,6 +4291,8 @@ kubernetes.live-service.whatnot.com
 kubernetes.wolt.com
 kudumba.anduril.com
 kunden.wolt.com
+kuwait-site-map.non-prod.eng.anduril.dev
+kuwait-wire.non-prod.eng.anduril.dev
 kyle-cluster.andurildev.com
 l.epicgames.dev
 l.wolt.com
@@ -5092,6 +5101,7 @@ mario-hitl.andurildev.com
 mario.andurildev.com
 maritime-app-team-internal-tools.non-prod.eng.anduril.dev
 maritime-budget-forecast-staffing.non-prod.eng.anduril.dev
+maritime-concept-doc-votes.non-prod.eng.anduril.dev
 maritime-dev.andurildev.com
 maritime-fieldops-training.non-prod.eng.anduril.dev
 maritime-gs.anduril.com
@@ -5764,6 +5774,7 @@ perception.dev.anduril.com
 persistence-test.non-prod.eng.anduril.dev
 personalisation-api.wolt.com
 personalisation-api5.wolt.com
+personnel-operations-tracker.eng.anduril.dev
 personnel-operations-tracker.non-prod.eng.anduril.dev
 pest.anduril.dev
 pestv2.anduril.dev
@@ -5874,6 +5885,7 @@ pp-feature-tracker.non-prod.eng.anduril.dev
 ppi-dashboard.non-prod.eng.anduril.dev
 ppp.epicgames.dev
 ppp.wolt.com
+pqc-dev.andurildev.com
 pr-2911.dev.dev2.k.wolt.com
 pr-2911a.dev.dev2.k.wolt.com
 praetorian-bandon.andurildev.com
@@ -6064,6 +6076,7 @@ pug-watcher-qa.eng.anduril.dev
 pull-ups.com.epicgames.dev
 pulse-eval.eng.anduril.dev
 pursuit.anduril.com
+pvw.tc.eng.anduril.dev
 py.epicgames.dev
 pypi.anduril.dev
 qa-metrics.imaging.anduril.dev
@@ -6248,6 +6261,7 @@ reynaga-okta-river-stg.eng.anduril.dev
 reynaga-okta-river.non-prod.eng.anduril.dev
 reynaga-okta-v2.non-prod.eng.anduril.dev
 reynaga-okta-v2.qa.eng.anduril.dev
+reynaga-pb-v2.eng.anduril.dev
 reynaga-pb-v2.non-prod.eng.anduril.dev
 reynaga-pb-v2.qa.eng.anduril.dev
 reynaga-runthrough.non-prod.eng.anduril.dev
@@ -6442,6 +6456,7 @@ rothman.wolt.com
 rothsville.wolt.com
 routemill-internal-apis.wolt.com
 routemillu.wolt.com
+routing-diff.eng.anduril.dev
 routing-diff.non-prod.eng.anduril.dev
 routing-diff.qa.eng.anduril.dev
 rps.mfx.andurildev.com
@@ -6968,6 +6983,7 @@ superset.forge-prod.eng.anduril.dev
 superset.forge-qa.eng.anduril.dev
 superset.itools.anduril.dev
 supplements.superhuman.com
+supplier-chargeback-tool.non-prod.eng.anduril.dev
 supplier-chargebacks.non-prod.eng.anduril.dev
 supplier-portal.anduril.com
 supplier-profiles-qa.eng.anduril.dev
@@ -7209,6 +7225,7 @@ thalia.anduril.com
 thanos-store-grpc.wolt.com
 thelasttestofthenight.non-prod.eng.anduril.dev
 thermalstruct-dev.non-prod.eng.anduril.dev
+this-is-hot.non-prod.eng.anduril.dev
 thrasher-9000.non-prod.eng.anduril.dev
 threat-response.security.anduril.dev
 thuja.anduril.com
@@ -7233,6 +7250,7 @@ timeseries-pipeline-2.andurildev.com
 timeseries-pipeline-3.andurildev.com
 tipqa.corp.anduril.dev
 tls-generic.itools-dev.anduril.dev
+tnt.andurildev.com
 to-dashboard.non-prod.eng.anduril.dev
 tokens.private.acme.superhuman.com
 toolbar.whatnot.com
