@@ -420,6 +420,7 @@ administratorpos.util.wolt.com
 administratorq.util.wolt.com
 administrators.util.wolt.com
 administratorselopu.util.wolt.com
+administratum.anduril.dev
 adminjs.allvoices-dev.eng.anduril.dev
 adminka.acme.superhuman.com
 adminlatin.util.wolt.com
@@ -907,6 +908,8 @@ arsenal2.eng.anduril.dev
 arsenal2.mdp-sandbox.eng.anduril.dev
 arthobbycrafts.epicgames.dev
 arthobbycraftsi.epicgames.dev
+artifact-store-public.rdf-dev.gov.anduril.dev
+artifact-store-public.rdf-prod.gov.anduril.dev
 artifactory-test.anduril.dev
 artifactory.anduril.dev
 artifactory.util.wolt.com
@@ -1064,7 +1067,9 @@ auth-s3.util.wolt.com
 auth.dev.gymnasium.anduril.dev
 auth.developer.anduril.com
 auth.non-prod.eng.anduril.dev
+auth.prod.gymnasium.anduril.dev
 auth.superhuman.com
+auth.test.gymnasium.anduril.dev
 auth.whatnot.com
 auth.wolt.com
 auth1.whatnot.com
@@ -1734,6 +1739,7 @@ class-systems-qa.eng.anduril.dev
 class-systems-stg.eng.anduril.dev
 class-systems.eng.anduril.dev
 class-systems.non-prod.eng.anduril.dev
+claude-agents.anduril.dev
 claude-bootstrap-dev.eng.anduril.dev
 claude.sandbox.anduril.au
 cldmas-comy.mail.protection.dev2.k.wolt.com
@@ -1771,6 +1777,8 @@ clock.autotime.eng.anduril.dev
 cloud-2.crucible.andurildev.com
 cloud-3.crucible.andurildev.com
 cloud-4.crucible.andurildev.com
+cloud-gateway-public.rdf-dev.gov.anduril.dev
+cloud-gateway-public.rdf-prod.gov.anduril.dev
 cloud.accounts.superhuman.com
 cloud.e.preview.dev.whatnot.com
 cloud.epicgames.dev
@@ -2423,6 +2431,7 @@ desert-guardian-itar.anduril.com
 desert-guardian.anduril.com
 design-survival-guide-qa.eng.anduril.dev
 design-survival-guide.non-prod.eng.anduril.dev
+design-survival-guide.qa.eng.anduril.dev
 design.superhuman.com
 design.wolt.com
 design5.util.wolt.com
@@ -2472,6 +2481,7 @@ dev-polarion.plm.anduril.dev
 dev-preview.whatnot.com
 dev-synthetics.whatnot.com
 dev-syntheticsy.whatnot.com
+dev.administratum.anduril.dev
 dev.agentsim.docs.anduril.dev
 dev.ahp.security.anduril.dev
 dev.anduril-resiliency-ext.andurildev.com
@@ -2767,6 +2777,7 @@ dragnet.non-prod.eng.anduril.dev
 dragon-slayer.non-prod.eng.anduril.dev
 draw.mfx.andurildev.com
 dream.non-prod.eng.anduril.dev
+dreammachine.fai.anduril.dev
 drift-detector.non-prod.eng.anduril.dev
 drive-fleetmillkibanaa.util.wolt.com
 drive.wolt.com
@@ -3358,6 +3369,7 @@ fm-demo.wss.anduril.dev
 fm.wss.anduril.dev
 fmipwebo.util.wolt.com
 fms-dev-beef.plm.anduril.dev
+fms-ops-kuwait.non-prod.eng.anduril.dev
 fms.tc.eng.anduril.au
 fna.wolt.com
 foo.non-prod.eng.anduril.dev
@@ -3937,6 +3949,7 @@ i.epicgames.dev
 ians-app.non-prod.eng.anduril.dev
 iapps-kube-oauth.anduril.dev
 ibcs-m.anduril.com
+ibcs-m.anduril.dev
 ibp.anduril.com
 id.epicgames.dev
 id.superhuman.com
@@ -4530,6 +4543,7 @@ louie-bot.non-prod.eng.anduril.dev
 loyalty-service-grpc.wolt.com
 loyalty-service-grpc5.wolt.com
 lrpm-dev.anduril.com
+lsc2-hitl.andurildev.com
 lsc2-ksat-rfct.anduril.com
 lsc2-test-runner.andurildev.com
 lupine.anduril.com
@@ -5390,6 +5404,7 @@ mop-scheduler.wolt.com
 mop-schedulera.wolt.com
 mops.superhuman.com
 morbius.andurildev.com
+moso-grove.anduril.dev
 mouse-in-a-box.anduril.com
 mouse-in-a-box.andurildev.com
 mouse.non-prod.eng.anduril.dev
