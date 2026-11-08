@@ -3374,6 +3374,7 @@ fms.tc.eng.anduril.au
 fna.wolt.com
 foo.non-prod.eng.anduril.dev
 foobar.anduril.dev
+forecast-staging.andurildev.com
 foresight-beta.non-prod.eng.anduril.dev
 forge-c2.andurildev.com
 forge-ci.sandbox.anduril.au
@@ -5284,6 +5285,7 @@ merch.whatnot.com
 merchant-access-control.wolt.com
 merchant-api.wolt.com
 merchant-apiw.wolt.com
+merchant-app-bff.wolt.com
 merchant-enterprise-service.wolt.com
 merchant-gateway.wolt.com
 merchant-onboarding-service.wolt.com
