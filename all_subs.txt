@@ -1444,6 +1444,7 @@ c2-jackpine.andurildev.com
 c2-jos-omega-red.andurildev.com
 c2-lattice-compat-staging.andurildev.com
 c2-oai.mfx.andurildev.com
+c2-retro-board.non-prod.eng.anduril.dev
 c2-safari-dev.jadc2.andurildev.com
 c2-safari.jadc2.andurildev.com
 c2-space-dev.andurildev.com
@@ -1514,6 +1515,8 @@ capi.superhuman.com
 capital.eng.anduril.dev
 capital.wolt.com
 capitalu.wolt.com
+carbon-ingest.observability-dev.andurildev.com
+carbon-ingest.observability.anduril.dev
 carddav-dev.it.anduril.dev
 carddav.it.anduril.dev
 careers.anduril.com
@@ -2154,6 +2157,8 @@ cuas-dev.dev.anduril.com
 cuas-devv.andurildev.com
 cuas.andurildev.com
 cuas.dev.anduril.com
+cuas4s-fpp.non-prod.eng.anduril.dev
+cuas4s-trr.non-prod.eng.anduril.dev
 cuas9.dev.anduril.com
 cuaso.andurildev.com
 cucinepenisolae.altervista.org.cdn.dev2.k.wolt.com
@@ -4308,6 +4313,7 @@ keycloak.rdf-prod.gov.anduril.dev
 keycloak.rdf.anduril.au
 keycloak.rdf.jip.anduril.com
 kibana.wolt.com
+kit-inspection.non-prod.eng.anduril.dev
 knative.mdp-sandbox.eng.anduril.dev
 kr.epicgames.dev
 kraken.anduril.com
@@ -4440,6 +4446,7 @@ librenms.network.anduril.dev
 license.plm.anduril.dev
 lid1.dev2.k.wolt.com
 life.wolt.com
+liftoff.non-prod.eng.anduril.dev
 lightcycle.anduril.com
 lighthouse.network.anduril.dev
 lighthouse.rdf-dev.gov.anduril.dev
@@ -4515,6 +4522,8 @@ login.developer.anduril.com
 login.fulmor-remote.anduril.com
 login.netbird.fulmor-remote.anduril.com
 login.portal-qa.anduril.dev
+login.portal-stg.anduril.com
+login.portal.anduril.com
 logs.wolt.com
 loki-1215-northstar.non-prod.eng.anduril.dev
 loki-gov.itools-dev.anduril.dev
@@ -5141,6 +5150,7 @@ maritime-dev.andurildev.com
 maritime-fieldops-training.non-prod.eng.anduril.dev
 maritime-gs.anduril.com
 maritime-sbs-dev.andurildev.com
+maritime-sc-crows-nest.non-prod.eng.anduril.dev
 maritime-serpentine.andurildev.com
 maritime-test.andurildev.com
 maritime-urs-pipeline.andurildev.com
@@ -5240,6 +5250,7 @@ mdm.trs-training.andurildev.com
 mdm.wolt.com
 mdp-dev.eng.anduril.dev
 mdp-ebom-tool.non-prod.eng.anduril.dev
+mdp-lorepath.non-prod.eng.anduril.dev
 mdp-sandbox.eng.anduril.dev
 mdp-web.mdp-dev.anduril.dev
 mdp-web.mdp-dev.eng.anduril.dev
@@ -5555,6 +5566,7 @@ nominal.gov.mlops-test.anduril.dev
 nominal.gov.prime-dmp.anduril.dev
 non-prod.eng.anduril.dev
 nonconformance-automation.non-prod.eng.anduril.dev
+nonconformance-automation.qa.eng.anduril.dev
 normandy.andurildev.com
 northstar.mdp-sandbox.eng.anduril.dev
 notes.mfx.andurildev.com
@@ -6044,6 +6056,7 @@ prodsec-dev.anduril.dev
 prodsec-dsb.andurildev.com
 prodsec.anduril.dev
 prodtech-fde-solutions.non-prod.eng.anduril.dev
+prodtech-fde-solutions.stage.eng.anduril.dev
 product-dev-cogs-forecastor.non-prod.eng.anduril.dev
 product.wolt.com
 productdevelop.wolt.com
@@ -6661,6 +6674,7 @@ schema-registry.andurildev.com
 schema-registry.developer.anduril.com
 schofield.usarmy.anduril.com
 scim.ai-staging.andurildev.com
+scim.authorization-staging.andurildev.com
 scm.dev2.k.wolt.com
 scm.epicgames.dev
 scm.util.wolt.com
@@ -6874,6 +6888,7 @@ sp-jira.anduril.dev
 sp.epicgames.dev
 space-lasers.non-prod.eng.anduril.dev
 space-nominal.anduril.dev
+space-platform.non-prod.eng.anduril.dev
 space-shift-scheduler.non-prod.eng.anduril.dev
 space-sim.andurildev.com
 space-sim.dev.anduril.com
@@ -7027,6 +7042,9 @@ superhuman.com
 supermarket-app.non-prod.eng.anduril.dev
 supermarket-app.qa.eng.anduril.dev
 supermarket-app.stage.eng.anduril.dev
+supermarket-forge.non-prod.eng.anduril.dev
+supermarket-forge.qa.eng.anduril.dev
+supermarket-forge.stage.eng.anduril.dev
 supernova.dive-xl.andurildev.au
 superset-dev.itools-dev.anduril.dev
 superset-qa.itools-dev.anduril.dev
@@ -7111,6 +7129,7 @@ talos-lattice-ssh-cluster.andurildev.com
 talos.anduril.dev
 tarpon.andurildev.com
 task-mgmt.andurildev.com
+task-tracker.eng.anduril.dev
 task-tracker.non-prod.eng.anduril.dev
 tasking-alpha-1.andurildev.com
 tasking-alpha-2.andurildev.com
@@ -7170,6 +7189,7 @@ teamcenter-writeback-server.non-prod.eng.anduril.dev
 teamcity.anduril.dev
 teams.andurildev.com
 techsec-sow-generator.non-prod.eng.anduril.dev
+telemetry.riptide.andurildev.com
 teleport-bot.security.anduril.dev
 teleport-dev-ext.security.anduril.dev
 teleport-dev.anduril.dev
@@ -7582,6 +7602,7 @@ vulture.anduril.dev
 vulture.andurildev.com
 vulture.dev.anduril.com
 vulture.sitlm.anduril.dev
+vv-tools.non-prod.eng.anduril.dev
 vwg.dev0.asv.maritime.andurildev.com
 vwg.dive-xl.andurildev.au
 vwg.lattice.nova.anduril.au
@@ -8779,6 +8800,7 @@ xpressentry.anduril.dev
 xwiki.anduril.dev
 yachty.whatnot.com
 yachtya.whatnot.com
+yellowjacket-launcher-build-tracker.non-prod.eng.anduril.dev
 yellowstone-performers-tmp.andurildev.com
 yellowstone-performers.andurildev.com
 yellowstone.anduril.dev
