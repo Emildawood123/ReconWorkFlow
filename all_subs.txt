@@ -1,6 +1,7 @@
 0000nw.dev2.k.wolt.com
 015cdd2d-5d4a-4652-a808-e9fa80ada472.vpn.dev2.k.wolt.com
 017c0614-7605-4dfc-8bec-a6c616a2135e.vpn.dev2.k.wolt.com
+01s6.dev2.k.wolt.com
 0240.dev2.k.wolt.com
 030996.dev2.k.wolt.com
 031121c.dev2.k.wolt.com
@@ -1228,6 +1229,7 @@ bifrost-dev.eng.anduril.dev
 bifrost.anduril.dev
 bifrost.andurildev.com
 bifrost.sandbox.anduril.au
+bifrost.sandbox.anduril.com.au
 big-ol-test.non-prod.eng.anduril.dev
 bigminoritys.dev2.k.wolt.com
 bigtitsinuniformg.dev2.k.wolt.com
@@ -1709,6 +1711,7 @@ cibhsfinteche.util.wolt.com
 cibounccashier.util.wolt.com
 cibounces-cmblogg.util.wolt.com
 cibounces-logins.util.wolt.com
+cibounces-posq.util.wolt.com
 cibouncescouriere.util.wolt.com
 cibouncesecom-plugin-api-shps.util.wolt.com
 cibouncesecomk.util.wolt.com
@@ -1943,6 +1946,7 @@ communications-service.util.wolt.com
 communications-service.wolt.com
 communications-servicebilling-explorei.util.wolt.com
 communications-servicecm-daas-self-service-api.util.wolt.com
+communicationshub.util.wolt.com
 community.epicgames.dev
 communitylink.superhuman.com
 commvault.it.anduril.dev
@@ -6515,6 +6519,7 @@ rsc.epicgames.dev
 rtmp.selfhost.corp.dev2.k.wolt.com
 rtmps.selfhost.corp.dev2.k.wolt.com
 rules-engine.anduril.dev
+rum.observability-dev.andurildev.com
 rz.epicgames.dev
 rz.security.anduril.dev
 s.epicgames.dev
