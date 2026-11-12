@@ -4232,6 +4232,7 @@ jira-hdplus.corp.anduril.dev
 jira-infosec.anduril.dev
 jira-integrationplus.corp.anduril.dev
 jira-klas.anduril.dev
+jira-nudge.non-prod.eng.anduril.dev
 jira-people.anduril.dev
 jira-stage-hdplus.corp.anduril.dev
 jira-stage-infosec.anduril.dev
@@ -5525,6 +5526,7 @@ nben-haim-pmi-companion.mdp-sandbox.eng.anduril.dev
 ncct-lattice-il5.anduril.com
 ncct-lattice-il5.andurildev.com
 ncsist-ld.anduril.com
+nctr.anduril.com
 ndowns-test01.security.anduril.dev
 ne1.epicgames.dev
 nebula.andurildev.au
@@ -6652,6 +6654,7 @@ sarah-work-tracker.non-prod.eng.anduril.dev
 sat-agent-runner-staging.andurildev.com
 sat-agent-runner.anduril.dev
 sat.anduril.com
+satc2-hub.non-prod.eng.anduril.dev
 satellite-c2.anduril.com
 satellite.redbud.anduril.dev
 satori.anduril.dev
