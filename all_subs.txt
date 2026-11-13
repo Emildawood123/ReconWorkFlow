@@ -5401,6 +5401,7 @@ mission-systems-qms-qa.eng.anduril.dev
 mission-systems-qms.non-prod.eng.anduril.dev
 mission-systems.non-prod.eng.anduril.dev
 mithril.anduril.dev
+mjiang-test-partybus.non-prod.eng.anduril.dev
 ml-prod.gov.anduril.dev
 ml.andurildev.au
 ml.andurildev.com
@@ -5626,6 +5627,8 @@ oa-digest.eng.anduril.dev
 oa-digest.non-prod.eng.anduril.dev
 oa-home.non-prod.eng.anduril.dev
 oa-maps.non-prod.eng.anduril.dev
+oak-grove.eng.anduril.dev
+oak-grove.non-prod.eng.anduril.dev
 oauth-proxy.itools-dev.anduril.dev
 oauth2-proxy.admin.dev.whatnot.com
 oauth2-proxy.admin.load1.whatnot.com
@@ -5912,6 +5915,7 @@ platform-stg.eng.anduril.dev
 platform.epicgames.dev
 platform.non-prod.eng.anduril.dev
 platsec-dev.anduril.dev
+platsec-istio-spike-azure.andurildev.com
 platsec-istio-spike.andurildev.com
 platsec-prod.anduril.dev
 plimsoll.non-prod.eng.anduril.dev
@@ -6002,6 +6006,7 @@ prime.anduril.com
 prime.andurildev.com
 prime.sie.andurildev.com
 prime.sitlm.anduril.dev
+prism-nats.imaging.anduril.dev
 prism.imaging.anduril.dev
 private-eye.non-prod.eng.anduril.dev
 private.andurildev.au
@@ -6070,6 +6075,7 @@ prodinfo.wolt.com
 prodsec-dev.anduril.dev
 prodsec-dsb.andurildev.com
 prodsec.anduril.dev
+prodtech-fde-solutions.eng.anduril.dev
 prodtech-fde-solutions.non-prod.eng.anduril.dev
 prodtech-fde-solutions.stage.eng.anduril.dev
 product-dev-cogs-forecastor.non-prod.eng.anduril.dev
@@ -7269,6 +7275,7 @@ test-cluster-2.anduril-resiliency-ext.andurildev.com
 test-confluence.it.anduril.dev
 test-env-peer.jos.gcp.andurildev.com
 test-env.jos.gcp.andurildev.com
+test-hazard-analysis.non-prod.eng.anduril.dev
 test-jira.anduril.dev
 test-jirao.anduril.dev
 test-jlind.forge-sandbox.sandbox.anduril.au
@@ -7384,6 +7391,7 @@ trino.rdf-prod.gov.anduril.dev
 trino.rdf.anduril.au
 trionda.anduril.com
 troubleshooting-app.non-prod.eng.anduril.dev
+troubleshooting-guide-eagleeye.non-prod.eng.anduril.dev
 trs-ci.andurildev.com
 trs-dev.andurildev.com
 trs-dev.fleetcore.anduril.dev
@@ -7444,6 +7452,7 @@ undersea-dominance-action-center.non-prod.eng.anduril.dev
 undersea-dominance-war-room.non-prod.eng.anduril.dev
 united.anduril.com
 united.anduril.dev
+uns-api.mdp-sandbox.eng.anduril.dev
 uns-bot.mdp-sandbox.eng.anduril.dev
 uns.mdp-dev.eng.anduril.dev
 uns.mdp-sandbox.eng.anduril.dev
@@ -7640,6 +7649,7 @@ wandb.gov.united.anduril.dev
 war-on-clicks.non-prod.eng.anduril.dev
 warehouse-utilization.non-prod.eng.anduril.dev
 warehouseapp.non-prod.eng.anduril.dev
+warehousing-wbr.non-prod.eng.anduril.dev
 warfighter-systems-portal.eng.anduril.dev
 warfighter-systems-portal.non-prod.eng.anduril.dev
 warfighter-systems-portal.qa.eng.anduril.dev
@@ -7692,6 +7702,7 @@ weighted-zh-connect.epicgames.dev
 weighted-zh-connecta.epicgames.dev
 welcome.superhuman.com
 welcomee.superhuman.com
+wg.am.anduril.com
 whatfix.anduril.dev
 whatfix.dev.anduril.dev
 whatnot.com
