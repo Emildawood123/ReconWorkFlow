@@ -172,6 +172,7 @@ a5mlrnesq.util.wolt.com
 a700-dashboard.eng.anduril.dev
 a700-dashboard.non-prod.eng.anduril.dev
 aa-etc-status-tool.non-prod.eng.anduril.dev
+aar-builder.non-prod.eng.anduril.dev
 abc-revocation.platsec-dev.anduril.dev
 abc-revocation.platsec-prod.anduril.dev
 abfb0c49-5412-48aa-bab4-e89e99758d60.vpn.dev2.k.wolt.com
@@ -459,6 +460,7 @@ ae-international-coproduction-calculator.non-prod.eng.anduril.dev
 aegeanmoodlei.dev2.k.wolt.com
 aegis.mdp-sandbox.eng.anduril.dev
 aes-build-status.non-prod.eng.anduril.dev
+aes-fleet-tracker.non-prod.eng.anduril.dev
 aes-ms.eng.anduril.dev
 aes-ms.non-prod.eng.anduril.dev
 aes-ms.qa.eng.anduril.dev
@@ -584,6 +586,7 @@ altium-stg.eng.anduril.dev
 altium.anduril.dev
 altium.corp.anduril.com
 altium.corp.anduril.dev
+altium.eng.anduril.dev
 altius-dashboard-qa.eng.anduril.dev
 altius-dashboard-stg.eng.anduril.dev
 altius-dashboard.non-prod.eng.anduril.dev
@@ -900,6 +903,7 @@ armory.andurildev.com
 armoryy.anduril.dev
 arms-elims.network.anduril.com
 arohabahugunam.dev2.k.wolt.com
+arsenal-design-lab.non-prod.eng.anduril.dev
 arsenal-os.itools-dev.anduril.dev
 arsenal-os3.itools-dev.anduril.dev
 arsenal.anduril.com
@@ -1275,6 +1279,7 @@ bl1.plm.anduril.dev
 bl1g.tc.anduril.dev
 bl2.plm.anduril.dev
 bl2g.tc.anduril.dev
+bladerunner-node-registry.eng.anduril.dev
 bladerunner-node-registry.non-prod.eng.anduril.dev
 blast-10.non-prod.eng.anduril.dev
 blast-radius.non-prod.eng.anduril.dev
@@ -1625,6 +1630,9 @@ centralus.cloudapp.dev2.k.wolt.com
 centralus7.cloudapp.dev2.k.wolt.com
 cerebro.non-prod.eng.anduril.dev
 ceres.dive-xl.andurildev.au
+cert-manager-upgrade-test-bse-dev.eng.anduril.dev
+cert-manager-upgrade-test-platform-prod.eng.anduril.dev
+cert-manager-upgrade-test.eng.anduril.dev
 cert-watcher.non-prod.eng.anduril.dev
 cert.epicgames.dev
 cetus.wolt.com
@@ -2494,6 +2502,7 @@ dev-platform-staging-aws.andurildev.com
 dev-polarion-long.corp.anduril.dev
 dev-polarion.plm.anduril.dev
 dev-preview.whatnot.com
+dev-socket.sscs.security.anduril.dev
 dev-synthetics.whatnot.com
 dev-syntheticsy.whatnot.com
 dev.administratum.anduril.dev
@@ -2815,6 +2824,7 @@ dt-jira-app.non-prod.eng.anduril.dev
 dtool-reqs-prototyping-qa.eng.anduril.dev
 dtool-reqs-prototyping-stg.eng.anduril.dev
 dtool-reqs-prototyping.non-prod.eng.anduril.dev
+dtools-prototype-suite.eng.anduril.dev
 dtools-prototype-suite.non-prod.eng.anduril.dev
 dtools-prototypes-qa.eng.anduril.dev
 dtools-prototypes.non-prod.eng.anduril.dev
@@ -2869,6 +2879,7 @@ ecom-plugin-api-shpo.util.wolt.com
 ecom-plugin-shp.wolt.com
 ecomtemp5.util.wolt.com
 ecovida.util.wolt.com
+ect-lab-metrics.non-prod.eng.anduril.dev
 edc.epicgames.dev
 edge-apic.util.wolt.com
 edge.anduril.dev
@@ -2898,6 +2909,7 @@ ee7.epicgames.dev
 egb-73-214e.dev2.k.wolt.com
 eggle1k.dev2.k.wolt.com
 eh2kc.dev2.k.wolt.com
+ehs-enterprise-task-dashboard.non-prod.eng.anduril.dev
 ehs-universal-dashboard.non-prod.eng.anduril.dev
 ekanban-app.non-prod.eng.anduril.dev
 ekanban-app.qa.eng.anduril.dev
@@ -3072,6 +3084,8 @@ est-milestone-tracker.eng.anduril.dev
 est-milestone-tracker.non-prod.eng.anduril.dev
 esteveabogados-comw.mail.protection.dev2.k.wolt.com
 estudiarfisica.dev2.k.wolt.com
+etc-lab-metrics.non-prod.eng.anduril.dev
+etc-parts-bin.non-prod.eng.anduril.dev
 etl-dev.gov.anduril.dev
 eu-central-1.wolt.com
 eu-central-1a.wolt.com
@@ -3112,6 +3126,8 @@ ew-hub.qa.eng.anduril.dev
 ew-hub.stage.eng.anduril.dev
 ew-infra.ew.anduril.dev
 ew-mfg.non-prod.eng.anduril.dev
+ew-mse-knowledge.non-prod.eng.anduril.dev
+ew-mse-knowledge.stage.eng.anduril.dev
 ew-production.eng.anduril.dev
 ew-production.non-prod.eng.anduril.dev
 ew-production.qa.eng.anduril.dev
@@ -4232,6 +4248,7 @@ jira-hdplus.corp.anduril.dev
 jira-infosec.anduril.dev
 jira-integrationplus.corp.anduril.dev
 jira-klas.anduril.dev
+jira-nudge.eng.anduril.dev
 jira-nudge.non-prod.eng.anduril.dev
 jira-people.anduril.dev
 jira-stage-hdplus.corp.anduril.dev
@@ -4573,6 +4590,7 @@ lsc2-hitl.andurildev.com
 lsc2-ksat-rfct.anduril.com
 lsc2-test-runner.andurildev.com
 lupine.anduril.com
+m-ime-bulk-ordering-tool.non-prod.eng.anduril.dev
 m.accounts.superhuman.com
 m.connect.epicgames.dev
 m.consumer-user.wolt.com
@@ -5262,6 +5280,7 @@ mdm.trs-training.andurildev.com
 mdm.wolt.com
 mdp-dev.eng.anduril.dev
 mdp-ebom-tool.non-prod.eng.anduril.dev
+mdp-harness.mdp-sandbox.eng.anduril.dev
 mdp-lorepath.eng.anduril.dev
 mdp-lorepath.non-prod.eng.anduril.dev
 mdp-sandbox.eng.anduril.dev
@@ -5723,6 +5742,7 @@ oracle.tc.anduril.au
 orchestrator-int.anduril.com
 orchestrator.anduril.com
 orchestrator.andurildev.com
+order-desk.non-prod.eng.anduril.dev
 org.cdn.dev2.k.wolt.com
 org.cdn.epicgames.dev
 org.cdn.whatnot.com
@@ -6896,6 +6916,7 @@ socius-qa.eng.anduril.dev
 socius-stg.eng.anduril.dev
 socius.eng.anduril.dev
 socius.non-prod.eng.anduril.dev
+socket.sscs.security.anduril.dev
 socom-low.andurildev.com
 socom.anduril.com
 software-catalog.anduril-edge-staging.anduril.dev
@@ -7329,6 +7350,7 @@ thanos-store-grpc.wolt.com
 thelasttestofthenight.non-prod.eng.anduril.dev
 thermalstruct-dev.non-prod.eng.anduril.dev
 this-is-hot.non-prod.eng.anduril.dev
+this-is-hot.qa.eng.anduril.dev
 thrasher-9000.non-prod.eng.anduril.dev
 threat-response.security.anduril.dev
 thuja.anduril.com
@@ -7386,6 +7408,8 @@ travel-form-editor.eng.anduril.dev
 travel-form-editor.non-prod.eng.anduril.dev
 travel.anduril.com
 trident-spectre.andurildev.com
+trino-ad.rdf-dev.gov.anduril.dev
+trino-authorized.rdf-dev.gov.anduril.dev
 trino.rdf-dev.gov.anduril.dev
 trino.rdf-prod.gov.anduril.dev
 trino.rdf.anduril.au
@@ -7563,6 +7587,7 @@ venom-me-roadmap.non-prod.eng.anduril.dev
 venom-me-team.non-prod.eng.anduril.dev
 venom.anduril.com
 venom.anduril.dev
+verdaccio.dev.forge-mgmt.anduril.dev
 verify-serial-qa.eng.anduril.dev
 verify-serial-shadow-mode-qa.eng.anduril.dev
 verify-serial-shadow-mode.non-prod.eng.anduril.dev
