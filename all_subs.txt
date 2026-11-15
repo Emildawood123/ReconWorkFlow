@@ -705,6 +705,7 @@ anton.non-prod.eng.anduril.dev
 anvil.anduril.dev
 aol.anduril.com
 aonia.non-prod.eng.anduril.dev
+aos-design-library.non-prod.eng.anduril.dev
 aozuqiukou.dev2.k.wolt.com
 ap.epicgames.dev
 ap02k.surenderlss.rtmp.selfhost.corp.dev2.k.wolt.com
@@ -715,6 +716,7 @@ apacg.epicgames.dev
 apache.util.wolt.com
 apachedevelop.util.wolt.com
 apaflowtool.foundations-dev.anduril.dev
+aperture.non-prod.eng.anduril.dev
 apgroupagency-com.mail.protection.dev2.k.wolt.com
 api-qa.itools.anduril.dev
 api.acme.superhuman.com
@@ -3086,6 +3088,7 @@ esteveabogados-comw.mail.protection.dev2.k.wolt.com
 estudiarfisica.dev2.k.wolt.com
 etc-lab-metrics.non-prod.eng.anduril.dev
 etc-parts-bin.non-prod.eng.anduril.dev
+etc-parts-bin.qa.eng.anduril.dev
 etl-dev.gov.anduril.dev
 eu-central-1.wolt.com
 eu-central-1a.wolt.com
