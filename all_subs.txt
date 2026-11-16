@@ -716,6 +716,7 @@ apacg.epicgames.dev
 apache.util.wolt.com
 apachedevelop.util.wolt.com
 apaflowtool.foundations-dev.anduril.dev
+aperture-api.non-prod.eng.anduril.dev
 aperture.non-prod.eng.anduril.dev
 apgroupagency-com.mail.protection.dev2.k.wolt.com
 api-qa.itools.anduril.dev
@@ -837,6 +838,7 @@ appfwi.breakthebank.whatnot.com
 applicationsy.util.wolt.com
 appq.cci.anduril.dev
 approval-hub.non-prod.eng.anduril.dev
+apps-dev.andurildev.au
 apps.anduril.com
 apps.eng.anduril.au
 apps.epicgames.dev
@@ -5823,6 +5825,7 @@ partybus-api.non-prod.eng.anduril.dev
 partybus-api.stage.eng.anduril.dev
 partybus-stg.eng.anduril.dev
 partybus-test-demo.non-prod.eng.anduril.dev
+partybus.andurildev.au
 partybus.eng.anduril.dev
 partybus.non-prod.eng.anduril.dev
 partybus.stage.eng.anduril.dev
@@ -5993,6 +5996,7 @@ ppp.wolt.com
 pqc-dev.andurildev.com
 pr-2911.dev.dev2.k.wolt.com
 pr-2911a.dev.dev2.k.wolt.com
+pr-report.bazel.anduril.dev
 praetorian-bandon.andurildev.com
 praetorian-cypress.andurildev.com
 praetorian-merion.andurildev.com
@@ -7671,6 +7675,7 @@ vwg.riptide.andurildev.com
 vwg.sandbox.andurildev.au
 w01.anduril.dev
 wag.dev2.k.wolt.com
+walnut.anduril.com
 wandb.anduril.dev
 wandb.gov.mlops-test.anduril.dev
 wandb.gov.united.anduril.dev
