@@ -168,6 +168,7 @@
 9xmail.dev2.k.wolt.com
 a.epicgames.dev
 a.wolt.com
+a1-ais-launch.non-prod.eng.anduril.dev
 a5mlrnesq.util.wolt.com
 a700-dashboard.eng.anduril.dev
 a700-dashboard.non-prod.eng.anduril.dev
@@ -514,12 +515,14 @@ airdefense.anduril.dev
 airflow-dev.g5-irad.anduril.dev
 airflow-master.wolt.com
 airflow.g5-atlas.anduril.dev
+airflow.g5-dev.g5-irad.anduril.dev
 airflow.g5-irad.anduril.dev
 airflow.growth.g5-irad.anduril.dev
 airflow.sunflower.anduril.dev
 airflow.util.wolt.com
 airflow.wolt.com
 airflowe.wolt.com
+airmaneuver.non-prod.eng.anduril.dev
 airmaneuverukprojects.non-prod.eng.anduril.dev
 ais-dashboards.non-prod.eng.anduril.dev
 ais-demo-1.andurildev.com
@@ -1080,6 +1083,7 @@ auth-public.rdf.jip.anduril.com
 auth-s3.util.wolt.com
 auth.dev.gymnasium.anduril.dev
 auth.developer.anduril.com
+auth.mdp-sandbox.eng.anduril.dev
 auth.non-prod.eng.anduril.dev
 auth.prod.gymnasium.anduril.dev
 auth.superhuman.com
@@ -1167,6 +1171,7 @@ ballast.network.anduril.dev
 bamboo-forest.anduril.dev
 bandit-dashboard.eng.anduril.dev
 bandit-dashboard.non-prod.eng.anduril.dev
+bandit-quality-hub.non-prod.eng.anduril.dev
 bandit.andurildev.com
 bap.anduril.dev
 bark-tts-dev.itools-dev.anduril.dev
@@ -1240,6 +1245,7 @@ bi035cisce-org.mail.protection.dev2.k.wolt.com
 bifrost-dev.andurildev.com
 bifrost-dev.eng.anduril.dev
 bifrost.anduril.dev
+bifrost.andurildev.au
 bifrost.andurildev.com
 bifrost.sandbox.anduril.au
 bifrost.sandbox.anduril.com.au
@@ -1407,6 +1413,7 @@ bucket.2020auth-s3.util.wolt.com
 bucketa.2020auth-s3.util.wolt.com
 bucketaccessg.internal-backupuserjenkins.util.wolt.com
 bucketcic.util.wolt.com
+bugswat-server.non-prod.eng.anduril.dev
 build-matrix.non-prod.eng.anduril.dev
 build.anduril.dev
 build.andurildev.com
@@ -2611,6 +2618,7 @@ devw.designdelivered.wolt.com
 devw.internal.util.wolt.com
 devy.plm.anduril.dev
 devz.anduril.dev
+dex.mdp-sandbox.eng.anduril.dev
 dex.mfx.andurildev.com
 df.andurildev.com
 dfdev1-prime.dev2.k.wolt.com
@@ -3017,6 +3025,8 @@ engineeringv2s3u.util.wolt.com
 engos-thermalstruct-qa.eng.anduril.dev
 engos-thermalstruct.eng.anduril.dev
 engos-thermalstruct.non-prod.eng.anduril.dev
+enroll.dev.menace-pki.anduril.com
+enroll.menace-pki.anduril.com
 enterpriseenrollment.superhuman.com
 enterpriseregistration.external.wolt.com
 enterpriseregistration.superhuman.com
@@ -3903,6 +3913,7 @@ heimdall-stg.eng.anduril.dev
 heimdall.non-prod.eng.anduril.dev
 helios-processor.non-prod.eng.anduril.dev
 helix.anduril.dev
+hello-mdp.mdp-sandbox.eng.anduril.dev
 hello-party-bus.non-prod.eng.anduril.dev
 hello.superhuman.com
 helm-only-test.andurildev.com
@@ -4372,6 +4383,7 @@ kubernetes.live-service.whatnot.com
 kubernetes.wolt.com
 kudumba.anduril.com
 kunden.wolt.com
+kuwait-d.non-prod.eng.anduril.dev
 kuwait-site-map.eng.anduril.dev
 kuwait-site-map.non-prod.eng.anduril.dev
 kuwait-wire.non-prod.eng.anduril.dev
@@ -5449,6 +5461,7 @@ mlops-tools.crocodile.anduril.au
 mlops.andurildev.com
 mlp.anduril.dev
 mm.anduril.dev
+mm.non-prod.eng.anduril.dev
 mm.security.anduril.dev
 mmi-demo-x.andurildev.com
 mmi-demo.andurildev.com
@@ -6401,6 +6414,7 @@ reynaga-runthrough.qa.eng.anduril.dev
 reynaga-share-nodes.non-prod.eng.anduril.dev
 reynagas-tavern.non-prod.eng.anduril.dev
 reynagas-tavern.qa.eng.anduril.dev
+rf-spectrum.non-prod.eng.anduril.dev
 rfd-api.foundations-dev.anduril.dev
 rfd-api.foundations.anduril.dev
 rfd.foundations-dev.anduril.dev
@@ -6464,6 +6478,7 @@ ricker.wolt.com
 ricketts.wolt.com
 rickey.wolt.com
 rickh.wolt.com
+rickie622.wolt.com
 rickl.wolt.com
 rickm.wolt.com
 rickmac.wolt.com
@@ -6844,6 +6859,7 @@ sheath-prod.anduril.dev
 sheath-staging.andurildev.com
 sherlock-matmgmt.non-prod.eng.anduril.dev
 shield-dashboard.security.anduril.dev
+shipping-tool.non-prod.eng.anduril.dev
 shippingsupplies.whatnot.com
 shippingsuppliesq.whatnot.com
 shjeq1qqc6ovtv70q2skk6nb06klmgj7.anduril.com
@@ -6879,6 +6895,7 @@ silvus-automation.non-prod.eng.anduril.dev
 sim-0-oai.mfx.andurildev.com
 sim-explorer-dev.g5-irad.anduril.dev
 sim-explorer.g5-atlas.anduril.dev
+sim-explorer.g5-dev.g5-irad.anduril.dev
 sim-explorer.g5-irad.anduril.dev
 sim-explorer.growth.g5-irad.anduril.dev
 sim-explorer.sunflower.anduril.dev
@@ -6966,6 +6983,7 @@ sp.epicgames.dev
 space-lasers.non-prod.eng.anduril.dev
 space-nominal.anduril.dev
 space-platform.non-prod.eng.anduril.dev
+space-platform.stage.eng.anduril.dev
 space-shift-scheduler.non-prod.eng.anduril.dev
 space-sim.andurildev.com
 space-sim.dev.anduril.com
@@ -7102,6 +7120,7 @@ strat-intel-mm.eng.anduril.dev
 strat-intel-mm.non-prod.eng.anduril.dev
 strat-sec-intel.non-prod.eng.anduril.dev
 strat-start-mini.non-prod.eng.anduril.dev
+stratex-schedule-v0.non-prod.eng.anduril.dev
 stratus.foundations-dev.anduril.dev
 stratus.foundations.anduril.dev
 stream.anduril.dev
@@ -7170,6 +7189,7 @@ switchboard-qa.eng.anduril.dev
 switchboard-stg.eng.anduril.dev
 switchboard.eng.anduril.dev
 switchboard.non-prod.eng.anduril.dev
+swp-dashboards.anduril.dev
 swplat-testrail.anduril.dev
 sydn2-dotmatrix.network.anduril.com
 symc.epicgames.dev
@@ -7383,6 +7403,7 @@ this-is-hot.non-prod.eng.anduril.dev
 this-is-hot.qa.eng.anduril.dev
 thrasher-9000.non-prod.eng.anduril.dev
 threat-response.security.anduril.dev
+throughline.non-prod.eng.anduril.dev
 thuja.anduril.com
 thunder-engineering.non-prod.eng.anduril.dev
 thunder-launch-qa.eng.anduril.dev
@@ -7761,6 +7782,7 @@ weighted-zh-connect.epicgames.dev
 weighted-zh-connecta.epicgames.dev
 welcome.superhuman.com
 welcomee.superhuman.com
+westus.cloudapp.dev2.k.wolt.com
 wg.am.anduril.com
 whatfix.anduril.dev
 whatfix.dev.anduril.dev
