@@ -492,6 +492,8 @@ agent-platform.anduril.dev
 agent-sandbox-dev.andurildev.com
 agent-vault-api.dev.forge-mgmt.anduril.dev
 agent-vault-api.forge-mgmt.anduril.dev
+agent-vault-mtls-api.dev.forge-mgmt.anduril.dev
+agent-vault-mtls.dev.forge-mgmt.anduril.dev
 agentic-shopping.wolt.com
 agents-on-servers-dev.andurildev.com
 agentsim.docs.anduril.dev
@@ -2242,6 +2244,7 @@ cybertruck1.whatnot.com
 cz.epicgames.dev
 czq.epicgames.dev
 d2a9n9a3gjjt55y.dev2.k.wolt.com
+d2ead.andurildev.com
 d365foconcierge8020aoss.westus.cloudapp.dev2.k.wolt.com
 daas-ecommerce-service.wolt.com
 daas-ecommerce-serviceregistryo.util.wolt.com
@@ -3953,6 +3956,7 @@ hiring-helper-qa.eng.anduril.dev
 hiring-helper-stg.eng.anduril.dev
 hiring-helper.eng.anduril.dev
 hiring-helper.non-prod.eng.anduril.dev
+hirschi.util.wolt.com
 historytest.util.wolt.com
 hitlkvm.anduril.dev
 hitlkvm1.anduril.dev
@@ -5401,6 +5405,7 @@ metabase.staging-superhuman.com
 metabase.superhuman.com
 metabase5.admin.superhuman.com
 metric.epicgames.dev
+metrics-archive.andurildev.au
 metrics-cluster.metrics.andurildev.au
 metrics-dev.andurildev.com
 metrics-site.non-prod.eng.anduril.dev
@@ -5913,6 +5918,7 @@ pdp-dashboard-qa.eng.anduril.dev
 pdp-dashboard-stg.eng.anduril.dev
 pdp-dashboard.eng.anduril.dev
 pdp-dashboard.non-prod.eng.anduril.dev
+pdp-sandbox.non-prod.eng.anduril.dev
 pdp-schedule-tracker.non-prod.eng.anduril.dev
 pdp-tracker.non-prod.eng.anduril.dev
 pdp-training.non-prod.eng.anduril.dev
@@ -7566,6 +7572,7 @@ uns-api.mdp-sandbox.eng.anduril.dev
 uns-bot.mdp-sandbox.eng.anduril.dev
 uns.mdp-dev.eng.anduril.dev
 uns.mdp-sandbox.eng.anduril.dev
+updog.non-prod.eng.anduril.dev
 upload.actuator.anduril.dev
 upload.auction-service.whatnot.com
 upload.live-service.whatnot.com
