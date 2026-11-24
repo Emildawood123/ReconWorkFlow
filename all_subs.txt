@@ -2221,6 +2221,7 @@ customervaults.util.wolt.com
 cvat.gov.mlops-test.anduril.dev
 cvat.gov.united.anduril.dev
 cvs.whatnot.com
+cvsblog.util.wolt.com
 cvscustomercig.util.wolt.com
 cw-demo.andurildev.com
 cw-sni-uk-network.anduril.com
@@ -6494,6 +6495,7 @@ rias.wolt.com
 riascollection.wolt.com
 riazzoli.wolt.com
 ribbit.wolt.com
+ribbon.wolt.com
 ribby.wolt.com
 ribcage.wolt.com
 ribeye.wolt.com
