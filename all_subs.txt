@@ -352,6 +352,7 @@ acp-govcom-corpnet-test-4.andurildev.com
 acp-govcom-create-test-1.andurildev.com
 acp-storage-restore.andurildev.com
 acrinym-comq.mail.protection.dev2.k.wolt.com
+acs.anduril.dev
 act.anduril.com
 activategoldenqam.dev2.k.wolt.com
 activec.util.wolt.com
@@ -645,6 +646,7 @@ anduril-cloudos-aws-cp.andurildev.com
 anduril-cloudos-com-dev-2.andurildev.com
 anduril-cloudos-com-dev-3.andurildev.com
 anduril-cloudos-com-dev.andurildev.com
+anduril-cloudos-com-staging.andurildev.com
 anduril-cloudos-dev-2.andurildev.com
 anduril-cloudos-dev-3.andurildev.com
 anduril-cloudos-dev.andurildev.com
@@ -762,6 +764,7 @@ api.observability.anduril.dev
 api.otto-stg.eng.anduril.dev
 api.otto.eng.anduril.dev
 api.otto.non-prod.eng.anduril.dev
+api.palantir.superhuman.com
 api.rdf-dev.gov.anduril.dev
 api.rdf-prod.gov.anduril.dev
 api.rdf.anduril.au
@@ -1087,6 +1090,9 @@ auth-public.rdf.jip.anduril.com
 auth-s3.util.wolt.com
 auth.dev.gymnasium.anduril.dev
 auth.developer.anduril.com
+auth.mcp-x-stg.andurildev.au
+auth.mcp-x.andurildev.au
+auth.mdp-dev.eng.anduril.dev
 auth.mdp-sandbox.eng.anduril.dev
 auth.non-prod.eng.anduril.dev
 auth.prod.gymnasium.anduril.dev
@@ -1249,6 +1255,7 @@ bhspartner.util.wolt.com
 bi035cisce-org.mail.protection.dev2.k.wolt.com
 bifrost-dev.andurildev.com
 bifrost-dev.eng.anduril.dev
+bifrost-stg.andurildev.au
 bifrost.anduril.dev
 bifrost.andurildev.au
 bifrost.andurildev.com
@@ -1661,6 +1668,7 @@ cf-protected-wwwy.xoxobride.com.cdn.dev2.k.wolt.com
 cfp.epicgames.dev
 ch-ballasting-digital-tool.non-prod.eng.anduril.dev
 ch.epicgames.dev
+change-helper.non-prod.eng.anduril.dev
 change-hub.non-prod.eng.anduril.dev
 chaos-mesh-stg.eng.anduril.dev
 chaos-mesh.non-prod.eng.anduril.dev
@@ -1776,6 +1784,7 @@ class-systems-qa.eng.anduril.dev
 class-systems-stg.eng.anduril.dev
 class-systems.eng.anduril.dev
 class-systems.non-prod.eng.anduril.dev
+claude-agents-staging.andurildev.com
 claude-agents.anduril.dev
 claude-bootstrap-dev.eng.anduril.dev
 claude.sandbox.anduril.au
@@ -2043,6 +2052,7 @@ console.dev.trs.framework.anduril.dev
 console.sandbox.trs.framework.anduril.dev
 console.sscs.security.anduril.dev
 console.staging.trs.framework.anduril.dev
+construct.anduril.dev
 consumer-api-experiment.wolt.com
 consumer-api.wolt.com
 consumer-apio.util.wolt.com
@@ -2628,6 +2638,7 @@ devw.designdelivered.wolt.com
 devw.internal.util.wolt.com
 devy.plm.anduril.dev
 devz.anduril.dev
+dex.mdp-dev.eng.anduril.dev
 dex.mdp-sandbox.eng.anduril.dev
 dex.mfx.andurildev.com
 df.andurildev.com
@@ -2884,6 +2895,7 @@ e2e-okta-test.non-prod.eng.anduril.dev
 e2e-otto-ottoe2evalidate.workspace.non-prod.eng.anduril.dev
 e53q.dev2.k.wolt.com
 e5a6m3eunhv9i5g4tfdvarufjrs0t0or.anduril.com
+ea.non-prod.eng.anduril.dev
 eagle-eye.andurildev.com
 eagle.anduril.com
 eagleeye-mil.non-prod.eng.anduril.dev
@@ -3215,6 +3227,7 @@ facility-requests-qa.eng.anduril.dev
 facility-requests-stg.eng.anduril.dev
 facility-requests.non-prod.eng.anduril.dev
 facility-requests.qa.eng.anduril.dev
+facility-simulation-model.non-prod.eng.anduril.dev
 facsys-inventory-qa.eng.anduril.dev
 facsys-inventory.non-prod.eng.anduril.dev
 facsys-otit-controltower-qa.eng.anduril.dev
@@ -3583,6 +3596,7 @@ gateway.id.superhuman.com
 gateway.non-prod.eng.anduril.dev
 gateway.orchestrator-int.anduril.com
 gateway.orchestrator.andurildev.com
+gateway.palantir.superhuman.com
 gateway.superhuman.com
 gateway9.util.wolt.com
 gatewaycibouncesq.util.wolt.com
@@ -3795,6 +3809,7 @@ grafana-euw2.voyager-irldev.anduril.dev
 grafana-gov.network.anduril.dev
 grafana-govm.network.anduril.dev
 grafana.arena-atlas.eng.anduril.dev
+grafana.dev.eng.anduril.dev
 grafana.dive.anduril.dev
 grafana.foundations-dev.anduril.dev
 grafana.foundations.anduril.dev
@@ -3930,6 +3945,7 @@ hello-mdp.mdp-sandbox.eng.anduril.dev
 hello-party-bus.non-prod.eng.anduril.dev
 hello.superhuman.com
 helm-only-test.andurildev.com
+help-bot.foundations-dev.anduril.dev
 help.anduril.com
 help.anduril.dev
 help.api.whatnot.com
@@ -3959,6 +3975,7 @@ hiring-helper.eng.anduril.dev
 hiring-helper.non-prod.eng.anduril.dev
 hirschi.util.wolt.com
 historytest.util.wolt.com
+hitlator.non-prod.eng.anduril.dev
 hitlkvm.anduril.dev
 hitlkvm1.anduril.dev
 hitlkvm2.anduril.dev
@@ -4000,6 +4017,8 @@ hto-dashboard.non-prod.eng.anduril.dev
 hto-dashboard.qa.eng.anduril.dev
 hto-document-library-and-creator.non-prod.eng.anduril.dev
 hto-exec-rollup-dashboard.non-prod.eng.anduril.dev
+hto-training-review.eng.anduril.dev
+hto-training-review.non-prod.eng.anduril.dev
 htpasswd.rdf-dev.gov.anduril.dev
 hub.accounts.superhuman.com
 hub.andurildev.com
@@ -4177,6 +4196,7 @@ internal.wolt.com
 internalk.sentry.anduril.dev
 internalmaps.andurildev.com
 international.e.preview.dev.whatnot.com
+interview-track.eng.anduril.dev
 interview-track.non-prod.eng.anduril.dev
 introlinksbilling1.util.wolt.com
 inventory-management-service.wolt.com
@@ -4595,6 +4615,8 @@ login.auction-service.whatnot.com
 login.consumer-static-assets.wolt.com
 login.developer.anduril.com
 login.fulmor-remote.anduril.com
+login.mcp-x-stg.andurildev.au
+login.mcp-x.andurildev.au
 login.netbird.fulmor-remote.anduril.com
 login.portal-qa.anduril.dev
 login.portal-stg.anduril.com
@@ -5213,6 +5235,7 @@ maps.anduril.com
 maps.andurildev.com
 maps.maritime.andurildev.com
 maps2.anduril.com
+maps21.anduril.com
 maps3.anduril.com
 marco-polo.non-prod.eng.anduril.dev
 marco-polo.qa.eng.anduril.dev
@@ -5276,6 +5299,7 @@ mcape-prom.andurildev.com
 mcape-prom.dev.anduril.com
 mcp-dev.security.anduril.dev
 mcp-x-dev.eng.anduril.dev
+mcp-x-stg.andurildev.au
 mcp-x.andurildev.au
 mcp-x.eng.anduril.dev
 mcp.auth.mail.superhuman.com
@@ -5316,6 +5340,7 @@ md-toolbox.non-prod.eng.anduril.dev
 md-wiki.non-prod.eng.anduril.dev
 md.anduril.com
 mde-webtools.corp.anduril.dev
+mdi-maritime.andurildev.com
 mdi.anduril.com
 mdm.aol.anduril.com
 mdm.belsof.anduril.com
@@ -5656,6 +5681,7 @@ nolwe.non-prod.eng.anduril.dev
 nominal.gov.itar.anduril.dev
 nominal.gov.mlops-test.anduril.dev
 nominal.gov.prime-dmp.anduril.dev
+nomos.private.acme.superhuman.com
 non-prod.eng.anduril.dev
 nonconformance-automation.non-prod.eng.anduril.dev
 nonconformance-automation.qa.eng.anduril.dev
@@ -5783,6 +5809,7 @@ openvpn.andurildev.com
 openvpn.dev.anduril.com
 operations-personnel-movement-tracker-t-e.non-prod.eng.anduril.dev
 operations-personnel-movement-tracker-t-e.qa.eng.anduril.dev
+ophrys.anduril.com
 oppenheimer-1.andurildev.com
 oppenheimer-2.andurildev.com
 ops-api.akm.anduril.com
@@ -6639,6 +6666,7 @@ rotamanlaser2.wolt.com
 rothman.wolt.com
 rothsville.wolt.com
 routemill-internal-apis.wolt.com
+routemill.wolt.com
 routemillu.wolt.com
 routing-diff.eng.anduril.dev
 routing-diff.non-prod.eng.anduril.dev
@@ -6799,6 +6827,8 @@ schofield.usarmy.anduril.com
 scim.ai-staging.andurildev.com
 scim.authorization-staging.andurildev.com
 scim.authorization.anduril.dev
+scm-sre-dashboard.eng.anduril.dev
+scm-sre-dashboard.non-prod.eng.anduril.dev
 scm.dev2.k.wolt.com
 scm.epicgames.dev
 scm.util.wolt.com
@@ -7730,6 +7760,7 @@ vincent7.local-dev.whatnot.com
 violet.jip.anduril.com
 vmalert.mdp-dev.eng.anduril.dev
 vmalert.mdp-sandbox.eng.anduril.dev
+vmauth.dev.eng.anduril.dev
 vn.epicgames.dev
 volta.anduril.dev
 voy-logistics-intake-dash.non-prod.eng.anduril.dev
