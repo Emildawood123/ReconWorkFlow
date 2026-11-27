@@ -427,6 +427,7 @@ administratorselopu.util.wolt.com
 administratum.anduril.dev
 adminjs.allvoices-dev.eng.anduril.dev
 adminka.acme.superhuman.com
+adminka.palantir.superhuman.com
 adminlatin.util.wolt.com
 admins.internal-backupuserjenkins.util.wolt.com
 admload0.whatnot.com
@@ -1176,6 +1177,7 @@ b6jrmfh0peeig9ac5fe3v1hv1mdl6d75.anduril.com
 ba7fc.dev2.k.wolt.com
 backend.contenta.andurildev.au
 backendc.util.wolt.com
+backstage.mdp-prod.eng.anduril.dev
 backup-elasticbeanstalka.2019jenkins.util.wolt.com
 backup-lonestar.anduril.com
 backup5.util.wolt.com
@@ -4069,6 +4071,8 @@ id.acme.superhuman.com
 id.epicgames.dev
 id.superhuman.com
 id2e-dev.andurildev.com
+idea-template-maker.non-prod.eng.anduril.dev
+idea-template-starter.non-prod.eng.anduril.dev
 identity.wolt.com
 idle-audit.mdp-sandbox.eng.anduril.dev
 idp.dev.dt.security.anduril.dev
@@ -4234,6 +4238,7 @@ it.preview.dev.whatnot.com
 it.wolt.com
 itar.anduril.dev
 itar.sitlm.anduril.dev
+itc-uk-dashboard.non-prod.eng.anduril.dev
 iterable-email-link.superhuman.com
 iterable-links.superhuman.com
 itools-dev.anduril.dev
@@ -5518,6 +5523,7 @@ mirror.sscs.security.anduril.dev
 mirrorload0.whatnot.com
 mirrorserv.anduril.au
 missiles.andurildev.com
+mission-control.non-prod.eng.anduril.dev
 mission-sim-ingest.observability-dev.andurildev.com
 mission-sim-ingest.observability.anduril.dev
 mission-systems-kpi-qa.eng.anduril.dev
@@ -7601,6 +7607,7 @@ trust4.superhuman.com
 tss-event-rom-qa.eng.anduril.dev
 tss-event-rom.non-prod.eng.anduril.dev
 tst-bed.non-prod.eng.anduril.dev
+tst-bed.stage.eng.anduril.dev
 tunnels-dev.anduril.dev
 tv.green-screen-dev.anduril.dev
 tv.green-screen.anduril.dev
@@ -7643,6 +7650,7 @@ uns-api.mdp-sandbox.eng.anduril.dev
 uns-bot.mdp-sandbox.eng.anduril.dev
 uns.mdp-dev.eng.anduril.dev
 uns.mdp-sandbox.eng.anduril.dev
+updog-api.non-prod.eng.anduril.dev
 updog.non-prod.eng.anduril.dev
 upload.actuator.anduril.dev
 upload.auction-service.whatnot.com
